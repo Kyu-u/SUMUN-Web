@@ -3,6 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+
+      margin: {
+        '26': '6.7rem'
+        },
+ 
+       padding: {
+        '70': '17rem'
+        },
+
       inset: {
         '0': 0,
        '1/5': '20%',
@@ -37,6 +46,10 @@ module.exports = {
         '5/7': '71.4285714%',
         '6/7': '85.7142857%',
         '30': '7.5rem',
+        '100': '60rem',
+        '99': '50rem',
+        '98': '40rem',
+        '97': '30rem',
         '120': '60rem'
       }
       
