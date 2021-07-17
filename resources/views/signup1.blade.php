@@ -17,7 +17,7 @@
         Please choose to create an account.
       </div>
 
-      <a href={{route('landing')}} class = "self-center">
+      <a href={{route('signup2')}} class = "self-center">
         <button type="button" class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-16">
           Create a new account
         </button>
