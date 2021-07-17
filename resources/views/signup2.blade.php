@@ -18,7 +18,8 @@
       </div>
 
       
-      <form action="" class="pt-10 flex flex-col">
+      <form action="{{ route('regis2') }}" method="POST" class="pt-10 flex flex-col">
+        @csrf
             <label class="pb-2 text-xl text-white"for="Email/Phone">Name</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="name" name="name" placeholder="Your Name...">
             <label class="pb-2 text-xl text-white"for="Email/Phone">Email</label>
@@ -37,9 +38,11 @@
              Back
           </div>
 
-          <button class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
-            Submit
-          </button>
+          <a href={{route('signup3')}}>
+            <button class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+              Submit
+            </button>
+          </a>
 
         </div>
         
