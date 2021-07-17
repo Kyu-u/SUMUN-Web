@@ -17,11 +17,11 @@
         Please choose to create an account.
       </div>
 
-      
+      <a href={{route('landing')}} class = "self-center">
         <button type="button" class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-16">
           Create a new account
         </button>
-
+      </a>
         <button type="button"  class="border-2 hover:border-buttonactive-0 border-signup-0 text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-10 flex justify-center items-center">
           Sign up with
           <img class="pl-3 w-14 self-center" src="images/google.png" alt="">

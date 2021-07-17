@@ -65,7 +65,7 @@
     </nav> -->
     <nav class="bg-main-0 py-10 text-white font-navbar font-medium overflow-visible">
       <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9">
-        <a href="" class="link justify-self-center relative hover:text-signup-0">Home</a>
+        <a href={{route('landing')}} class="link justify-self-center relative hover:text-signup-0">Home</a>
 
 
 
@@ -141,8 +141,9 @@
                 font-bold font-navbar
                 rounded-full
                 hover:bg-buttonactive-0
+
               ">
-            Sign Up
+              <a href={{ route('signup1')}} class="no-underline ...">Sign Up</a>
           </button>
         </div>
       </div>
