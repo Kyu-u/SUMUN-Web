@@ -1,5 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\registerController;
 
-Route::view('/', 'signup1');
+Route::view('/', 'landing')->name('landing');
+Route::get('/register',
+    [registerController::class,'index'])->name('signup1');
