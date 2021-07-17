@@ -25,3 +25,4 @@ Route::get('/signup5',
     [registerController::class,'index5'])->name('signup5');
 Route::post('/regis5',
     [registerController::class,'store'])->name('regis5');
+
