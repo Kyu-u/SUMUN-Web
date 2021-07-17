@@ -18,7 +18,7 @@
       </div>
 
       
-      <form method="POST" action="{{ route('signup2') }}" class="pt-10 flex flex-col">
+      <form action="{{ route('regis2') }}" method="POST" class="pt-10 flex flex-col">
         @csrf
             <label class="pb-2 text-xl text-white"for="Email/Phone">Name</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="name" name="name" placeholder="Your Name...">

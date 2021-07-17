@@ -143,7 +143,7 @@
                 hover:bg-buttonactive-0
 
               ">
-              <a href={{ route('signup1')}} class="no-underline ...">Sign Up</a>
+              <a href="{{ route('signup1') }}" class="no-underline ...">Sign Up</a>
           </button>
         </div>
       </div>
