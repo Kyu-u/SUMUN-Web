@@ -18,7 +18,17 @@
       </div>
 
       
-      <form action="{{ route('regis2') }}" method="POST" class="pt-10 flex flex-col">
+      @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+      @endif
+
+      <form action="{{route('regis2')}}" method="POST" class="pt-10 flex flex-col">
         @csrf
             <label class="pb-2 text-xl text-white"for="Email/Phone">Name</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="name" name="name" placeholder="Your Name...">
@@ -27,9 +37,7 @@
             <label class="py-2 text-xl text-white"for="lname">Password</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 text-black" type="password" id="password" name="password" placeholder="Password...">
             <label class="py-2 text-xl text-white"for="lname">Confirm Password</label>
-            <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 text-black" type="password" id="cpassword" name="cpassword" placeholder=" Confirm Password...">
-            
-          </form>
+            <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 text-black" type="password" id="password_confirmation" name="password_confirmation" placeholder=" Confirm Password...">
 
         <div class="flex justify-between w-96">
           
@@ -39,13 +47,12 @@
           </div>
 
           <a href={{route('signup3')}}>
-            <button class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+            <button type="submit" class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
               Submit
             </button>
           </a>
-
         </div>
-        
+      </form>
 
         
     </div>

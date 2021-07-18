@@ -10,7 +10,7 @@ Route::get('/register',
 
 Route::get('/signup2',
     [registerController::class,'index2'])->name('signup2');
-Route::post('/regis2',
+Route::post('/register2',
     [registerController::class,'store'])->name('regis2');
 
 Route::get('/signup3',

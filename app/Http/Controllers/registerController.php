@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Users;
+use Faker\Factory as Faker;
 
 class registerController extends BaseController {
 
@@ -45,8 +46,8 @@ class registerController extends BaseController {
             'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);
-
         $data = $request->all();
+        dump($data);
         $check = $this->create($data);
 
         redirect()->to('signup3');
@@ -54,10 +55,12 @@ class registerController extends BaseController {
 
     public function create(array $data)
     {
-      return User::create([
-        'name' => $data['name'],
-        'email' => $data['email'],
-        'password' => Hash::make($data['password'])
-      ]);
+        $faker = Faker::create('id_ID');
+        return User::create([
+            'name' => $data['name'],
+            'username' => $faker->userName,
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+        ]);
     } 
 }
