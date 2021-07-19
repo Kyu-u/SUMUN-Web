@@ -16,22 +16,30 @@ class registerController extends BaseController {
 
     public function index()
     {
+        $users = User::all();
+
         return view('signup1');
     }
 
-    public function index2()
+    public function index2(Request $request)
     {
-        return view('signup2');
+        $users = $request->session()->get('users');
+
+        return view('signup2', compact('users'));
     }
 
-    public function index3()
+    public function index3(Request $request)
     {
-        return view('signup3');
+        $users = $request->session()->get('users');
+
+        return view('signup3', compact('users'));
     }
 
-    public function index4()
+    public function index4(Request $request)
     {
-        return view('signup4');
+        $users = $request->session()->get('users');
+        
+        return view('signup4', compact('users'));
     }
 
     public function index5()
@@ -39,28 +47,62 @@ class registerController extends BaseController {
         return view('signup5');
     }
 
-    public function store(Request $request)
+    public function store2(Request $request)
     {
-        $request->validate([
+        // $request->validate([
+        //     'name' => 'required',
+        //     'email' => 'required|email',
+        //     'password' => 'required|confirmed',
+        // ]);
+        // $data = $request->all();
+        // dump($data);
+        // $check = $this->create($data);
+
+        $validatedData = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);
-        $data = $request->all();
-        dump($data);
-        $check = $this->create($data);
 
-        redirect()->to('signup3');
+        if(empty($request->session()->get('users')))
+        {
+            $users = new User();
+            $users->fill($validatedData);
+            $request->session()->put('users', $users);
+        }
+        else
+        {
+            $users = $request->session()->get('users');
+            $users->fill($validatedData);
+            $request->session()->put('users', $users);
+            // $request->session()->forget('users');
+        }
+
+        return redirect()->route('signup3');
     }
 
-    public function create(array $data)
+    // public function create(array $data)
+    // {
+    //     $faker = Faker::create('id_ID');
+    //     return User::create([
+    //         'name' => $data['name'],
+    //         'username' => $faker->userName,
+    //         'email' => $data['email'],
+    //         'password' => Hash::make($data['password'])
+    //     ]);
+    // }
+    public function store4(Request $request)
     {
-        $faker = Faker::create('id_ID');
-        return User::create([
-            'name' => $data['name'],
-            'username' => $faker->userName,
-            'email' => $data['email'],
-            'password' => Hash::make($data['password'])
+        $validatedData = $request->validate([
+            'school_name' => 'required',
+            // 'grade' => 'required',
         ]);
+
+        $users = $request->session()->get('users');
+        $users->fill($validatedData);
+        $request->session()->put('users', $users);
+        $users->save();
+
+        return redirect()->route('signup5');
     } 
 }
