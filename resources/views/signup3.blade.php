@@ -17,14 +17,17 @@
         Please select your education level.
       </div>
 
-      
-      <button type="button"  class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-16">
-          Senior High School Student
-        </button>
+        <a href={{ route('signup4') }}>
+          <button type="button"  class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-16">
+            Senior High School Student
+          </button>
+        </a>
 
-        <button type="button"  class="border-2 hover:border-buttonactive-0 border-signup-0 text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-10 flex justify-center items-center">
-          Undergraduate Student
-        </button>
+        <a href={{ route('signup5') }}>
+          <button type="button"  class="border-2 hover:border-buttonactive-0 border-signup-0 text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-10 flex justify-center items-center">
+            Undergraduate Student
+          </button>
+        </a>
 
         <div class="flex justify-between w-96 pt-20">
           
