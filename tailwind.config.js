@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     extend: {
 
+      fill: theme => ({
+        'green': theme('colors.signup.0'),
+        
+      }),
+      
       margin: {
         '26': '6.7rem'
         },
@@ -32,6 +37,10 @@ module.exports = {
         time: ['#2FCB6E'],
         tablebg: ['#242E28'],
         tableisi: ['#1F5975'],
+        dropdown: ['#409863'],
+        cardprofile: ['#27372D'],
+        border: ['#184E68'],
+        garis: ['#C4C4C4']
       },
       fontFamily: {
         navbar: ['Open Sans, sans-serif'],
