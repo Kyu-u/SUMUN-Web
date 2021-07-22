@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <div class="relative mx-auto">
@@ -143,7 +148,7 @@
    </div>
 
    @yield('content')
-   
+
    <footer class="relative bg-main-0 ">
         <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
         <div class="
