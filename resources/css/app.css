@@ -31,30 +31,26 @@ scroll-behavior: smooth;
 height: 54rem;
 }
 
-.container .topic{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .content{
-    display: flex;
+
+  /*  { */
+    /* display: flex; */
     /* align-items: center; */
-    justify-content: space-between;
-  }
-  .content .list{
+    
+    /* justify-content: space-between; */
+  /* } */
+
+    .list{
     display: flex;
     flex-direction: column;
-    width: 20%;
-    margin-right: 50px;
+    
     position: relative;
   }
-  .content .list label{
-    height: 60px;
+    .list label{
+    height: 80px;
     font-size: 22px;
     font-weight: 500;
     line-height: 60px;
     cursor: pointer;
-    padding-left: 25px;
     transition: all 0.5s ease;
     color: rgb(252, 252, 252);
     z-index: 12;
@@ -66,24 +62,28 @@ height: 54rem;
   #about:checked ~ .list label.about{
     color: #fff;
   }
-  .content .list label:hover{
+    .list label:hover{
     color: #57CA85;
   }
-  .content .slider{
+    .slider{
     position: absolute;
     left: 0;
     top: 0;
-    height: 60px;
-    width: 100%;
-    border-radius: 12px;
+    height: 80px;
+    width: 90%;
+    border-radius: 8px;
     background: #57CA85;
     transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0px;
+    left: 0px;
   }
   #home:checked ~ .list .slider{
     top: 0;
   }
   #blog:checked ~ .list .slider{
-    top: 60px;
+    top: 120px;
   }
   #help:checked ~ .list .slider{
     top: 120px;
@@ -94,23 +94,21 @@ height: 54rem;
   #about:checked ~ .list .slider{
     top: 240px;
   }
-  .content .text-content{
+    .text-content{
     width: 80%;
     transition: all 0.4s ease;
   
   }
-  .content .text{
+    .text{
     display: none;
   }
-  .content .text .title{
-    font-size: 25px;
+    .text .title{
     margin-bottom: 10px;
-    font-weight: 500;
   }
-  .content .text p{
+    .text p{
     text-align: justify;
   }
-  .content .text-content .home{
+    .text-content .home{
     display: block;
   }
   #home:checked ~ .text-content .home,
@@ -126,9 +124,7 @@ height: 54rem;
   #about:checked ~ .text-content .home{
     display: none;
   }
-  .content input{
-    display: none;
-  }
+
 
   .h-timeline{
     height: 54rem;
@@ -138,6 +134,10 @@ height: 54rem;
     top:37rem;
   }
 
+  .h-admin{
+    height: 40rem;
+  }
+
   @layer components{
 
     .tabletime{
@@ -145,9 +145,18 @@ height: 54rem;
     }
 
     .tablekosong{
-      @apply bg-timelinebot-0 opacity-30
+      @apply bg-timelinebot-0 opacity-30;
     }
 
+    .rad{
+      @apply hidden;
+    }
+  
+
+  }
+
+  .rounded-4xl{
+    border-radius: 5rem;
   }
 
   select {
@@ -162,3 +171,5 @@ height: 54rem;
 
 
   }
+
+  

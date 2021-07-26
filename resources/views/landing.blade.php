@@ -227,17 +227,15 @@
 
     <!-- Timeline -->
 
-    <div class="container max-w-7xl mx-auto text-white pt-52 pb-52">
-      <div class="content h-timeline">
+    <div class="container max-w-3xl sm:max-w-5xl md:max-w-7xl mx-auto text-white pt-52 pb-52">
+      <div class="h-timeline flex flex-col items-center lg:flex-row">
         <input type="radio" name="slider" checked id="home" />
         <input type="radio" name="slider" id="blog" />
-        <div class="list flex flex-col justify-start h-full">
-          <label for="home" class="home">
-            <i class="fas fa-home"></i>
+        <div class="list flex flex-col justify-start lg:mr-14 h-full">
+          <label for="home" class="home flex justify-center lg:justify-start lg:pl-6">
             <span class="title">Timeline</span>
           </label>
-          <label for="blog" class="blog">
-            <span class="icon"><i class="fas fa-blog"></i></span>
+          <label for="blog" class="blog flex justify-center lg:justify-start lg:pl-6">
             <span class="title">Rundown</span>
           </label>
 
@@ -265,7 +263,7 @@
               <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-96">
 
               </div>
-              <div class=" h-full w-full flex flex-col justify-items-center pl- pr-8 gap-y-16">
+              <div class=" h-full w-full flex flex-col justify-items-center pr-8 gap-y-16 mt-20">
               <div class="w-72 h-36 items-center relative">
                           <div class="relative z-10 font-judul text-3xl font-medium text-center">
                             January
