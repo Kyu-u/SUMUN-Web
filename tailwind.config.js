@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
 
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+      textColor: ['focus'],
+      
       fill: theme => ({
         'green': theme('colors.signup.0'),
         
