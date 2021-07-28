@@ -21,12 +21,12 @@
         <button type="button" class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-16">
           Create a new account
         </button>
-      </a>
+      <a href="{{ route('googleRedirect') }}">
         <button type="button"  class="border-2 hover:border-buttonactive-0 border-signup-0 text-white text-xl font-semibold font-sans w-80 h-14 rounded-md self-center mt-10 flex justify-center items-center">
           Sign up with
           <img class="pl-3 w-14 self-center" src="images/google.png" alt="">
         </button>
-
+        
         <img class="w-40 self-center pt-20" src="images/line.png" alt="">
 
         <div class="text-white font-sans self-center pt-10">
