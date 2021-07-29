@@ -2,18 +2,25 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registerController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Socialite;
+use App\Http\Controllers\ForgotPasswordController;
 
 Route::view('/', 'admin')->name('admin');
+Route::view('/', 'landing')->name('landing');
 
 Route::get('/register',[registerController::class,'index'])->name('signup1');
-
+Route::get('/login',[LoginController::class,'index'])->name('login');
+Route::get('/forgot',[ForgotPasswordController::class,'index'])->name('forgot');
+Route::get('/forgot2',[ForgotPasswordController::class,'index2'])->name('forgot2');
+Route::post('/forgot_password',[ForgotPasswordController::class,'postEmail'])->name('emailpassword');
+Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
+Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
 Route::get('/signup2',
     [registerController::class,'index2'])->name('signup2');
 Route::post('/register2',
     [registerController::class,'store2'])->name('regis2');
 
-Route::post('/register2',[registerController::class,'store'])->name('regis2');
 
 Route::get('/signup4',
     [registerController::class,'index4'])->name('signup4');
@@ -27,8 +34,6 @@ Route::get('auth/google/callback', [registerController::class,'handleGoogleCallb
 Route::get('auth/google', [registerController::class,'redirectToGoogle'])->name('googleRedirect');
 
 Route::get('/signup4',[registerController::class,'index4'])->name('signup4');
-
-Route::post('/regis4',[registerContrFoller::class,'store'])->name('regis4');
 
 Route::get('/signup5',[registerController::class,'index5'])->name('signup5');
 

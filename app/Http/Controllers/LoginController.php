@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends BaseController
 {
-    public function create()
+    public function index()
     {
-        return view('/landing');
+        return view('login');
     }
 
     public function store()

@@ -4,9 +4,9 @@
 <section class="font-navbar bg-main-0 text-white py-32">
     <div class="max-w-7xl mx-auto flex justify-center">
       <div class="flex flex-row">
-        <a href="">
+        <!-- <a href="">
           <img class="w-1/2 hidden md:block" src="images/back.png" alt="">
-        </a>
+        </a> -->
         <div class="flex flex-col px-10 sm:px-0">
           <p class="text-xl flex flex-row items-center md:block text-sm md:text-md"> <img class="block md:hidden w-12 pr-6 self-center"src="images/back.png" alt=""> Back to main page</p>
 
@@ -21,20 +21,20 @@
             We’ll send you and email with a link to reset your password.
             </p>
             <div class="flex flex-col w-full md:w-1/2 pt-6 md:pt-0">
-              <form class="flex flex-col py-10" action="" method="">
+              <form class="flex flex-col py-10" action="{{route('emailpassword')}}" method="POST">
+                @csrf
                 <label class="pb-2 text-xs nd:text-sm" for="Email" class="">Your Email</label>
                 <input class="rounded-lg md:w-full px-4 py-2 text-sm md:text-sm  text-xl text-black" type="text" id="email" name="email"
                   placeholder="example@example.com">
+                  <button class="flex justify-end items-end">
+                    <a href="forgot2.html" type="submit">
+                    <div class="w-auto bg-signup-0 rounded-md py-2 px-8">
+                      <p>Send</p>
+                    </div>
+                    </a>
+                  </button>
               </form>
 
-              <button class="flex justify-end items-end">
-                <a href="forgot2.html">
-                <div class="w-auto bg-signup-0 rounded-md py-2 px-8">
-                  <p>Send</p>
-                </div>
-                </a>
-
-              </button>
             </div>
         </div>
       </div>

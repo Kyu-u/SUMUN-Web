@@ -64,8 +64,6 @@ class registerController extends BaseController {
             'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);
-        $data = $request->all();
-        $check = $this->create($data);
 
         if(empty($request->session()->get('users')))
         {
