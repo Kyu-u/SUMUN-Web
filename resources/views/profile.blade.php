@@ -22,9 +22,9 @@
 
                 <ul class="text-xxs sm:text-base flex flex-col text-white py-6 pl-2">
                     <p class="py-2">
-                        SMAK Penabur Harapan Indah zxcasdqew</p>
+                        {{ $users->school_name }}</p>
                     <p class="py-2">
-                        Teknik Informatika</p>
+                        {{ $users->major }}</p>
                     <p class="py-2">
                         UNESCO
                     </p>
