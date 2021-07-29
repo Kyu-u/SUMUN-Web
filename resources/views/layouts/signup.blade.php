@@ -7,10 +7,10 @@
     <title>Document</title>
     
 </head>
-<body style="background-image: url('images/batik.png')"
+<!-- <body style="background-image: url('images/batik.png')"
       class="bg-cover bg-local relative">
     <div >
-    <img class="absolute top-0 left-0" src="images/batik.png" alt="">
+    <img class="absolute top-0 left-0" src="images/batik.png" alt=""> -->
     
 
 
