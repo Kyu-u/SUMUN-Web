@@ -44,3 +44,4 @@ Route::post('/regis5',[registerController::class,'store'])->name('regis5');
 Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
+
