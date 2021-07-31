@@ -32,7 +32,8 @@
             <label class="pb-2 pt-2 text-xl text-white"for="School Name">Schoo Name</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="name" name="school_name" placeholder="Your School Name...">
             <label class="pb-2 pt-2 text-xl text-white"for="Grade">Grade</label>
-            <select style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;" class="drop w-96 border bg-white rounded px-3 py-4 outline-none">
+            <select style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;" class="drop w-96 border bg-white rounded px-3 py-4 outline-none"
+            name="grade" for="grade">
                 <option class="py-1 font-sans">10</option>
                 <option class="py-1 font-sans">11</option>
                 <option class="py-1 font-sans">12</option>
@@ -40,10 +41,11 @@
 
             </select>
             <label class="pb-2 pt-2 text-xl text-white"for="Major">Major</label>
-            <select style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"  class="drop w-96 border bg-white rounded px-3 py-4 outline-none relative">
+            <select style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"  class="drop w-96 border bg-white rounded px-3 py-4 outline-none relative"
+            name="major" for="major">
                 <option class="py-1 font-sans">Science</option>
                 <option class="py-1 font-sans">Social</option>
-                <img class="absolute right-4" src="images/droparrow.png" alt="">
+                <!-- <img class="absolute right-4" src="images/droparrow.png" alt=""> -->
             </select>
             <a href={{route('landing')}}>
             <button type="submit" class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">

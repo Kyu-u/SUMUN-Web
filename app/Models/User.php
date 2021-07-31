@@ -32,6 +32,7 @@ class User extends Authenticatable
         'phone',
         'school_name',
         'grade',
+        'major',
         'webinar_id',
         'transaction_id',
         'created_at',
