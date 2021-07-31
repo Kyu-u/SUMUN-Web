@@ -80,7 +80,7 @@
       <a href="" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
       <div id="navitems" class="justify-self-center flex gap-4 items-center text-sm col-span-2">
-        <a href="#login" class="link justify-self-start relative hover:text-signup-0">Log In</a>
+        <a href={{ route('login') }} class="link justify-self-start relative hover:text-signup-0">Log In</a>
         <div class="text-xs">
           <h2>or</h2>
         </div>
