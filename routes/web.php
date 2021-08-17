@@ -5,8 +5,11 @@ use App\Http\Controllers\registerController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Socialite;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin2Controller;
 
-Route::view('/', 'admin')->name('admin');
+
+
 Route::view('/', 'landing')->name('landing');
 Route::get('/register',[registerController::class,'index'])->name('signup1');
 Route::get('/login',[LoginController::class,'showLoginForm'])->name('showLoginForm');
@@ -27,5 +30,8 @@ Route::get('/signup5',[registerController::class,'index5'])->name('signup5');
 Route::post('/regis5',[registerController::class,'store'])->name('regis5');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout1');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin2', [Admin2Controller::class, 'index'])->name('admin2');
+
 
 
