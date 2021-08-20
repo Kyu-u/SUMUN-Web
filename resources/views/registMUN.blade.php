@@ -23,18 +23,37 @@
                                     <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
                                         name="Council" placeholder="*******">
 
-                                    <button class="flex justify-end items-center pt-4">
-                                        <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
-                                            height="10" viewBox="0 0 11 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2" stroke-linecap="square"
-                                                stroke-linejoin="round" />
-                                            <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
-                                                stroke-linecap="square" stroke-linejoin="round" />
-                                        </svg>
+                                    <div class="flex flex-row justify-between">
+                                        <!-- START : BUTTON ADD-->
+                                        <div class="px-2">
 
-                                    </button>
+                                            <button class="flex justify-end items-center pt-4">
+                                                <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
+                                                    height="10" viewBox="0 0 11 10" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                    <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                </svg>
 
+                                            </button>
+                                        </div>
+                                        <!-- END : BUTTON ADD-->
+
+                                        <!-- START : BUTTON DELETE-->
+                                        <button class="flex justify-end items-center pt-4">
+                                            <span class="pr-1 text-sm md:text-md">Delete</span> <svg width="11"
+                                                height="10" viewBox="0 0 11 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                    stroke-linecap="square" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </button>
+                                        <!-- END : BUTTON DELETE-->
+                                    </div>
                                 </div>
                             </div>
 
@@ -59,18 +78,37 @@
                                     <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
                                         name="Council" placeholder="*******">
 
-                                    <button class="flex justify-end items-center pt-4">
-                                        <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
-                                            height="10" viewBox="0 0 11 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2" stroke-linecap="square"
-                                                stroke-linejoin="round" />
-                                            <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
-                                                stroke-linecap="square" stroke-linejoin="round" />
-                                        </svg>
+                                    <div class="flex flex-row justify-between">
+                                        <!-- START : BUTTON ADD-->
+                                        <div class="px-2">
 
-                                    </button>
+                                            <button class="flex justify-end items-center pt-4">
+                                                <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
+                                                    height="10" viewBox="0 0 11 10" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                    <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                </svg>
 
+                                            </button>
+                                        </div>
+                                        <!-- END : BUTTON ADD-->
+
+                                        <!-- START : BUTTON DELETE-->
+                                        <button class="flex justify-end items-center pt-4">
+                                            <span class="pr-1 text-sm md:text-md">Delete</span> <svg width="11"
+                                                height="10" viewBox="0 0 11 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                    stroke-linecap="square" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </button>
+                                        <!-- END : BUTTON DELETE-->
+                                    </div>
                                 </div>
                             </div>
 
@@ -78,7 +116,6 @@
 
 
                     </div>
-
 
                     <div class="py-6 card">
 
@@ -94,18 +131,37 @@
                                     <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
                                         name="Council" placeholder="*******">
 
-                                    <button class="flex justify-end items-center pt-4">
-                                        <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
-                                            height="10" viewBox="0 0 11 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2" stroke-linecap="square"
-                                                stroke-linejoin="round" />
-                                            <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
-                                                stroke-linecap="square" stroke-linejoin="round" />
-                                        </svg>
+                                    <div class="flex flex-row justify-between">
+                                        <!-- START : BUTTON ADD-->
+                                        <div class="px-2">
 
-                                    </button>
+                                            <button class="flex justify-end items-center pt-4">
+                                                <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
+                                                    height="10" viewBox="0 0 11 10" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                    <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                </svg>
 
+                                            </button>
+                                        </div>
+                                        <!-- END : BUTTON ADD-->
+
+                                        <!-- START : BUTTON DELETE-->
+                                        <button class="flex justify-end items-center pt-4">
+                                            <span class="pr-1 text-sm md:text-md">Delete</span> <svg width="11"
+                                                height="10" viewBox="0 0 11 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                    stroke-linecap="square" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </button>
+                                        <!-- END : BUTTON DELETE-->
+                                    </div>
                                 </div>
                             </div>
 
@@ -113,7 +169,6 @@
 
 
                     </div>
-
 
                     <div class="py-6 card">
 
@@ -129,18 +184,37 @@
                                     <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
                                         name="Council" placeholder="*******">
 
-                                    <button class="flex justify-end items-center pt-4">
-                                        <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
-                                            height="10" viewBox="0 0 11 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2" stroke-linecap="square"
-                                                stroke-linejoin="round" />
-                                            <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
-                                                stroke-linecap="square" stroke-linejoin="round" />
-                                        </svg>
+                                    <div class="flex flex-row justify-between">
+                                        <!-- START : BUTTON ADD-->
+                                        <div class="px-2">
 
-                                    </button>
+                                            <button class="flex justify-end items-center pt-4">
+                                                <span class="pr-1 text-sm md:text-md">Add more</span> <svg width="11"
+                                                    height="10" viewBox="0 0 11 10" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                    <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                </svg>
 
+                                            </button>
+                                        </div>
+                                        <!-- END : BUTTON ADD-->
+
+                                        <!-- START : BUTTON DELETE-->
+                                        <button class="flex justify-end items-center pt-4">
+                                            <span class="pr-1 text-sm md:text-md">Delete</span> <svg width="11"
+                                                height="10" viewBox="0 0 11 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
+                                                    stroke-linecap="square" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </button>
+                                        <!-- END : BUTTON DELETE-->
+                                    </div>
                                 </div>
                             </div>
 
@@ -148,12 +222,6 @@
 
 
                     </div>
-
-
-                    <button class="w-full flex justify-center pt-6" type="submit">
-                        <a class="w-auto px-6 py-2 bg-signup-0 text-white rounded-xl" href="verif.html">
-                            Submit </a>
-                    </button>
 
 
 
