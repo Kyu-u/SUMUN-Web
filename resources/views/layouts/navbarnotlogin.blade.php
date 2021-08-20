@@ -154,9 +154,9 @@
     @yield('content')
 
 
-    <footer class="relative z-0 w-full">
-      <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
-      <div class="
+    <footer class="relative bg-main-0 ">
+        <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
+        <div class="
           flex
           flex-col
           md:flex-row
@@ -169,48 +169,48 @@
           mx-auto
           pb-20
           relative
-          
+         
         ">
-        <div class="w-20 md:w-36 items-center">
-          <img class="object-contain" src="images/unknown.png" alt="" />
-        </div>
-        <div
-          class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/4 justify-center items-center md:items-start md:justify-start h-36">
-          <div class="font-semibold text-xl pb-6 pt-10 md:pt-0">About</div>
-          <div class="text-xs font-thin text-center md:text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip e
+          <div class="w-20 md:w-36 items-center">
+            <img class="object-contain" src="images/unknown.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col text-foot-0 font-sans w-2/3 md:w-1/4 justify-center items-center md:items-start md:justify-start h-36">
+            <div class="font-semibold text-xl pb-2 pt-10 md:pt-0">About</div>
+            <div class="text-xs font-thin text-center md:text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip e
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+            <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+            <div class="text-xs font-thin text-center md:text-left">
+              Line : @sumunmantap <br />
+              Instagram : @surabayamun <br />
+              Email : admin@sumun.com
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+            <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+            <div class="text-xs font-thin text-center md:text-left">
+              Lorem ipsum dolor sit aliqua <br />
+              Lorem ipsum dolor
+            </div>
           </div>
         </div>
-        <div
-          class="flex flex-col text-foot-0 font-sans w-1/4 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
-          <div class="font-semibold text-xl pb-6 pt-20 md:pt-0">About</div>
-          <div class="text-xs font-thin text-center md:text-left">
-            Line : @sumunmantap <br />
-            Instagram : @surabayamun <br />
-            Email : admin@sumun.com
+        <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />
+        <div class="flex items-center justify-center md:justify-between mx-auto max-w-7xl relative">
+          <div class="text-foot-0 font-thin  py-6 text-xxs md:text-md">Surabaya MUN 2021. All Rights Reserved</div>
+          <div class="hidden md:flex justify-evenly items-center">
+            <img class="w-1/5" src="images/linef.png" alt="" />
+            <img class="w-1/5" src="images/ig.png" alt="" /><img class="w-1/5" src="images/mail.png" alt="" />
           </div>
         </div>
-        <div
-          class="flex flex-col text-foot-0 font-sans w-1/4 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
-          <div class="font-semibold text-xl pb-6 pt-20 md:pt-0">About</div>
-          <div class="text-xs font-thin text-center md:text-left">
-            Lorem ipsum dolor sit aliqua <br />
-            Lorem ipsum dolor
-          </div>
-        </div>
-      </div>
-      <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />
-      <div class="flex items-center justify-center md:justify-between mx-auto max-w-7xl relative">
-        <div class="text-foot-0 font-thin  py-6 ">Surabaya MUN 2021. All Rights Reserved</div>
-        <div class="hidden md:flex justify-evenly items-center">
-          <img class="w-1/5" src="images/linef.png" alt="" />
-          <img class="w-1/5" src="images/ig.png" alt="" /><img class="w-1/5" src="images/mail.png" alt="" />
-        </div>
-      </div>
-    </footer>
+      </footer>
   </div>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
