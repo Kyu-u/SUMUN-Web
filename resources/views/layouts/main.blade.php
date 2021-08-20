@@ -5,8 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/app.css">
-  <title>Document</title>
-
+  <title>Surabaya Model United Nations</title>
+  <meta name="description"
+    content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
+<meta name="keywords" content="Surabaya,MUN,SUMUN,Surabaya MUN,Conference">
+<meta name="author" content="sumun">
+    <link rel="shortcut icon" type="image/x-icon" href="images/surabayamunlogo.png">
+    <link rel="apple-touch-icon" href="images/surabayamunlogo.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="images/surabayamunlogo.png" sizes="192x192">
+    <meta property="og:title" content="Surabaya Model United Nations">
+    <meta property="og:site_name" content="sumun">
+    <meta property="og:url" content="sumun.com">
+    <meta property="og:description"
+        content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dxy6iowwg/image/upload/v1629339198/sumunlogo_irqixh.png">
 </head>
 
 <body class="relative">
