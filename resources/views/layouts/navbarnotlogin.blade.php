@@ -97,6 +97,9 @@
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                             <a href="#">Webinar</a>
                         </div>
+                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                            <a href="#">Verif</a>
+                        </div>
                     </div>
                 </div>
                 <a href="" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>

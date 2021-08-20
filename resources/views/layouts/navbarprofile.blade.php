@@ -98,6 +98,9 @@
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                             <a href="#">Webinar</a>
                         </div>
+                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                            <a href="#">Verif</a>
+                        </div>
                     </div>
                 </div>
                 <a href="" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
@@ -275,13 +278,7 @@
             
         </nav>
 
-        <div class="flex items-center justify-center bg-main-0 py-0 md:py-6 lg:py-2">
-            <div class="flex flex-col justify-center">
-                <h1 class="text-signup-0 text-2xl sm:text-5xl pb-10">
-                    Angelina Jolie Voight</h1>
-                <div class="w-2/3 h-2 bg-signup-0 rounded-full self-center"></div>
-            </div>
-        </div>
+        
 
         </div>
 @endif
