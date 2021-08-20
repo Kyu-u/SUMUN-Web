@@ -32,6 +32,7 @@
 <body>
 <div class="relative max-w-screen-3xl mx-auto">
 @if (Auth::check())
+<div class="relative">
 <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
             
             <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid relative z-10">
@@ -273,7 +274,18 @@
             <img src="images/batik2.png" alt="" class="hidden md:block z-0 top-0 lg:-top-1/2  2xl:-top-40 absolute">
             
         </nav>
+
+        <div class="flex items-center justify-center bg-main-0 py-0 md:py-6 lg:py-2">
+            <div class="flex flex-col justify-center">
+                <h1 class="text-signup-0 text-2xl sm:text-5xl pb-10">
+                    Angelina Jolie Voight</h1>
+                <div class="w-2/3 h-2 bg-signup-0 rounded-full self-center"></div>
+            </div>
+        </div>
+
+        </div>
 @endif
+<div class="relative">
        <nav class="bg-main-0 py-10 text-white font-navbar font-medium z-10">
            <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
                <a href="" class="link justify-self-center relative hover:text-signup-0">Home</a>
@@ -396,15 +408,6 @@
            </div>
 
        </nav>
-
-       <div class="flex items-center justify-center bg-main-0 py-20 md:py-40 lg:py-2">
-           <div class="flex flex-col justify-center">
-               <h1 class="text-signup-0 text-2xl sm:text-5xl pb-10">
-                   Angelina Jolie Voight</h1>
-               <div class="w-2/3 h-2 bg-signup-0 rounded-full self-center"></div>
-           </div>
-       </div>
-
    </div>
 
    @yield('content')
