@@ -65,19 +65,9 @@ class registerController extends BaseController {
             'password' => 'required|confirmed',
         ]);
 
-        if(empty($request->session()->get('users')))
-        {
-            $users = new User();
-            $users->fill($validatedData);
-            $request->session()->put('users', $users);
-        }
-        else
-        {
-            $users = $request->session()->get('users');
-            $users->fill($validatedData);
-            $request->session()->put('users', $users);
-            // $request->session()->forget('users');
-        }
+        $users = new User();
+        $users->fill($validatedData);
+        $request->session()->put('users', $users);
 
         return redirect()->route('signup3');
     }
@@ -96,13 +86,15 @@ class registerController extends BaseController {
     {
         $validatedData = $request->validate([
             'school_name' => 'required',
-            // 'grade' => 'required',
+            'grade' => 'required',
+            'major' => 'required',
         ]);
 
         $users = $request->session()->get('users');
         $users->fill($validatedData);
         $request->session()->put('users', $users);
         $users->save();
+        $request->session()->forget('users');
 
         return redirect()->route('signup5');
     } 

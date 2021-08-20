@@ -1,16 +1,18 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/app.css">
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/app.css">
+  <title>Document</title>
+
 </head>
+
 <body class="relative">
   <div>
 
-<!-- <nav class="bg-main-0 py-10 text-white font-navbar font-medium">
+    <!-- <nav class="bg-main-0 py-10 text-white font-navbar font-medium">
       <div
         id="navitems"
         class="max-w-7xl mx-auto items-center grid grid-cols-9"
@@ -73,9 +75,11 @@
           <button id="menu-btn" class="inline-flex items-center hover:text-signup-0 border-none">
             <span class="mr-2">About</span>
             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
           </button>
-          <div id="dropdown" class="hidden absolute left-0 right-0 mx-auto rounded-md top-6 flex-col bg-signup-0 w-auto  mt-1 justify-center z-10">
+          <div id="dropdown"
+            class="hidden absolute left-0 right-0 mx-auto rounded-md top-6 flex-col bg-signup-0 w-auto  mt-1 justify-center z-10">
             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
               <a href="#">What is SUMUN</a>
             </div>
@@ -91,7 +95,8 @@
           <button id="menu-btn3" class="inline-flex items-center hover:text-signup-0">
             <span class="mr-2">Council & Topic</span>
             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
           </button>
           <div id="dropdown3" class="hidden absolute  top-6 flex-col bg-signup-0 w-32  mt-1 justify-center z-10">
             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
@@ -115,9 +120,11 @@
           <button id="menu-btn2" class="inline-flex items-center hover:text-signup-0">
             <span class="mr-4">Registration</span>
             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
           </button>
-          <div id="dropdown2" class="hidden absolute left-0 right-0 mx-auto top-6 flex-col bg-signup-0 w-28  mt-1 justify-center z-10">
+          <div id="dropdown2"
+            class="hidden absolute left-0 right-0 mx-auto top-6 flex-col bg-signup-0 w-28  mt-1 justify-center z-10">
             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
               <a href="#">MUN</a>
             </div>
@@ -143,7 +150,7 @@
                 hover:bg-buttonactive-0
 
               ">
-              <a href="{{ route('signup1') }}" class="no-underline ...">Sign Up</a>
+            <a href="{{ route('signup1') }}" class="no-underline ...">Sign Up</a>
           </button>
         </div>
       </div>
@@ -202,8 +209,8 @@
     </script>
 
     @yield('content')
-      </div>
+  </div>
 
 </body>
-</html>
 
+</html>
