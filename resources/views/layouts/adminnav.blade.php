@@ -205,6 +205,20 @@
                 // unesco.classList.toggle('hidden')
                 // unesco.classList.toggle('flex')
             })
+            const adminbtnmob = document.querySelector('#adminbtnmob')
+            const unescomob = document.querySelector('#unescomob')
+            adminbtnmob.addEventListener('click', () => {
+                 if(unescomob.classList.contains('hidden')){
+                    unescomob.classList.remove('hidden');
+                    unescomob.classList.add('flex');
+                }else{
+                    unescomob.classList.remove('flex');
+                    unescomob.classList.add('hidden');
+                } 
+                
+                // unesco.classList.toggle('hidden')
+                // unesco.classList.toggle('flex')
+            })
 
         })
   </script>

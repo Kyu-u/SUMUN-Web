@@ -7,9 +7,9 @@
     background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;">Administration</h1>
-<div class=" fixed inset-0 hidden justify-center h-screen items-center z-50 bg-black bg-opacity-50" id="overlay">
+    <div class=" fixed inset-0 hidden justify-center h-screen items-center z-50 bg-black bg-opacity-50" id="overlay">
         <div
-            class="bg-gradient-to-r from-signup-0 to-tableisi-0 w-2/3 h-2/3 rounded-3xl shadow-2xl px-20 py-14 flex text-white font-sans">
+            class="bg-gradient-to-r from-signup-0 to-tableisi-0 w-100 h-97 rounded-3xl shadow-2xl px-20 py-14 flex text-white font-sans">
             <div class="flex flex-col items-center w-3/7 h-96 justify-between">
                 <div class="bg-adminbox-0 w-60 h-80 rounded-md">
 
@@ -62,63 +62,135 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 
-<div class="relative flex justify-center mx-auto w-6/7 h-96 sm:h-97 sm:w-97  md:w-98 lg:w-99">
+    <div class="relative hidden md:flex justify-center mx-auto w-6/7 h-96 sm:h-97 sm:w-97  md:w-98 lg:w-99">
 
-    <div class="relative w-full h-full rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0 p-10">
+        <div class="relative w-full h-full rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0 p-10">
 
-        <div class="pt-2 sm:pt-5 flex flex-col lg:flex-row lg:justify-between ">
-            <div class="flex flex-wrap h-64 sm:h-72 md:h-80 lg:h-96 gap-10 w-full overflow-y-scroll
+            <div class="pt-2 sm:pt-5 flex flex-col lg:flex-row lg:justify-between ">
+                <div class="flex flex-wrap h-64 sm:h-72 md:h-80 lg:h-96 gap-10 w-full overflow-y-scroll
           scrollbar-thumb-rounded-full scrollbar-thin object-contain
           scrollbar-track-main-0 scrollbar-thumb-signup-0 whitespace-nowrap pr-1">
 
-                <button id="overlaybtn2" type="button">
+                    <button id="overlaybtn2" type="button">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                            <span class="text-white font-sans mt-2 mx-auto">
+                                BuktiPembayaran.jpg
+                            </span>
+                        </div>
+                    </button>
                     <div class="flex flex-col items-center">
                         <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
                         <span class="text-white font-sans mt-2 mx-auto">
                             BuktiPembayaran.jpg
                         </span>
                     </div>
-                </button>
-                <div class="flex flex-col items-center">
-                    <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                    <span class="text-white font-sans mt-2 mx-auto">
-                        BuktiPembayaran.jpg
-                    </span>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                        <span class="text-white font-sans mt-2 mx-auto">
+                            BuktiPembayaran.jpg
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                        <span class="text-white font-sans mt-2 mx-auto">
+                            BuktiPembayaran.jpg
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                        <span class="text-white font-sans mt-2 mx-auto">
+                            BuktiPembayaran.jpg
+                        </span>
+                    </div>
+
+
+
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                    <span class="text-white font-sans mt-2 mx-auto">
-                        BuktiPembayaran.jpg
-                    </span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                    <span class="text-white font-sans mt-2 mx-auto">
-                        BuktiPembayaran.jpg
-                    </span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                    <span class="text-white font-sans mt-2 mx-auto">
-                        BuktiPembayaran.jpg
-                    </span>
-                </div>
+
 
 
 
             </div>
 
-
-
-
         </div>
 
+
+    </div>
+    <div
+        class="flex md:hidden flex-col p-5 items-center w-72 h-80 rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0">
+        <div class="flex flex-wrap gap-3 h-72 overflow-y-scroll
+    scrollbar-thumb-rounded-full scrollbar-thin object-contain
+    scrollbar-track-main-0 scrollbar-thumb-signup-0 whitespace-nowrap">
+            <div class="flex flex-col items-center">
+                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                <span class="text-white text-xs font-sans mt-2 mx-auto">
+                    BuktiPembayaran.jpg
+                </span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                <span class="text-white text-xs font-sans mt-2 mx-auto">
+                    BuktiPembayaran.jpg
+                </span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                <span class="text-white text-xs font-sans mt-2 mx-auto">
+                    BuktiPembayaran.jpg
+                </span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                <span class="text-white text-xs font-sans mt-2 mx-auto">
+                    BuktiPembayaran.jpg
+                </span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                <span class="text-white text-xs font-sans mt-2 mx-auto">
+                    BuktiPembayaran.jpg
+                </span>
+            </div>
+        </div>
+        <a class="self-end pt-2 sm:pt-5">
+            <button type="submit"
+                class="bg-signup-0 text-white text-sm  font-semibold font-sans w-16 h-7 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+                Submit
+            </button>
+        </a>
     </div>
 
-
-</div>
+    <div
+        class="flex md:hidden gap-y-4 flex-col p-5 items-center w-72 h-60 rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0 mt-10">
+        <div class="flex flex-col items-center">
+            <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+            <span class="text-white text-xs font-sans mt-2 mx-auto">
+                BuktiPembayaran.jpg
+            </span>
+        </div>
+        <div class="flex flex-col w-full items-center gap-3 h-30 overflow-y-scroll
+    scrollbar-thumb-rounded-full scrollbar-thin object-contain
+    scrollbar-track-main-0 scrollbar-thumb-signup-0 whitespace-nowrap text-white text-xs">
+            <div class="flex flex-wrap">
+                Drigo Alexander Sihombing
+            </div>
+            <div class="flex flex-wrap">
+                Drigo Alexander Sihombing
+            </div>
+            <div class="flex flex-wrap">
+                Drigo Alexander Sihombing
+            </div>
+            <div class="flex flex-wrap">
+                Drigo Alexander Sihombing
+            </div>
+            <div class="flex flex-wrap">
+                Drigo Alexander Sihombing
+            </div>
+        </div>
+    </div>
 
 </div>
 
