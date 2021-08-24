@@ -1,4 +1,4 @@
-@extends('layouts.main ')
+@extends('layouts.navbarprofile')
 
 @section('content')
 <!-- Landing -->

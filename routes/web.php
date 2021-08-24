@@ -6,7 +6,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Socialite;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Admin2Controller;
+use App\Http\Controllers\verif;
+use App\Http\Controllers\StorageFileController;
+
 
 
 
@@ -28,10 +30,12 @@ Route::get('auth/google', [registerController::class,'redirectToGoogle'])->name(
 Route::get('/signup3',[registerController::class,'index3'])->name('signup3');
 Route::get('/signup5',[registerController::class,'index5'])->name('signup5');
 Route::post('/regis5',[registerController::class,'store'])->name('regis5');
-Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout1');
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
-Route::get('/admin2', [Admin2Controller::class, 'index'])->name('admin2');
+Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
+Route::get('/verif', [verif::class, 'index'])->name('verif.index');
+Route::POST('/verif/upload', [verif::class,'upload'])->name('verif.post');
+Route::get('image/{filename}', [StorageFileController::class,'publicImage'])->name('image.displayImage');
 
 
 
