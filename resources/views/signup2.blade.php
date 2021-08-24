@@ -32,6 +32,8 @@
         @csrf
             <label class="pb-2 text-xl text-white"for="Email/Phone">Name</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="name" name="name" placeholder="Your Name...">
+            <label class="pb-2 text-xl text-white"for="Email/Phone">Username</label>
+            <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="username" name="username" placeholder="Your Name...">
             <label class="pb-2 text-xl text-white"for="Email/Phone">Email</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="email" name="email" placeholder="Your Email...">
             <label class="py-2 text-xl text-white"for="lname">Password</label>

@@ -7,8 +7,8 @@
                 <img class="w-1/2" src="images/registmun.png" alt="">
 
 
-                <form class="flex flex-wrap justify-evenly bg-main-0 px-10 xl:px-40 py-20">
-
+                <form method="post" class="flex flex-wrap justify-evenly bg-main-0 px-10 xl:px-40 py-20">
+                @csrf
                     <div class="py-6 card">
 
                         <div class="w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">

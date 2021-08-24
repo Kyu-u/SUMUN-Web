@@ -18,17 +18,10 @@
       </div>
 
       
-      <form action="" class="pt-10 flex flex-col">
-            <label class="pb-2 pt-2 text-xl text-white"for="University">University</label>
-            <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="uniname" name="uniname" placeholder="Your University...">
-            <label class="pb-2 pt-2 text-xl text-white"for="UMajor">Major</label>
-            <select style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;" class="drop w-96 border bg-white rounded px-3 py-4 outline-none">
-                <option class="py-1 font-sans">10</option>
-                <option class="py-1 font-sans">11</option>
-                <option class="py-1 font-sans">12</option>
-
-
-            </select>
+      <form method="post" action="" class="pt-10 flex flex-col">
+        @csrf
+            <label class="pb-2 pt-2 text-xl text-white"for="university">University</label>
+            <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="university" name="university" placeholder="Your University...">
             <label class="pb-2 pt-2 text-xl text-white"for="Major">Major</label>
             <select style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"  class="drop w-96 border bg-white rounded px-3 py-4 outline-none relative">
                 <option class="py-1 font-sans">Science</option>
