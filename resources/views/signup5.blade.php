@@ -18,7 +18,7 @@
       </div>
 
       
-      <form method="post" action="" class="pt-10 flex flex-col">
+      <form method="POST" action="{{ route('regis5') }}" class="pt-10 flex flex-col">
         @csrf
             <label class="pb-2 pt-2 text-xl text-white"for="university">University</label>
             <input class=" outline-none px-3 w-96 rounded-md text-sm py-4 " type="text" id="university" name="university" placeholder="Your University...">
@@ -28,7 +28,11 @@
                 <option class="py-1 font-sans">Social</option>
                 <img class="absolute right-4" src="images/droparrow.png" alt="">
             </select>
-            
+            <a href={{route('landing')}}>
+            <button type="submit" class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+              Submit
+            </button>
+          </a>
           </form>
 
         <div class="flex justify-between w-96">
@@ -37,10 +41,6 @@
             <button type="button" onclick="javascript:history.back()"><img class=" w-8 h-8 " src="images/back.png" alt=""></button>
              Back
           </div>
-
-          <button type="button"  class="bg-signup-0 text-white text-xl font-semibold font-sans w-40 h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
-            Submit
-          </button>
 
         </div>
         

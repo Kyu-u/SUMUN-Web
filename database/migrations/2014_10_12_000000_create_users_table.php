@@ -22,10 +22,12 @@ class CreateUsersTable extends Migration
             $table->string('google_id')->nullable();
             $table->string('phone')->nullable();
             $table->string('school_name')->nullable();
+            $table->string('university')->nullable();
             $table->string('grade')->nullable();
             $table->string('major')->nullable();
             $table->boolean('is_admin')->default(0);
             $table->integer('webinar_id')->default(0);
+            $table->integer('mun_id')->default(0);
             $table->integer('transaction_id')->default(0);
             $table->timestamps();
         });
