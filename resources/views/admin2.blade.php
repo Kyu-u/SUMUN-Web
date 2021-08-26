@@ -69,21 +69,19 @@
 
   </div>
 
-  <div class="flex-col items-center relative">
-    <button type="button" id="adminbtnmob"
-      class=" md:hidden font-semibold inline-flex items-center pb-5 md:pb-0 text-white ">
-      <span class="mb-1 text-xl pr-2">Unesco</span>
-      <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
-    </button>
-    <div id="unescomob" class=" shadow-lg hidden flex-col z-10 absolute top-8 bg-signup-0 p-5 rounded-lg mt-2 gap-5">
-      <a href="#">Unesco</a>
-      <a href="">Unesco</a>
-      <a href="">Unesco</a>
-      <a href="">Unesco</a>
+  <div class="flex items-center pb-10 text-white md:hidden">
+    <select
+      style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"
+      class="drop w-30 lg:h-auto border bg-gray-600 bg-opacity-20 rounded-xl border-none rounded px-3 py-4 outline-none relative"
+      name="grade" for="grade">
+      <option class="py-1 font-sans">Unesco</option>
+      <option class="py-1 font-sans">Unesco</option>
+      <option class="py-1 font-sans">Unesco</option>
 
-    </div>
-  </div>
+
+    </select>
+  <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 ml-5 h-10 shadow-sm" type="button">Filter</button>
+</div>
 
   <div class="relative flex justify-center mx-auto w-6/7 h-80 sm:h-97 sm:w-97  md:w-98 lg:w-99">
 
@@ -94,19 +92,21 @@
       <form action="{{route('regis2')}}" method="POST" class="pt-2 sm:pt-5 flex flex-row ">
         @csrf
         <div class="md:flex flex-col hidden items-start  w-3/7">
-          <button type="button" id="adminbtn" class=" font-semibold inline-flex items-center">
-            <span class="mb-1 text-xl pr-2">Unesco</span>
-            <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
-          </button>
-          <div id="unesco"
-            class=" shadow-lg hidden flex-col z-10 absolute top-24 bg-signup-0 p-5 rounded-lg mt-2 gap-5">
-            <a href="#">Unesco</a>
-            <a href="">Unesco</a>
-            <a href="">Unesco</a>
-            <a href="">Unesco</a>
+          <div class="w-full flex items-center">
+              <select
+                style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"
+                class="drop w-30 lg:h-auto border bg-black bg-opacity-20 rounded-xl border-none rounded px-3 py-4 outline-none relative"
+                name="grade" for="grade">
+                <option class="py-1 font-sans">Unesco</option>
+                <option class="py-1 font-sans">Unesco</option>
+                <option class="py-1 font-sans">Unesco</option>
 
+
+              </select>
+            <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 ml-5 h-10 shadow-sm" type="button">Filter</button>
           </div>
+
+
           <div class="mt-5 flex flex-col text-xl gap-7 overflow-y-scroll items-center h-64 sm:h-72 md:h-80 lg:h-80  scrollbar-thumb-rounded-full scrollbar-thin object-contain
               scrollbar-track-main-0 scrollbar-thumb-signup-0 pr-10">
             <div class="flex-wrap"> Drigo Alexander Sihombing</div>
@@ -158,7 +158,8 @@
 
   </div>
 
-  <div class="bg-gradient-to-r from-signup-0 to-tableisi-0 p-5 md:hidden rounded-3xl text-white mt-10 w-6/7 md:w-98 sm:w-97">
+  <div
+    class="bg-gradient-to-r from-signup-0 to-tableisi-0 p-5 md:hidden rounded-3xl text-white mt-10 w-6/7 md:w-98 sm:w-97">
     <div class="mt-5 flex flex-col text-xl gap-7 overflow-y-scroll items-center h-44  scrollbar-thumb-rounded-full scrollbar-thin object-contain 
     scrollbar-track-main-0 scrollbar-thumb-signup-0 pr-10">
       <div class="flex-wrap"> Drigo Alexander Sihombing</div>
