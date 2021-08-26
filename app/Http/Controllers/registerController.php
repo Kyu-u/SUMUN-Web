@@ -43,9 +43,11 @@ class registerController extends BaseController {
         return view('signup4', compact('users'));
     }
 
-    public function index5()
+    public function index5(Request $request)
     {
-        return view('signup5');
+        $users = $request->session()->get('users');
+        
+        return view('signup5', compact('users'));
     }
 
     public function store2(Request $request)
@@ -97,7 +99,7 @@ class registerController extends BaseController {
         $users->save();
         $request->session()->forget('users');
 
-        return redirect()->route('dashboard');
+        return redirect()->route('landing');
     } 
 
     public function store5(Request $request)
@@ -113,7 +115,7 @@ class registerController extends BaseController {
         $users->save();
         $request->session()->forget('users');
 
-        return redirect()->route('dashboard');
+        return redirect()->route('landing');
     } 
 
     public function redirectToGoogle()
