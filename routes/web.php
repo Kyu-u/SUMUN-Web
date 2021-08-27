@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Socialite;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\verif;
+use App\Http\Controllers\StorageFileController;
 use App\Http\Controllers\Admin2Controller;
 use App\Http\Controllers\HomeController;
 use App\Models\User;
@@ -33,7 +35,10 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout1');
 
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
-Route::get('/admin2', [Admin2Controller::class, 'index'])->name('admin2');
+Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
+Route::get('/verif', [verif::class, 'index'])->name('verif.index');
+Route::POST('/verif/upload', [verif::class,'upload'])->name('verif.post');
+Route::get('image/{filename}', [StorageFileController::class,'publicImage'])->name('image.displayImage');
 
 Route::get('/', function (Request $request) {
     

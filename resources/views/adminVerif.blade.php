@@ -12,7 +12,6 @@
             class="bg-gradient-to-r from-signup-0 to-tableisi-0 w-100 h-97 rounded-3xl shadow-2xl px-20 py-14 flex text-white font-sans">
             <div class="flex flex-col items-center w-3/7 h-96 justify-between">
                 <div class="bg-adminbox-0 w-60 h-80 rounded-md">
-
                 </div>
                 <div class="text-center ">
                     Bukti Pembayaran.jpg
@@ -72,88 +71,37 @@
                 <div class="flex flex-wrap h-64 sm:h-72 md:h-80 lg:h-96 gap-10 w-full overflow-y-scroll
           scrollbar-thumb-rounded-full scrollbar-thin object-contain
           scrollbar-track-main-0 scrollbar-thumb-signup-0 whitespace-nowrap pr-1">
-
+                    <!-- hNBErHnkrsSUjWpHGVpIPZvgiDvwXRmuTzxpbvel.png -->
+                    @foreach($images as $image)
                     <button id="overlaybtn2" type="button">
                         <div class="flex flex-col items-center">
-                            <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
+                            <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl">
+                                <img src="{{ route('image.displayImage',$image->file_path) }}" alt="" />
+                            </div>
                             <span class="text-white font-sans mt-2 mx-auto">
-                                BuktiPembayaran.jpg
+                                {{$image['name']}}
                             </span>
                         </div>
                     </button>
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                        <span class="text-white font-sans mt-2 mx-auto">
-                            BuktiPembayaran.jpg
-                        </span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                        <span class="text-white font-sans mt-2 mx-auto">
-                            BuktiPembayaran.jpg
-                        </span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                        <span class="text-white font-sans mt-2 mx-auto">
-                            BuktiPembayaran.jpg
-                        </span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 lg:w-32 h-24 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                        <span class="text-white font-sans mt-2 mx-auto">
-                            BuktiPembayaran.jpg
-                        </span>
-                    </div>
-
-
-
+                    @endforeach
                 </div>
-
-
-
-
             </div>
-
         </div>
-
-
     </div>
     <div
         class="flex md:hidden flex-col p-5 items-center w-72 h-80 rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0">
         <div class="flex flex-wrap gap-3 h-72 overflow-y-scroll
     scrollbar-thumb-rounded-full scrollbar-thin object-contain
     scrollbar-track-main-0 scrollbar-thumb-signup-0 whitespace-nowrap">
+            @foreach($images as $image)
             <div class="flex flex-col items-center">
                 <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
                 <span class="text-white text-xs font-sans mt-2 mx-auto">
-                    BuktiPembayaran.jpg
+                    {{$image['name']}}
                 </span>
             </div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                <span class="text-white text-xs font-sans mt-2 mx-auto">
-                    BuktiPembayaran.jpg
-                </span>
-            </div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                <span class="text-white text-xs font-sans mt-2 mx-auto">
-                    BuktiPembayaran.jpg
-                </span>
-            </div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                <span class="text-white text-xs font-sans mt-2 mx-auto">
-                    BuktiPembayaran.jpg
-                </span>
-            </div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
-                <span class="text-white text-xs font-sans mt-2 mx-auto">
-                    BuktiPembayaran.jpg
-                </span>
-            </div>
+            @endforeach
+
         </div>
         <a class="self-end pt-2 sm:pt-5">
             <button type="submit"
@@ -165,12 +113,14 @@
 
     <div
         class="flex md:hidden gap-y-4 flex-col p-5 items-center w-72 h-60 rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0 mt-10">
+        @foreach($images as $image)
         <div class="flex flex-col items-center">
             <div class="w-16 lg:w-32 h-20 lg:h-40 bg-adminbox-0 rounded-xl"></div>
             <span class="text-white text-xs font-sans mt-2 mx-auto">
-                BuktiPembayaran.jpg
+                {{$image['name']}}
             </span>
         </div>
+        @endforeach
         <div class="flex flex-col w-full items-center gap-3 h-30 overflow-y-scroll
     scrollbar-thumb-rounded-full scrollbar-thin object-contain
     scrollbar-track-main-0 scrollbar-thumb-signup-0 whitespace-nowrap text-white text-xs">
