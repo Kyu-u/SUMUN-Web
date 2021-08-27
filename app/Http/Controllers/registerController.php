@@ -43,9 +43,11 @@ class registerController extends BaseController {
         return view('signup4', compact('users'));
     }
 
-    public function index5()
+    public function index5(Request $request)
     {
-        return view('signup5');
+        $users = $request->session()->get('users');
+        
+        return view('signup5', compact('users'));
     }
 
     public function store2(Request $request)
@@ -61,6 +63,7 @@ class registerController extends BaseController {
 
         $validatedData = $request->validate([
             'name' => 'required',
+            'username' => 'required',
             'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);
@@ -96,8 +99,25 @@ class registerController extends BaseController {
         $users->save();
         $request->session()->forget('users');
 
-        return redirect()->route('signup5');
+        return redirect()->route('landing');
     } 
+
+    public function store5(Request $request)
+    {
+        $validatedData = $request->validate([
+            'university' => 'required',
+            'major' => 'required',
+        ]);
+
+        $users = $request->session()->get('users');
+        $users->fill($validatedData);
+        $request->session()->put('users', $users);
+        $users->save();
+        $request->session()->forget('users');
+
+        return redirect()->route('landing');
+    } 
+
     public function redirectToGoogle()
     {
         return Socialite::driver('google')->redirect();

@@ -23,17 +23,25 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    public function mun()
+    {
+    	return $this->hasOne(mun::class);
+    }
+
     protected $fillable = [
         'name',
         'email',
-        // 'username',
+        'username',
         'password',
         'google_id',
         'phone',
         'school_name',
+        'university',
         'grade',
         'major',
         'webinar_id',
+        'mun_id',
         'transaction_id',
         'created_at',
         'updated_at',
