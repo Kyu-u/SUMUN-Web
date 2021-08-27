@@ -169,5 +169,8 @@ class registerController extends BaseController {
             dd($e->getMessage());
         }
     }
-
+    public function registMUN()
+    {
+        return view('registMUN');
+    }
 }

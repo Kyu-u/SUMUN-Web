@@ -53,3 +53,5 @@ Route::get('/', function (Request $request) {
 
 
 
+/* REGISTER MUN */
+Route::get('/registerMUN',[registerController::class,'registMUN'])->name('registMUN');
