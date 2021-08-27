@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Queueverif;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use Illuminate\Http\Re;
 use Illuminate\Routing\Controller as BaseController;
 use Faker\Factory as Faker;
 use Socialite;
@@ -61,15 +63,19 @@ class registerController extends BaseController {
         // dump($data);
         // $check = $this->create($data);
 
-        $validatedData = $request->validate([
+        $request->validate([
             'name' => 'required',
-            'username' => 'required',
-            'email' => 'required|email',
+            'username' => 'required|unique:users,username',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|confirmed',
         ]);
-
+        
         $users = new User();
-        $users->fill($validatedData);
+        
+        $users->fill(array('name' => $request->name,
+         'username' => $request->username,
+         'email'=>$request->email,
+         'password'=>Hash::make($request->password)));
         $request->session()->put('users', $users);
 
         return redirect()->route('signup3');
@@ -172,5 +178,42 @@ class registerController extends BaseController {
     public function registMUN()
     {
         return view('registMUN');
+    }
+    public function registMember(Request $request)
+    {
+        $request->validate([
+            'username' => 'required',
+            'council' => 'required',
+        ]);
+        $username = array_filter($request->username);
+        $council = array_filter($request->council);
+        if(count($username)==0||count($council)==0||count($username)!=count($council)){
+            return redirect('registerMUN')->withErrors('Please fill out all the forms');
+        }
+        foreach($username as $i => $uname){
+            $datas[$i]['username'] =  $username[$i];
+            $datas[$i]['council'] =  $council[$i];
+        }
+        foreach($datas as $data){
+            $user = User::where('username','=',$data['username'])->first();
+            if(!$user){
+                return redirect('registerMUN')->withErrors('User not found');
+            }
+            if($user->verified==1){
+                return redirect('registerMUN')->withErrors('Ada user yang sedang diverifikasi');
+            }
+            if($user->verified==2){
+                return redirect('registerMUN')->withErrors('Ada user sudah terverifikasi');
+            }
+        }
+        foreach($datas as $data){
+            $user = User::where('username','=',$data['username'])->first();
+            $user->update(['verified' => '1']);
+            Queueverif::create([
+                'user_id' => auth()->user()->id,
+                'tambahan' => $user->id,
+            ]);
+        }
+        return redirect()->route('verif.index')->with('success', 'Success');
     }
 }

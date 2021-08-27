@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\verifikasi;
+use App\Models\Queueverif;
 
 class AdminController extends Controller
 {
@@ -15,7 +16,8 @@ class AdminController extends Controller
     public function Verifindex()
     {
         $data = verifikasi::all();
-        return view('adminVerif',['images' => $data]);
+        $user = Queueverif::join('users','tambahan','=','users.id')->get();
+        return view('adminVerif',['images' => $data,'users' => $user]);
     }
 
 }

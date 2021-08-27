@@ -17,7 +17,7 @@ class LoginController extends BaseController
 
     public function login(Request $request)
     {
-        $this->validate($request, [
+        $request->validate([
             'email' => 'required|email',
             'password' => 'required'
         ]);
@@ -29,10 +29,10 @@ class LoginController extends BaseController
         return redirect()->route('landing');
     }
 
-    public function logout()
-    {
+    public function logout(Request $request){
         Auth::logout();
-
-        return redirect()->route('landing');
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('landing');
     }
 }

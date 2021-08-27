@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->string('grade')->nullable();
             $table->string('major')->nullable();
             $table->boolean('is_admin')->default(0);
+            $table->integer('verified')->default(0);
             $table->integer('webinar_id')->default(0);
             $table->integer('mun_id')->default(0);
             $table->integer('transaction_id')->default(0);

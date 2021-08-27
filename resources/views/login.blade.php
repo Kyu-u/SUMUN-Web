@@ -9,7 +9,10 @@
         <h1 class="font-bold lg:text-5xl xl:text-8xl">Welcome <br>Back</h1>
 
         <h2 class="font-medium pt-2 pb-6 lg:text-sm xl:text-2xl">Please Log In to your account</h2>
-        <form class="flex flex-col" action="{{ route('showLoginForm') }}" method="post">
+        @foreach ($errors->all() as $error)
+        {{ $error }}<br />
+        @endforeach
+        <form class="flex flex-col" action="{{ route('login.post') }}" method="post">
           @csrf
           <label class="pb-2 text-sm" for="Email" class="">Your Email</label>
           <input class="rounded-lg lg:w-60 xl:w-96 px-4 py-2 lg:text-sm xl:text-xl" type="text" id="email" name="email"
@@ -30,7 +33,7 @@
             </div>
           </div>
           <a class="lg:pl-36 xl:pl-70  text-white hover:text-signup-0 lg:text-xs xl:text-sm pt-4" href="">Forgot
-            possword?</a>
+            password?</a>
 
         </form>
         <img class="lg:w-60 xl:w-96 py-6 pt-10" src="images/orlog.png" alt="">

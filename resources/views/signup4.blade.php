@@ -56,11 +56,11 @@
         <div class="flex justify-between w-full pt-5 lg:w-96">
 
           <div class="flex text-white text-xl font-semibold font-sans gap-x-5 items-center">
-            <button type="button" onclick="javascript:history.back()"><img class=" w-4 h-4 md:w-8 md:h-8" src="images/back.png"
-                alt=""></button>
+            <button type="button" onclick="javascript:history.back()"><img class=" w-4 h-4 md:w-8 md:h-8"
+                src="images/back.png" alt=""></button>
             Back
           </div>
-          <a href={{route('landing')}}>
+          <a href="{{ route('landing')}} ">
             <button type="submit"
               class="bg-signup-0 text-white text-md md:text-xl font-semibold font-sans w-20 h-7 md:w-30 md:h-10 lg:w-40 lg:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
               Submit

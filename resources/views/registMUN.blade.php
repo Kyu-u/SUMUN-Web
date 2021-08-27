@@ -6,8 +6,11 @@
         <div class="flex flex-col justify-center items-center py-10 bg-main-0">
             <img class="w-1/2" src="images/registmun.png" alt="">
 
-
-            <form method="post" class="flex flex-wrap justify-evenly bg-main-0 px-10 xl:px-40 py-20">
+            @if($errors->any())
+            <h4 class='text-red-600'>{{$errors->first()}}</h4>
+            @endif
+            <form method="post" action="{{route('registMUN.post')}}"
+                class="flex flex-wrap justify-evenly bg-main-0 px-10 xl:px-40 py-20">
                 @csrf
                 <div class="py-6 card">
 
@@ -16,12 +19,12 @@
                         <div class="py-4 px-8 md:px-16 md:py-8">
                             <div class="flex flex-col text-white">
                                 <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
-                                <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Username"
-                                    name="Username" placeholder="Username">
+                                <input class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Username"
+                                    name="username[]" placeholder="Username">
                                 <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
                                     class="">Council</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
-                                    name="Council" placeholder="*******">
+                                    name="council[]" placeholder="*******">
 
                                 <div class="flex flex-row justify-between">
                                     <!-- START : BUTTON ADD-->
@@ -71,11 +74,11 @@
                             <div class="flex flex-col text-white">
                                 <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Username"
-                                    name="Username" placeholder="Username">
+                                    name="username[]" placeholder="Username">
                                 <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
                                     class="">Council</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
-                                    name="Council" placeholder="*******">
+                                    name="council[]" placeholder="*******">
 
                                 <div class="flex flex-row justify-between">
                                     <!-- START : BUTTON ADD-->
@@ -123,11 +126,11 @@
                             <div class="flex flex-col text-white">
                                 <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Username"
-                                    name="Username" placeholder="Username">
+                                    name="username[]" placeholder="Username">
                                 <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
                                     class="">Council</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
-                                    name="Council" placeholder="*******">
+                                    name="council[]" placeholder="*******">
 
                                 <div class="flex flex-row justify-between">
                                     <!-- START : BUTTON ADD-->
@@ -175,11 +178,11 @@
                             <div class="flex flex-col text-white">
                                 <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Username"
-                                    name="Username" placeholder="Username">
+                                    name="username[]" placeholder="Username">
                                 <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
                                     class="">Council</label>
                                 <input class="rounded-md py-1 px-2 md:px-4 md:py-2" type="text" id="Council"
-                                    name="Council" placeholder="*******">
+                                    name="council[]" placeholder="*******">
 
                                 <div class="flex flex-row justify-between">
                                     <!-- START : BUTTON ADD-->
@@ -221,7 +224,21 @@
 
 
 
+                <div class="w-full flex justify-start">
+                    <button type="button" class="">
+                        <div class="flex flex-row">
+                            <p class="text-white hover:text-signup-0 transition duration-300" href="">Add More +
+                            </p>
+                        </div>
 
+                    </button>
+                </div>
+
+                <div class="w-full flex justify-center">
+                    <button type="submit" class="bg-signup-0  flex justify-center items-center rounded-lg">
+                        <div class="px-4 py-2 text-white" href="">Submit</div>
+                    </button>
+                </div>
             </form>
 
 

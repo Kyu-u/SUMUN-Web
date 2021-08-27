@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Verifikasi extends Migration
+class QueueVerif extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class Verifikasi extends Migration
      */
     public function up()
     {
-        Schema::create('Verifikasi', function (Blueprint $table) {
+        Schema::create('queueVerif', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->string('user_id');
-            $table->string('file_path');
-            $table->string('type');
+            $table->string('tambahan');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class Verifikasi extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Verifikasi');
+        Schema::dropIfExists('queueVerif');
     }
 }

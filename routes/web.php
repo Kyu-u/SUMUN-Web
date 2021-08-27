@@ -13,9 +13,8 @@ use App\Http\Controllers\Admin2Controller;
 use App\Http\Controllers\HomeController;
 use App\Models\User;
 
-Route::view('/', 'landing')->name('landing');
+Route::get('/landing',[HomeController::class,'landing'])->name('landing');
 Route::get('/register',[registerController::class,'index'])->name('signup1');
-Route::get('/login',[LoginController::class,'showLoginForm'])->name('showLoginForm');
 Route::get('/forgot',[ForgotPasswordController::class,'index'])->name('forgot');
 Route::get('/forgot2',[ForgotPasswordController::class,'index2'])->name('forgot2');
 Route::post('/forgot_password',[ForgotPasswordController::class,'postEmail'])->name('emailpassword');
@@ -31,9 +30,6 @@ Route::post('/regis5',[registerController::class,'store5'])->name('regis5');
 Route::get('auth/google/callback', [registerController::class,'handleGoogleCallback'])->name('googleCallback');
 Route::get('auth/google', [registerController::class,'redirectToGoogle'])->name('googleRedirect');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout1');
-
-
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
 Route::get('/verif', [verif::class, 'index'])->name('verif.index');
@@ -56,7 +52,11 @@ Route::get('/', function (Request $request) {
 
 })->name('filter');
 
-
+/* Login Logout MUN */
+Route::get('/login',[LoginController::class,'showLoginForm'])->name('showLoginForm');
+Route::POST('/login/user',[LoginController::class,'login'])->name('login.post');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout1');
 
 /* REGISTER MUN */
 Route::get('/registerMUN',[registerController::class,'registMUN'])->name('registMUN');
+Route::POST('/registerMUN/post', [registerController::class,'registMember'])->name('registMUN.post');
