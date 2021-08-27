@@ -30,7 +30,8 @@
         </div>
 
 
-        <a href="" class="link justify-self-center relative hover:text-signup-0 col-start-6">Verification</a>
+        <a href="{{route('admin.verif')}}"
+          class="link justify-self-center relative hover:text-signup-0 col-start-6">Verification</a>
 
 
       </div>
@@ -133,183 +134,183 @@
   </div>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      
 
-            const menuBtn2 = document.querySelector('#menu-btn2')
-            const dropdown2 = document.querySelector('#dropdown2')
 
-            menuBtn2.addEventListener('click', () => {
-                if (dropdown2.classList.contains('hidden')) {
-                    dropdown2.classList.remove('hidden');
-                    dropdown2.classList.add('flex');
-                } else {
-                    dropdown2.classList.remove('flex');
-                    dropdown2.classList.add('hidden');
-                }
-            })
-        })
+      const menuBtn2 = document.querySelector('#menu-btn2')
+      const dropdown2 = document.querySelector('#dropdown2')
+
+      menuBtn2.addEventListener('click', () => {
+        if (dropdown2.classList.contains('hidden')) {
+          dropdown2.classList.remove('hidden');
+          dropdown2.classList.add('flex');
+        } else {
+          dropdown2.classList.remove('flex');
+          dropdown2.classList.add('hidden');
+        }
+      })
+    })
   </script>
 
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      
 
-            const menuBtn = document.querySelector('#menu-btn')
-            const dropdown = document.querySelector('#dropdown')
 
-            menuBtn.addEventListener('click', () => {
-                if (dropdown.classList.contains('hidden')) {
-                    dropdown.classList.remove('hidden');
-                    dropdown.classList.add('flex');
-                } else {
-                    dropdown.classList.remove('flex');
-                    dropdown.classList.add('hidden');
-                }
-            })
-        })
+      const menuBtn = document.querySelector('#menu-btn')
+      const dropdown = document.querySelector('#dropdown')
+
+      menuBtn.addEventListener('click', () => {
+        if (dropdown.classList.contains('hidden')) {
+          dropdown.classList.remove('hidden');
+          dropdown.classList.add('flex');
+        } else {
+          dropdown.classList.remove('flex');
+          dropdown.classList.add('hidden');
+        }
+      })
+    })
   </script>
 
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      
 
-            const menuBtn3 = document.querySelector('#menu-btn3')
-            const dropdown3 = document.querySelector('#dropdown3')
 
-            menuBtn3.addEventListener('click', () => {
-                if (dropdown3.classList.contains('hidden')) {
-                    dropdown3.classList.remove('hidden');
-                    dropdown3.classList.add('flex');
-                } else {
-                    dropdown3.classList.remove('flex');
-                    dropdown3.classList.add('hidden');
-                }
-            })
-        })
+      const menuBtn3 = document.querySelector('#menu-btn3')
+      const dropdown3 = document.querySelector('#dropdown3')
+
+      menuBtn3.addEventListener('click', () => {
+        if (dropdown3.classList.contains('hidden')) {
+          dropdown3.classList.remove('hidden');
+          dropdown3.classList.add('flex');
+        } else {
+          dropdown3.classList.remove('flex');
+          dropdown3.classList.add('hidden');
+        }
+      })
+    })
   </script>
   <script>
-    window.addEventListener('DOMContentLoaded', ()=> {
-      
+    window.addEventListener('DOMContentLoaded', () => {
 
-            const adminbtn = document.querySelector('#adminbtn')
-            const unesco = document.querySelector('#unesco')
-            adminbtn.addEventListener('click', () => {
-                 if(unesco.classList.contains('hidden')){
-                    unesco.classList.remove('hidden');
-                    unesco.classList.add('flex');
-                }else{
-                    unesco.classList.remove('flex');
-                    unesco.classList.add('hidden');
-                } 
-                
-                // unesco.classList.toggle('hidden')
-                // unesco.classList.toggle('flex')
-            })
-            const adminbtnmob = document.querySelector('#adminbtnmob')
-            const unescomob = document.querySelector('#unescomob')
-            adminbtnmob.addEventListener('click', () => {
-                 if(unescomob.classList.contains('hidden')){
-                    unescomob.classList.remove('hidden');
-                    unescomob.classList.add('flex');
-                }else{
-                    unescomob.classList.remove('flex');
-                    unescomob.classList.add('hidden');
-                } 
-                
-                // unesco.classList.toggle('hidden')
-                // unesco.classList.toggle('flex')
-            })
 
-        })
+      const adminbtn = document.querySelector('#adminbtn')
+      const unesco = document.querySelector('#unesco')
+      adminbtn.addEventListener('click', () => {
+        if (unesco.classList.contains('hidden')) {
+          unesco.classList.remove('hidden');
+          unesco.classList.add('flex');
+        } else {
+          unesco.classList.remove('flex');
+          unesco.classList.add('hidden');
+        }
+
+        // unesco.classList.toggle('hidden')
+        // unesco.classList.toggle('flex')
+      })
+      const adminbtnmob = document.querySelector('#adminbtnmob')
+      const unescomob = document.querySelector('#unescomob')
+      adminbtnmob.addEventListener('click', () => {
+        if (unescomob.classList.contains('hidden')) {
+          unescomob.classList.remove('hidden');
+          unescomob.classList.add('flex');
+        } else {
+          unescomob.classList.remove('flex');
+          unescomob.classList.add('hidden');
+        }
+
+        // unesco.classList.toggle('hidden')
+        // unesco.classList.toggle('flex')
+      })
+
+    })
   </script>
   <script>
-    window.addEventListener('DOMContentLoaded', ()=> {
-      
+    window.addEventListener('DOMContentLoaded', () => {
 
-            const backbtn = document.querySelector('#modalback')
-            const overlay = document.querySelector('#overlay')
-            const modalbutton = document.querySelector('#overlaybtn2')
-            const body = document.querySelector('#adminbody')
-            function topFunction() {
-              document.body.scrollTop = 0; // For Safari
-              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-            backbtn.addEventListener('click', () => {
-              console.log('test')
 
-                 if(overlay.classList.contains('flex')){
-                    overlay.classList.remove('flex');
-                    overlay.classList.add('hidden');
-                }
-                
+      const backbtn = document.querySelector('#modalback')
+      const overlay = document.querySelector('#overlay')
+      const modalbutton = document.querySelector('#overlaybtn2')
+      const body = document.querySelector('#adminbody')
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+      backbtn.addEventListener('click', () => {
+        console.log('test')
 
-            })
+        if (overlay.classList.contains('flex')) {
+          overlay.classList.remove('flex');
+          overlay.classList.add('hidden');
+        }
 
-            modalbutton.addEventListener('click', () => {
-              console.log('test')
 
-                //  if(overlay.classList.contains('hidden')){
-                //     overlay.classList.remove('hidden');
-                //     overlay.classList.add('flex');
-                // }
+      })
 
-                overlay.classList.toggle('flex');
-                overlay.classList.toggle('hidden');
-                
-                
+      modalbutton.addEventListener('click', () => {
+        console.log('test')
 
-            })
-            
+        //  if(overlay.classList.contains('hidden')){
+        //     overlay.classList.remove('hidden');
+        //     overlay.classList.add('flex');
+        // }
 
-        })
+        overlay.classList.toggle('flex');
+        overlay.classList.toggle('hidden');
+
+
+
+      })
+
+
+    })
   </script>
   <script>
-    window.addEventListener('DOMContentLoaded', ()=> {
-      
+    window.addEventListener('DOMContentLoaded', () => {
 
-            const councilbtn = document.querySelector('#councilbutton')
-            const verifbtn = document.querySelector('#verifbutton')
-            const aboutbtn = document.querySelector('#aboutbutton')
-            const addinput = document.querySelector('#addinput')
-            const column = document.querySelector('#inputcolumn')
-            councilbtn.addEventListener('click', () => {
-              console.log('test')
-              
 
-                 if(aboutbtn.classList.contains('hidden')){
-                    aboutbtn.classList.remove('hidden');
-                    aboutbtn.classList.add('flex');
-                }
-                
+      const councilbtn = document.querySelector('#councilbutton')
+      const verifbtn = document.querySelector('#verifbutton')
+      const aboutbtn = document.querySelector('#aboutbutton')
+      const addinput = document.querySelector('#addinput')
+      const column = document.querySelector('#inputcolumn')
+      councilbtn.addEventListener('click', () => {
+        console.log('test')
 
-            })
-            verifbtn.addEventListener('click', () => {
-              console.log('test')
-              
 
-                 if(aboutbtn.classList.contains('flex')){
-                    aboutbtn.classList.remove('flex');
-                    aboutbtn.classList.add('hidden');
-                }
-                
+        if (aboutbtn.classList.contains('hidden')) {
+          aboutbtn.classList.remove('hidden');
+          aboutbtn.classList.add('flex');
+        }
 
-            })
 
-            function createNewInput() {
+      })
+      verifbtn.addEventListener('click', () => {
+        console.log('test')
 
-              var newinput = document.createElement('div');
-              newinput.classList.add('relative');
-              newinput.innerHTML = '<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">';
-              
-              column.appendChild(newinput);
-            }
 
-            addinput.addEventListener('click', () => {
-              
-              document.write('<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">')
-            })
+        if (aboutbtn.classList.contains('flex')) {
+          aboutbtn.classList.remove('flex');
+          aboutbtn.classList.add('hidden');
+        }
 
-        })
+
+      })
+
+      function createNewInput() {
+
+        var newinput = document.createElement('div');
+        newinput.classList.add('relative');
+        newinput.innerHTML = '<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">';
+
+        column.appendChild(newinput);
+      }
+
+      addinput.addEventListener('click', () => {
+
+        document.write('<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">')
+      })
+
+    })
   </script>
 
 </body>
