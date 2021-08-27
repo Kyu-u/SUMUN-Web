@@ -214,6 +214,6 @@ class registerController extends BaseController {
                 'tambahan' => $user->id,
             ]);
         }
-        return redirect()->route('verif.index')->with('success', 'Success');
+        return redirect()->route('verifMUN.index')->with('success', 'Success');
     }
 }

@@ -19,6 +19,7 @@ class Verifikasi extends Migration
             $table->string('user_id');
             $table->string('file_path');
             $table->string('type');
+            $table->string('verified')->default(0);
             $table->timestamps();
         });
     }

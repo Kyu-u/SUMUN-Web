@@ -32,9 +32,7 @@ Route::get('auth/google', [registerController::class,'redirectToGoogle'])->name(
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
-Route::get('/verif', [verif::class, 'index'])->name('verif.index');
-Route::POST('/verif/upload', [verif::class,'upload'])->name('verif.post');
-Route::get('image/{filename}', [StorageFileController::class,'publicImage'])->name('image.displayImage');
+
 
 Route::get('/', function (Request $request) {
     
@@ -60,3 +58,12 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout1');
 /* REGISTER MUN */
 Route::get('/registerMUN',[registerController::class,'registMUN'])->name('registMUN');
 Route::POST('/registerMUN/post', [registerController::class,'registMember'])->name('registMUN.post');
+
+/* Admin Verif */
+Route::post('/adminVerif-post', [AdminController::class, 'verify'])->name('verify.post');
+
+/* User Verif */
+Route::get('/verifMUN', [verif::class, 'MUN'])->name('verifMUN.index');
+Route::get('/verifWebinar', [verif::class, 'Webinar'])->name('verifWebinar.index');
+Route::POST('/verif/upload', [verif::class,'upload'])->name('verif.post');
+Route::get('image/{filename}', [StorageFileController::class,'publicImage'])->name('image.displayImage');

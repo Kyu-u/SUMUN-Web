@@ -16,6 +16,7 @@ class verifikasi extends Model
         'user_id',
         "file_path",
         'type',
+        'verified',
         "created_at",
         "updated_at"
     ];

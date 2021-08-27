@@ -14,10 +14,10 @@
                         <div class="py-6 px-6 flex flex-col">
 
                             <h1 class="text-sm md:text-xl font-bold">
-                                Model United Nations
+                                Webinar
                             </h1>
 
-                            <hr class="text-xs md:text-md pb-4">
+                            <hr class="pb-4">
 
                             <h1 class="text-sm md:text-xl font-bold">
                                 Bank Account / Bank Name
@@ -32,7 +32,7 @@
                             </h1>
 
                             <p class="text-xs md:text-md pt-4">
-                                Rp {{$total}}
+                                Rp 400.000,00 or $30 USD
                             </p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     <label for="payment" class="text-white pr-4">Click to choose:</label>
                     <select name="payment" id="payment"
                         class="text-xxs md:text-md rounded-xl border-signup-0 border-4 bg-main-0 text-white px-4 w-auto">
-                        <option value="MUN">Pembayaran MUN </option>
+                        <option value="Webinar">Pembayaran Webinar</option>
                     </select>
 
 
