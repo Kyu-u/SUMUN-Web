@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="stylesheet" href="/css/app.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Surabaya Model United Nations</title>
   <style>
     #menu-toggle:checked+#menu {
@@ -493,7 +493,10 @@
   </script>
 
   <script src="add.js"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
