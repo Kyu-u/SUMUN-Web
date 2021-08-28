@@ -2,6 +2,18 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+
+    screens: {
+      'ip': '376px',
+      'go': '500px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1290px',
+      '2xl': '1536px',
+     
+    },
+    
     extend: {
 
       fill: theme => ({
