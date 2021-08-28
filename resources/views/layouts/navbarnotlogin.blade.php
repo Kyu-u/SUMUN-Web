@@ -492,6 +492,8 @@
         })
   </script>
 
+  <script src="add.js"></script>
+
 </body>
 
 </html>
