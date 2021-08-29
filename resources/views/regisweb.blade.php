@@ -69,11 +69,11 @@
                 <div class="flex text-white gap-x-6 md:gap-x-16 font-sans pb-4 md:pb-10">
                     <div class="flex-1 flex flex-col items-center">
                         <span class="text-secondheader-0 text-sm md:text-xl pb-2 md:pb-5">Join on:</span>
-                        <span class="text-xl md:text-5xl font-semibold">1 September</span>
+                        <span class="text-xl md:text-4xl font-semibold">1 September</span>
                     </div>
                     <div class="flex-1 flex flex-col items-center">
                         <span class="text-secondheader-0 text-sm md:text-xl pb-2 md:pb-5">Time:</span>
-                        <span class="text-xl md:text-5xl font-semibold">12:00 - 15:00</span>
+                        <span class="text-xl md:text-4xl font-semibold">12:00 - 15:00</span>
                     </div>
 
                 </div>
