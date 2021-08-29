@@ -63,7 +63,7 @@
                             </svg>
                         </button>
                         <div id="dropdown2"
-                            class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
+                            class="hidden z-10 absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
                             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                                 <a href="{{route('registMUN')}}">MUN</a>
                             </div>
