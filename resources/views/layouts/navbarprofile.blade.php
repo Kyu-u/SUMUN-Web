@@ -134,6 +134,15 @@
                 <img src="images/batik2.png" alt="" class="hidden md:block z-0 top-0 lg:-top-1/2  2xl:-top-40 absolute">
 
             </nav>
+            
+            <div class="flex items-center justify-center bg-main-0 py-0 md:py-6 lg:py-2">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-signup-0 text-2xl sm:text-5xl pb-10">
+                        {{Auth::user()->name}</h1>
+                    <div class="w-2/3 h-2 bg-signup-0 rounded-full self-center"></div>
+                </div>
+            </div>
+            
             @else
 
             <div class="relative">
