@@ -1,8 +1,8 @@
-@extends('layouts.navbarprofile')
+@extends('layouts.landingnavbar')
 
 @section('content')
 <!-- Landing -->
-<div class="bg-main-0 md:p-0">
+<div class="bg-main-0 md:p-0 z-0">
     <div style="background-image: url('images/background.png')" class="bg-cover h-landing bg-local  relative">
         <div class="w-full absolute top-0 h-1/2 bg-gradient-to-b from-main-0 z-0"></div>
         <div class="w-1/2 absolute h-full top-0 bg-gradient-to-r from-main-0 z-0"></div>
@@ -21,7 +21,7 @@
           flex flex-col
           items-center
         ">
-            <div data-aos="fade-right" data-aos-duration="1000" class="w-full">
+            <div data-aos="fade-right" data-aos-duration="2000" class="w-full">
                 <img class="mx-auto go:mx-0 w-6/7 md:w-1/2 object-contain " src="images/sumunnn.png" alt="Surabaya Model United Nations Title" />
             </div>
             <a href="#sponsors" class="pt-40 ip:pt-64 go:pt-44 flex justify-center">
@@ -70,17 +70,17 @@
     <!-- Join Us -->
 
     <div class="max-w-7xl pt-36 mx-auto relative go:pb-20">
-        <div data-aos="fade-right" data-aos-duration="1000" class="w-1/5 mx-auto md:mx-0">
+        <div data-aos="fade-right" data-aos-duration="2000" class="w-1/5 mx-auto md:mx-0">
             <img class="" src="images/joinus.png" alt="" />
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="font-sans text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
+        <div data-aos="fade-right" data-aos-duration="2000" class="font-sans text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
             <h2>
                 Pendaftaran dibuka <span class="font-bold">15-17 Juni 2021</span>.
                 Pilih acara yang ingin diikuti.
             </h2>
         </div>
         <div class="flex flex-col md:flex-row gap-14 pt-16">
-            <div data-aos="fade-right" data-aos-duration="1000" class="
+            <div data-aos="fade-right" data-aos-duration="2000" class="
             rounded-2xl
             bg-card-0
             w-6/7 md:w-1/3 mx-auto md:mx-0
@@ -143,7 +143,7 @@
                     Register Here!
                 </button>
             </div>
-            <div data-aos="fade-right" data-aos-duration="1000" class="
+            <div data-aos="fade-right" data-aos-duration="2000" class="
             rounded-2xl
             bg-card-0
             w-6/7 md:w-1/3 mx-auto md:mx-0
@@ -211,7 +211,7 @@
 
     <!-- Timeline -->
 
-    <div id="timeline" data-aos="fade-up" data-aos-duration="1000"
+    <div id="timeline" data-aos="fade-up" data-aos-duration="2000"
         class="container  md:max-w-7xl mx-auto text-white pt-20 go:pt-52 pb-20 go:pb-52">
         <div class="h-timeline flex flex-col items-center md:items-start md:flex-row">
             <input class="hidden" type="radio" name="slider" checked id="home" />
@@ -310,56 +310,56 @@
                                     <td class=" bg-timelinebot-0 rounded-md ">Day</td>
                                     <td class="bg-timelinebot-0 rounded-md">Day</td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">08.00</td>
                                     <td class=" tablekosong"></td>
                                     <td rowspan="2" class=" bg-tableisi-0">Webinar AZIK</td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">09.00</td>
                                     <td class="tablekosong"></td>
                                     <!-- <td class="">Day</td> -->
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class="tabletime">10.00</td>
                                     <td class=" bg-tableisi-0">Webinar ASHIAP</td>
                                     <td class=" tablekosong"></td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">11.00</td>
                                     <td class=" bg-tableisi-0">Webinar ah mantab</td>
                                     <td class="tablekosong"></td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime ">12.00</td>
                                     <td class="tablekosong"></td>
                                     <td class="tablekosong"></td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime ">13.00</td>
                                     <td rowspan="2" class=" bg-tableisi-0">Webinar AZIK</td>
                                     <td class=" bg-tableisi-0">Webinar ASHIAP</td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">14.00</td>
                                     <td class=" bg-tableisi-0">Webinar ah mantab</td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">15.00</td>
                                     <td class="tablekosong"></td>
                                     <td class="tablekosong"></td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">16.00</td>
                                     <td class=" bg-tableisi-0">Webinar ASHIAP</td>
                                     <td class=" tablekosong"></td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">17.00</td>
                                     <td class=" bg-tableisi-0">Webinar ah mantab</td>
                                     <td class=" bg-tableisi-0" rowspan="2">Webinar AZIK</td>
                                 </tr>
-                                <tr class=" text-center h-12">
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
                                     <td class=" tabletime">18.00</td>
                                     <td class="tablekosong"></td>
                                 </tr>
