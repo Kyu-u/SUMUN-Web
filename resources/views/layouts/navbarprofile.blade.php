@@ -115,8 +115,7 @@
                             <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Schedule</a>
                             <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Registration</a>
                             <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Merchandise</a>
-                            <a class="block hover:text-signup-0 transition duration-300" href=""> {{Auth::user()->name}}
-                            </a>
+                            <a class="block hover:text-signup-0 transition duration-300" href=""> {{Auth::user()->name}}</a>
                             <form method="POST" action="{{route('logout1')}}"
                                 class="block pb-2 hover:text-signup-0 transition duration-300">
                                 @csrf
@@ -138,7 +137,7 @@
             <div class="flex items-center justify-center bg-main-0 py-0 md:py-6 lg:py-2">
                 <div class="flex flex-col justify-center">
                     <h1 class="text-signup-0 text-2xl sm:text-5xl pb-10">
-                        {{Auth::user()->name}</h1>
+                        {{Auth::user()->name}}</h1>
                     <div class="w-2/3 h-2 bg-signup-0 rounded-full self-center"></div>
                 </div>
             </div>
