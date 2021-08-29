@@ -442,13 +442,14 @@
 
   </script>
 
-  <script>window.addEventListener('DOMContentLoaded', () => { 
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
     const card = document.querySelector('.card')
     const add = document.querySelector('.add')
 
-add.addEventListener('click', () => {
+    add.addEventListener('click', () => {
 
-    const html = `<div  class="del py-6 px-4">
+        const html = `<div  class="del py-6 px-4">
 
     <div class="w-52 ip:w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">
 
@@ -468,15 +469,8 @@ add.addEventListener('click', () => {
 
                 <div class="flex flex-row justify-end">
                     <!-- START : BUTTON DELETE-->
-                    <button type="button" class="delete flex justify-end items-center pt-4">
-                        <span class="pr-1 text-sm md:text-md">Delete</span> <svg width="11"
-                            height="10" viewBox="0 0 11 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-
-                            <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2"
-                                stroke-linecap="square" stroke-linejoin="round" />
-                        </svg>
-
+                    <button onclick="myDelete()" type="button" class="delete flex justify-end items-center pt-4 text-sm md:text-md">
+                        Delete 
                     </button>
                     <!-- END : BUTTON DELETE-->
                 </div>
@@ -487,18 +481,21 @@ add.addEventListener('click', () => {
 
 
 </div>`;
-    const addCard = document.querySelector(`.card`);
-    addCard.innerHTML += html;
+        const addCard = document.querySelector(`.card`);
+        addCard.innerHTML += html;
+    });
+})
 
-});
+  </script>
 
-
-
-
+<script>
+        function myDelete(){
+            var hapus = document.querySelector('.del')
+            hapus.remove();
+        }
     
-
-
-})</script>
+    </script>
+    
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
