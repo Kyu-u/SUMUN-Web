@@ -2,8 +2,8 @@
 
 @section('content')
 <!-- Landing -->
-<div class="bg-main-0">
-    <div style="background-image: url('images/background.png')" class="bg-cover h-landing bg-local relative">
+<div class="bg-main-0 p-4 md:p-0">
+    <div style="background-image: url('images/background.png')" class="bg-cover h-landing bg-local  relative">
         <div class="w-full absolute top-0 h-1/2 bg-gradient-to-b from-main-0 z-0"></div>
         <div class="w-1/2 absolute h-full top-0 bg-gradient-to-r from-main-0 z-0"></div>
 
@@ -12,7 +12,7 @@
             <img src="images/buletsmall.png" alt="" />
         </div>
         <div class="
-          max-w-3xl sm:max-w-lg md:max-w-7xl
+          max-w-3xl ip:max-w-lg md:max-w-7xl
           h-full
           pt-24
           mx-auto
@@ -20,8 +20,8 @@
           flex flex-col
           items-center
         ">
-            <div class="w-full">
-                <img class="w-1/2" src="images/sumunnn.png" alt="" />
+            <div data-aos="fade-right" data-aos-duration="1000" class="w-full">
+                <img class="w-1/2 object-contain " src="images/sumunnn.png" alt="Surabaya Model United Nations Title" />
             </div>
             <a href="#sponsors" class="pt-44 flex justify-center">
                 <img class="w-2/3 cursor-pointer animate-bounce" src="images/arrow.png" alt="" />
@@ -69,30 +69,30 @@
     <!-- Join Us -->
 
     <div class="max-w-7xl pt-36 mx-auto relative pb-20">
-        <div class="w-1/5">
+        <div data-aos="fade-right" data-aos-duration="1000" class="w-1/5">
             <img class="" src="images/joinus.png" alt="" />
         </div>
-        <div class="font-sans text-white text-xl pt-8">
+        <div data-aos="fade-right" data-aos-duration="1000" class="font-sans text-white text-xl pt-8">
             <h2>
                 Pendaftaran dibuka <span class="font-bold">15-17 Juni 2021</span>.
                 Pilih acara yang ingin diikuti.
             </h2>
         </div>
-        <div class="flex gap-14 pt-16">
+        <div data-aos="fade-left" data-aos-duration="1000" class="flex flex-col md:flex-row gap-14 pt-16">
             <div class="
             rounded-2xl
             bg-card-0
-            w-1/4
-            h-80
+            w-full md:w-1/3
+            
             font-sans
             text-white
             flex flex-col
             justify-between
             px-10
-            py-12
+            py-6
             gap-y-2
           ">
-                <div class="font-semibold text-4xl pb-3">
+                <div class="font-semibold text-lg md:text-4xl pb-3">
                     <h2>Model United</h2>
                     <h2>Nations</h2>
                 </div>
@@ -100,8 +100,8 @@
                     <img class="w-1/3" src="images/line.png" alt="" />
                 </div>
                 <div class="
-              text-xs
-              h-1/3
+              text-sm
+              h-1/2
               overflow-y-scroll
               scrollbar-thumb-rounded-full scrollbar-thin
               object-contain
@@ -129,7 +129,6 @@
               font-bold font-navbar
               rounded-full
               self-start
-              mt-5
               focus:bg-buttonactive-0
             ">
                     Register Here!
@@ -138,17 +137,17 @@
             <div class="
             rounded-2xl
             bg-card-0
-            w-1/4
-            h-80
+            w-1/3
+            
             font-sans
             text-white
             flex flex-col
             justify-between
             px-10
-            py-12
+            py-6
             gap-y-2
           ">
-                <div class="font-semibold text-4xl pb-3">
+                <div class="font-semibold text-lg md:text-4xl pb-3">
                     <h2>Model United</h2>
                     <h2>Nations</h2>
                 </div>
@@ -156,8 +155,8 @@
                     <img class="w-1/3" src="images/line.png" alt="" />
                 </div>
                 <div class="
-              text-xs
-              h-1/3
+              text-sm
+              h-1/2
               overflow-y-scroll
               scrollbar-thumb-rounded-full scrollbar-thin
               object-contain
@@ -185,7 +184,6 @@
               font-bold font-navbar
               rounded-full
               self-start
-              mt-5
               focus:bg-buttonactive-0
             ">
                     Register Here!
@@ -196,11 +194,12 @@
 
     <!-- Timeline -->
 
-    <div class="container max-w-3xl sm:max-w-5xl md:max-w-7xl mx-auto text-white pt-52 pb-52">
+    <div id="timeline" data-aos="fade-up" data-aos-duration="1000"
+        class="container sm:max-w-5xl md:max-w-7xl mx-auto text-white pt-52 pb-52">
         <div class="h-timeline flex flex-col items-center md:flex-row">
             <input class="hidden" type="radio" name="slider" checked id="home" />
             <input class="hidden" type="radio" name="slider" id="blog" />
-            <div class="list flex flex-col justify-start mr-20 h-full">
+            <div class="list flex flex-col justify-start md:mr-20 md:h-full">
                 <label for="home" class="home landing flex justify-center px-5">
                     <span class="title">Timeline</span>
                 </label>
@@ -215,69 +214,71 @@
                 <!-- Timeline Content -->
 
                 <div class="home text relative flex justify-between">
-                    <div class="absolute mx-auto h-full w-1 bg-gray-400 right-0 left-0 rounded-full ">
+                    <div class="absolute mx-auto h-full w-0.5 md:w-1 bg-gray-400 right-0 left-0 rounded-full ">
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-48">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-48">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-full">
+                    <div
+                        class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-full">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-timeline">
+                    <div
+                        class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-timeline">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-96">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-96">
 
                     </div>
-                    <div class=" h-full w-full flex flex-col justify-items-center pr-8 gap-y-16 mt-20">
-                        <div class="w-72 h-36 items-center relative">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                    <div class=" h-full w-full flex flex-col justify-items-center md:pr-8 gap-y-16 mt-20">
+                        <div class="w-28  md:w-72 h-30 md:h-36 items-center relative">
+                            <div class="relative z-10 font-judul text-xl md:text-3xl font-medium text-center">
                                 January
                             </div>
-                            <div class="text-center relative z-10 mt-3 font-sans w-5/7 mx-auto">
+                            <div class="text-center text-xs md:text-xl relative z-10 mt-3 font-sans w-5/7 mx-auto">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
-                        <div class="w-72 h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                        <div class="w-28  md:w-72 h-30 md:h-36 items-center relative self-end">
+                            <div class="relative z-10 font-judul text-xl md:text-3xl font-medium text-center">
                                 February
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
-                        <div class="w-72 h-36 items-center relative">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                        <div class="w-28  md:w-72 h-30 md:h-36 items-center relative">
+                            <div class="relative z-10 font-judul text-xl md:text-3xl font-medium text-center">
                                 March
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
-                        <div class="w-72 h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                        <div class="w-28  md:w-72 h-30 md:h-36 items-center relative self-end">
+                            <div class="relative z-10 font-judul text-xl md:text-3xl font-medium text-center">
                                 April
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
                     </div>
@@ -359,11 +360,11 @@
 
     <footer class="relative">
         <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
-        <div class="grid grid-cols-2 max-w-7xl mx-auto gap-x-20 mt-20 mb-20">
+        <div class="grid grid-cols-2 max-w-7xl mx-auto md:gap-x-20 mt-20 mb-20">
             <div class="flex flex-col">
                 <div class="
               font-semibold
-              text-3xl text-signup-0
+              text-lg md:text-3xl text-signup-0
               opacity-80
               text-center
               pb-10
@@ -371,7 +372,6 @@
                     Partnership
                 </div>
                 <div class="flex flex-wrap gap-x-7 gap-y-5 justify-evenly">
-                    <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
@@ -385,7 +385,7 @@
             <div class="flex flex-col">
                 <div class="
               font-semibold
-              text-3xl text-signup-0
+              text-lg md:text-3xl text-signup-0
               opacity-80
               text-center
               pb-10
@@ -400,45 +400,48 @@
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
-                    <img class="self-center w-1/7" src="images/coke.png" alt="" />
                 </div>
             </div>
         </div>
         <div class="
-          flex
+        flex
+          flex-col
+          md:flex-row
           justify-evenly
           items-center
           w-full
-          h-60
+          h-full
           pt-20
           max-w-7xl
           mx-auto
           pb-20
           relative
         ">
-            <div class="h-36 items-center">
+            <div class="w-12 ip:w-20 md:w-36 items-center">
                 <img class="object-contain" src="images/unknown.png" alt="" />
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/4 justify-start h-36">
-                <div class="font-semibold text-xl pb-6">About</div>
-                <div class="text-xs font-thin">
+            <div class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/4 justify-start h-36">
+                <div class="font-semibold text-center text-xl pb-2 pt-10 md:pt-0"">About</div>
+                <div class=" text-xs font-thin text-center md:text-left">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip e
                 </div>
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/6 justify-start h-36">
-                <div class="font-semibold text-xl pb-6">About</div>
-                <div class="text-xs font-thin">
+            <div
+                class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+                <div class="text-xs font-thin text-center md:text-left">
                     Line : @sumunmantap <br />
                     Instagram : @surabayamun <br />
                     Email : admin@sumun.com
                 </div>
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/6 justify-start h-36">
-                <div class="font-semibold text-xl pb-6">About</div>
-                <div class="text-xs font-thin">
+            <div
+                class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+                <div class="text-xs font-thin text-center md:text-left">
                     Lorem ipsum dolor sit aliqua <br />
                     Lorem ipsum dolor
                 </div>
