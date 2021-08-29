@@ -14,4 +14,20 @@ class HomeController extends Controller
     {
         return view('landing');
     }
+    public function about()
+    {
+        return view('about');
+    }
+    public function council()
+    {
+        return view('council');
+    }
+    public function merch()
+    {
+        return view('merch');
+    }
+    public function regisweb()
+    {
+        return view('regisweb');
+    }
 }

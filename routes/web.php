@@ -32,6 +32,8 @@ Route::get('auth/google', [registerController::class,'redirectToGoogle'])->name(
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
+Route::get('/regisweb', [HomeController::class, 'index'])->name('regisweb');
+
 
 
 Route::get('/', function (Request $request) {
@@ -67,3 +69,11 @@ Route::get('/verifMUN', [verif::class, 'MUN'])->name('verifMUN.index');
 Route::get('/verifWebinar', [verif::class, 'Webinar'])->name('verifWebinar.index');
 Route::POST('/verif/upload', [verif::class,'upload'])->name('verif.post');
 Route::get('image/{filename}', [StorageFileController::class,'publicImage'])->name('image.displayImage');
+
+/*NAVBAR*/
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/merch', [HomeController::class, 'merch'])->name('merch');
+Route::get('/council', [HomeController::class, 'council'])->name('council');
+Route::get('/regisweb', [HomeController::class, 'regisweb'])->name('regisweb');
+
+

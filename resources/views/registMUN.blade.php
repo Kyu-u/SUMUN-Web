@@ -13,7 +13,7 @@
                 class="bg-main-0 px-10 xl:px-40 py-20 ">
                 @csrf
                 <div class="flex flex-wrap justify-evenly card">
-                        <div class="del py-6 px-4">
+                        <div class="py-6 px-4">
 
                             <div class="w-52 ip:w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">
     
@@ -35,7 +35,7 @@
                                             <!-- START : BUTTON DELETE-->
                                             <button type="button" class="delete flex justify-end items-center py-5">
                                               
-    
+
                                             </button>
                                             <!-- END : BUTTON DELETE-->
                                         </div>

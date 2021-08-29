@@ -12,7 +12,7 @@
             <img src="images/buletsmall.png" alt="" />
         </div>
         <div class="
-          max-w-3xl sm:max-w-lg md:max-w-7xl
+          max-w-3xl ip:max-w-lg md:max-w-7xl
           h-full
           pt-10
           go:pt-24
@@ -380,7 +380,7 @@
             <div class="flex flex-col">
                 <div class="
               font-semibold
-              text-3xl text-signup-0
+              text-lg md:text-3xl text-signup-0
               opacity-80
               text-center
               pb-10
@@ -391,7 +391,6 @@
                     Partnership
                 </div>
                 <div class="flex flex-wrap gap-x-7 gap-y-5 justify-evenly">
-                    <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
@@ -405,7 +404,7 @@
             <div class="flex flex-col">
                 <div class="
               font-semibold
-              text-3xl text-signup-0
+              text-lg md:text-3xl text-signup-0
               opacity-80
               text-center
               pb-10
@@ -423,45 +422,48 @@
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
-                    <img class="self-center w-1/7" src="images/coke.png" alt="" />
                 </div>
             </div>
         </div>
         <div class="
-          flex
+        flex
+          flex-col
+          md:flex-row
           justify-evenly
           items-center
           w-full
-          h-60
+          h-full
           pt-20
           max-w-7xl
           mx-auto
           pb-20
           relative
         ">
-            <div class="h-36 items-center">
+            <div class="w-12 ip:w-20 md:w-36 items-center">
                 <img class="object-contain" src="images/unknown.png" alt="" />
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/4 justify-start h-36">
-                <div class="font-semibold text-xl pb-6">About</div>
-                <div class="text-xs font-thin">
+            <div class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/4 justify-start h-36">
+                <div class="font-semibold text-center text-xl pb-2 pt-10 md:pt-0"">About</div>
+                <div class=" text-xs font-thin text-center md:text-left">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip e
                 </div>
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/6 justify-start h-36">
-                <div class="font-semibold text-xl pb-6">About</div>
-                <div class="text-xs font-thin">
+            <div
+                class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+                <div class="text-xs font-thin text-center md:text-left">
                     Line : @sumunmantap <br />
                     Instagram : @surabayamun <br />
                     Email : admin@sumun.com
                 </div>
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/6 justify-start h-36">
-                <div class="font-semibold text-xl pb-6">About</div>
-                <div class="text-xs font-thin">
+            <div
+                class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+                <div class="text-xs font-thin text-center md:text-left">
                     Lorem ipsum dolor sit aliqua <br />
                     Lorem ipsum dolor
                 </div>

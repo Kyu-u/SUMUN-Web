@@ -62,7 +62,9 @@ module.exports = {
         border: ['#184E68'],
         garis: ['#C4C4C4'],
         adminbox: ['#C9C9C9'],
-        secondheader: ['#51B97B']
+        secondheader: ['#51B97B'],
+        councilbar: ['#317E73'],
+        cardcouncil: ['#469766']
       },
       fontFamily: {
         navbar: ['Open Sans, sans-serif'],

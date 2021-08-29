@@ -35,50 +35,16 @@
   @if (Auth::check())
   <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
             <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
-                <a href="" class="link justify-self-center relative hover:text-signup-0">Home</a>
+              <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
 
 
 
-                <div class=" justify-center flex relative w-full">
-                    <button id="menu-btn" class="inline-flex items-center hover:text-signup-0 ">
-                        <span class="mr-2">About</span>
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                        </svg>
-                    </button>
-                    <div id="dropdown" class="hidden absolute top-6 flex-col bg-signup-0 w-auto mt-1 justify-center ">
-                        <div class="flex py-1 px-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">What is SUMUN?</a>
-                        </div>
-                        <div class="flex py-1 px-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">Chair</a>
-                        </div>
-                        <div class="flex py-1 px-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">BoD</a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" justify-self-center flex relative">
-                    <button id="menu-btn3" class="inline-flex items-center hover:text-signup-0">
-                        <span class="mr-2">Council & Topic</span>
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                        </svg>
-                    </button>
-                    <div id="dropdown3" class="hidden absolute top-6 flex-col bg-signup-0 w-32  mt-1 justify-center">
-                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">ILO</a>
-                        </div>
-                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">DISEC</a>
-                        </div>
-                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">UNHRC</a>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="" class="link justify-self-center relative hover:text-signup-0">Schedule</a>
+              <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
+      
+              <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">Council</a>
+      
+      
+              <a href="{{route('landing')}}#timeline" class="link justify-self-center relative hover:text-signup-0">Schedule</a>
                 <div class="justify-self-center">
                     <img class="h-20" src="images/unknown.png" alt="" />
                 </div>
@@ -92,24 +58,27 @@
                     </button>
                     <div id="dropdown2" class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">MUN</a>
+                            <a href="{{route('registMUN')}}">MUN</a>
                         </div>
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">Webinar</a>
+                            <a href="{{route('regisweb')}}">Webinar</a>
                         </div>
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                             <a href="#">Verif</a>
                         </div>
                     </div>
                 </div>
-                <a href="" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
+                <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
-                <div id="navitems" class="justify-self-start flex gap-4  col-span-2 items-center">
-                   
-                    <a href="" class="w-full pl-4">
-                        Drigo Alexander
-  </a>
-                </div>
+                <a href="" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->name}}</a>
+
+              <form method="POST" action="{{route('logout1')}}"
+                  class="justify-self-center flex  col-span-1 items-center hover:text-signup-0 transition duration-300">
+                  @csrf
+                  <button type="submit" class="w-full">
+                      Logout
+                  </button>
+              </form>
             </div>
 
             <div class="lg:hidden px-6  flex flex-wrap items-center ">
@@ -137,7 +106,15 @@
                         <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
                         <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
                         <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
-                        <a class="block hover:text-signup-0" href="">Drigo Alexander</a>
+                        <a class="block hover:text-signup-0" href="">{{Auth::user()->name}}
+                        </a>
+                        <form method="POST" action="{{route('logout1')}}"
+                        class="block pb-2 hover:text-signup-0 transition duration-300">
+                        @csrf
+                        <button type="submit" class="w-full">
+                            Logout
+                        </button>
+                    </form>
                     </div>
 
                 </div>
@@ -150,48 +127,20 @@
 @else
         <nav class="bg-main-0 py-10 text-white font-navbar font-medium">
       <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
-        <a href="" class="link justify-self-center relative hover:text-signup-0">Home</a>
 
 
 
-        <div class=" justify-center flex relative w-full">
-          <button id="menu-btn" class="inline-flex items-center hover:text-signup-0 ">
-            <span class="mr-2">About</span>
-            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
-          </button>
-          <div id="dropdown" class="hidden absolute top-6 flex-col bg-signup-0 w-auto mt-1 justify-center ">
-            <div class="flex py-1 px-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">What is SUMUN?</a>
-            </div>
-            <div class="flex py-1 px-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">Chair</a>
-            </div>
-            <div class="flex py-1 px-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">BoD</a>
-            </div>
-          </div>
-        </div>
-        <div class=" justify-self-center flex relative">
-          <button id="menu-btn3" class="inline-flex items-center hover:text-signup-0">
-            <span class="mr-2">Council & Topic</span>
-            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
-          </button>
-          <div id="dropdown3" class="hidden absolute top-6 flex-col bg-signup-0 w-32  mt-1 justify-center">
-            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">ILO</a>
-            </div>
-            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">DISEC</a>
-            </div>
-            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">UNHRC</a>
-            </div>
-          </div>
-        </div>
+        <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
 
-        <a href="" class="link justify-self-center relative hover:text-signup-0">Schedule</a>
+
+
+        <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
+
+        <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">Council</a>
+
+
+        <a href="{{route('landing')}}#timeline" class="link justify-self-center relative hover:text-signup-0">Schedule</a>
+
         <div class="justify-self-center">
           <img class="h-20" src="images/unknown.png" alt="" />
         </div>
@@ -204,14 +153,14 @@
           </button>
           <div id="dropdown2" class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">MUN</a>
-            </div>
-            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">Webinar</a>
-            </div>
+              <a href="{{route('registMUN')}}">MUN</a>
+          </div>
+          <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+              <a href="{{route('regisweb')}}">Webinar</a>
+          </div>
           </div>
         </div>
-        <a href="" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
+        <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
         <div id="navitems" class="justify-self-center flex gap-4 items-center text-sm col-span-2">
           <a href="#login" class="link justify-self-start relative hover:text-signup-0">Log In</a>
@@ -490,9 +439,63 @@
             })
 
         })
+
   </script>
 
-  <script src="add.js"></script>
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const card = document.querySelector('.card')
+    const add = document.querySelector('.add')
+
+    add.addEventListener('click', () => {
+
+        const html = `<div  class="del py-6 px-4">
+
+    <div class="w-52 ip:w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">
+
+        <div class="py-4 px-8 md:px-16 md:py-8">
+            <div class="flex flex-col text-white">
+                <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
+                <input class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" type="text"
+                    id="Username" name="Username" placeholder="Username">
+                <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
+                    class="">Council</label>
+                <select class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" id="Council"
+                    name="Council">
+                    <option value="UNDP">UNDP</option>
+                    <option value="UNEP">UNEP</option>
+                    <option value="UNSC">UNSC</option>
+                </select>
+
+                <div class="flex flex-row justify-end">
+                    <!-- START : BUTTON DELETE-->
+                    <button onclick="myDelete()" type="button" class="delete flex justify-end items-center pt-4 text-sm md:text-md">
+                        Delete 
+                    </button>
+                    <!-- END : BUTTON DELETE-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>`;
+        const addCard = document.querySelector(`.card`);
+        addCard.innerHTML += html;
+    });
+})
+
+  </script>
+
+<script>
+        function myDelete(){
+            var hapus = document.querySelector('.del')
+            hapus.remove();
+        }
+    
+    </script>
+    
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
