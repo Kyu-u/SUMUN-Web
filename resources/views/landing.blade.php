@@ -2,8 +2,8 @@
 
 @section('content')
 <!-- Landing -->
-<div class="bg-main-0">
-    <div style="background-image: url('images/background.png')" class="bg-cover h-landing bg-local relative">
+<div class="bg-main-0 md:p-0">
+    <div style="background-image: url('images/background.png')" class="bg-cover h-landing bg-local  relative">
         <div class="w-full absolute top-0 h-1/2 bg-gradient-to-b from-main-0 z-0"></div>
         <div class="w-1/2 absolute h-full top-0 bg-gradient-to-r from-main-0 z-0"></div>
 
@@ -14,17 +14,18 @@
         <div class="
           max-w-3xl sm:max-w-lg md:max-w-7xl
           h-full
-          pt-24
+          pt-10
+          go:pt-24
           mx-auto
           relative
           flex flex-col
           items-center
         ">
-            <div class="w-full">
-                <img class="w-1/2" src="images/sumunnn.png" alt="" />
+            <div data-aos="fade-right" data-aos-duration="1000" class="w-full">
+                <img class="mx-auto go:mx-0 w-6/7 md:w-1/2 object-contain " src="images/sumunnn.png" alt="Surabaya Model United Nations Title" />
             </div>
-            <a href="#sponsors" class="pt-44 flex justify-center">
-                <img class="w-2/3 cursor-pointer animate-bounce" src="images/arrow.png" alt="" />
+            <a href="#sponsors" class="pt-40 ip:pt-64 go:pt-44 flex justify-center">
+                <img class="w-1/3 ip:w-2/3 cursor-pointer animate-bounce" src="images/arrow.png" alt="" />
             </a>
         </div>
     </div>
@@ -68,31 +69,30 @@
 
     <!-- Join Us -->
 
-    <div class="max-w-7xl pt-36 mx-auto relative pb-20">
-        <div class="w-1/5">
+    <div class="max-w-7xl pt-36 mx-auto relative go:pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="w-1/5 mx-auto md:mx-0">
             <img class="" src="images/joinus.png" alt="" />
         </div>
-        <div class="font-sans text-white text-xl pt-8">
+        <div data-aos="fade-right" data-aos-duration="1000" class="font-sans text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
             <h2>
                 Pendaftaran dibuka <span class="font-bold">15-17 Juni 2021</span>.
                 Pilih acara yang ingin diikuti.
             </h2>
         </div>
-        <div class="flex gap-14 pt-16">
-            <div class="
+        <div class="flex flex-col md:flex-row gap-14 pt-16">
+            <div data-aos="fade-right" data-aos-duration="1000" class="
             rounded-2xl
             bg-card-0
-            w-1/4
-            h-80
+            w-6/7 md:w-1/3 mx-auto md:mx-0
             font-sans
             text-white
             flex flex-col
             justify-between
-            px-10
-            py-12
+            h-80 md:h-97
+            p-8
             gap-y-2
           ">
-                <div class="font-semibold text-4xl pb-3">
+                <div class="font-semibold text-xl md:text-4xl pb-3">
                     <h2>Model United</h2>
                     <h2>Nations</h2>
                 </div>
@@ -100,8 +100,8 @@
                     <img class="w-1/3" src="images/line.png" alt="" />
                 </div>
                 <div class="
-              text-xs
-              h-1/3
+              text-xs md:text-sm
+              h-1/2
               overflow-y-scroll
               scrollbar-thumb-rounded-full scrollbar-thin
               object-contain
@@ -118,8 +118,16 @@
                         terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
                         aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
                         apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
+                        aja sumpah engga ngadi-ngadi terserah deh isi                       apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh
+                        isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
+                        apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
+                        kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
+                        engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
+                        bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
+                        terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
+                        aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
+                        apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
                         aja sumpah engga ngadi-ngadi terserah deh isi
-                    </p>
                 </div>
                 <button type="button" class="
               bg-signup-0
@@ -129,26 +137,25 @@
               font-bold font-navbar
               rounded-full
               self-start
-              mt-5
               focus:bg-buttonactive-0
+              mt-5 md:mt-0
             ">
                     Register Here!
                 </button>
             </div>
-            <div class="
+            <div data-aos="fade-right" data-aos-duration="1000" class="
             rounded-2xl
             bg-card-0
-            w-1/4
-            h-80
+            w-6/7 md:w-1/3 mx-auto md:mx-0
             font-sans
             text-white
             flex flex-col
             justify-between
-            px-10
-            py-12
+            h-80 md:h-97
+            p-8
             gap-y-2
           ">
-                <div class="font-semibold text-4xl pb-3">
+                <div class="font-semibold text-xl md:text-4xl pb-3">
                     <h2>Model United</h2>
                     <h2>Nations</h2>
                 </div>
@@ -156,8 +163,8 @@
                     <img class="w-1/3" src="images/line.png" alt="" />
                 </div>
                 <div class="
-              text-xs
-              h-1/3
+              text-xs md:text-sm
+              h-1/2
               overflow-y-scroll
               scrollbar-thumb-rounded-full scrollbar-thin
               object-contain
@@ -174,8 +181,16 @@
                         terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
                         aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
                         apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
+                        aja sumpah engga ngadi-ngadi terserah deh isi                       apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh
+                        isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
+                        apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
+                        kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
+                        engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
+                        bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
+                        terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
+                        aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
+                        apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
                         aja sumpah engga ngadi-ngadi terserah deh isi
-                    </p>
                 </div>
                 <button type="button" class="
               bg-signup-0
@@ -185,8 +200,8 @@
               font-bold font-navbar
               rounded-full
               self-start
-              mt-5
               focus:bg-buttonactive-0
+              mt-5 md:mt-0
             ">
                     Register Here!
                 </button>
@@ -196,11 +211,12 @@
 
     <!-- Timeline -->
 
-    <div class="container max-w-3xl sm:max-w-5xl md:max-w-7xl mx-auto text-white pt-52 pb-52">
-        <div class="h-timeline flex flex-col items-center md:flex-row">
+    <div id="timeline" data-aos="fade-up" data-aos-duration="1000"
+        class="container  md:max-w-7xl mx-auto text-white pt-20 go:pt-52 pb-20 go:pb-52">
+        <div class="h-timeline flex flex-col items-center md:items-start md:flex-row">
             <input class="hidden" type="radio" name="slider" checked id="home" />
             <input class="hidden" type="radio" name="slider" id="blog" />
-            <div class="list flex flex-col justify-start mr-20 h-full">
+            <div class="list flex flex-col justify-start md:mr-20 h-full">
                 <label for="home" class="home landing flex justify-center px-5">
                     <span class="title">Timeline</span>
                 </label>
@@ -215,69 +231,69 @@
                 <!-- Timeline Content -->
 
                 <div class="home text relative flex justify-between">
-                    <div class="absolute mx-auto h-full w-1 bg-gray-400 right-0 left-0 rounded-full ">
+                    <div class="absolute mx-auto h-full w-0.5 md:w-1 bg-gray-400 right-0 left-0 rounded-full ">
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-48">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-48">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-full">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-full">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-timeline">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-timeline">
 
                     </div>
-                    <div class="absolute mx-auto h-4 w-4 bg-gray-400 right-0 left-0 rounded-full top-96">
+                    <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-96">
 
                     </div>
-                    <div class=" h-full w-full flex flex-col justify-items-center pr-8 gap-y-16 mt-20">
-                        <div class="w-72 h-36 items-center relative">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                    <div class=" h-full w-full flex flex-col justify-items-center md:pr-8 gap-y-16 ">
+                        <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
+                            <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
                                 January
                             </div>
-                            <div class="text-center relative z-10 mt-3 font-sans w-5/7 mx-auto">
+                            <div class="text-center text-xs md:text-lg relative z-10 mt-0 md:mt-3 font-sans w-5/7 mx-auto">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
-                        <div class="w-72 h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                        <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
+                            <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
                                 February
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
-                        <div class="w-72 h-36 items-center relative">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                        <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
+                            <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
                                 March
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
-                        <div class="w-72 h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul text-3xl font-medium text-center">
+                        <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
+                            <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
                                 April
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                             <div
-                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-3xl z-0 opacity-40">
+                                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
                             </div>
                         </div>
                     </div>
@@ -359,7 +375,8 @@
 
     <footer class="relative">
         <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
-        <div class="grid grid-cols-2 max-w-7xl mx-auto gap-x-20 mt-20 mb-20">
+        <h2 class="text-center text-lg text-signup-0 go:hidden font-semibold opacity-80">Partnership & Media Partner</h2>
+        <div class="grid grid-cols-2 max-w-7xl mx-auto md:gap-x-20 mt-8 go:mt-20 mb-20">
             <div class="flex flex-col">
                 <div class="
               font-semibold
@@ -367,6 +384,9 @@
               opacity-80
               text-center
               pb-10
+              hidden
+              go:flex
+              justify-center
             ">
                     Partnership
                 </div>
@@ -389,6 +409,9 @@
               opacity-80
               text-center
               pb-10
+              hidden
+              go:flex
+              justify-center
             ">
                     Partnership
                 </div>
