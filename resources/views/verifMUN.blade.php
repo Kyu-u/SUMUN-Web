@@ -23,7 +23,7 @@
                                 <div class="py-6 px-6 flex flex-col">
 
                                     <h1 class="text-sm md:text-xl font-bold text-center">
-                                       Webinar
+                                       Model United Nations
                                     </h1>
 
                                     <hr class="text-xs md:text-md pb-4 text-center">
