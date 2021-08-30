@@ -77,10 +77,10 @@
     <input class="rad" type="radio" name="slider" id="blog" />
     <div class="list flex flex-col justify-start lg:pl-0 lg:mr-14 w-2/3 lg:w-1/5">
       {{-- <button id="councilbutton" class="relative z-10"> --}}
-      <label for="home" class="home flex justify-center border-signup-0 border-2 w-9/10 mx-auto rounded-2xl">
-        <span class="title text-sm sm:text-xl font-semibold self-center">Council Form</span>
-      </label>
-      {{-- </button> --}}
+        <label for="home" class="home flex justify-center border-signup-0 border-2 w-9/10 mx-auto rounded-2xl">
+          <span class="title text-sm sm:text-xl font-semibold self-center">Council Form</span>
+        </label>
+        {{-- </button> --}}
       <button id="verifbutton" class="relative z-10">
         <label for="blog" class="blog flex justify-center border-signup-0 border-2 w-9/10 mx-auto rounded-2xl mt-10">
           <span class="title text-sm sm:text-xl font-semibold self-center justify-self-center">Verification</span>
@@ -90,7 +90,8 @@
         <button id="adminbtn" class=" font-semibold self-center inline-flex items-center">
           <span class="mb-1 pr-2">About</span>
           <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
         </button>
         <div id="unesco" class=" shadow-lg hidden flex-col z-10 bg-signup-0 p-5 rounded-lg mt-2 gap-5">
           <a href="#">Unesco</a>
