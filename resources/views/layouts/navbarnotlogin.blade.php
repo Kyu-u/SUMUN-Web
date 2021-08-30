@@ -1,356 +1,436 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.landingnavbar')
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0,viewport-fit=cover,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="/css/app.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Surabaya Model United Nations</title>
-  <style>
-    #menu-toggle:checked+#menu {
-      display: block;
-    }
-  </style>
-  <meta name="description"
-    content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
-  <meta name="keywords" content="Surabaya,MUN,SUMUN,Surabaya MUN,Conference">
-  <meta name="author" content="sumun">
-  <link rel="shortcut icon" type="image/x-icon" href="images/surabayamunlogo.png">
-  <link rel="apple-touch-icon" href="images/surabayamunlogo.png" sizes="128x128">
-  <link rel="apple-touch-icon" href="images/surabayamunlogo.png" sizes="192x192">
-  <meta property="og:title" content="Surabaya Model United Nations">
-  <meta property="og:site_name" content="sumun">
-  <meta property="og:url" content="sumun.com">
-  <meta property="og:description"
-    content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
-  <meta property="og:type" content="website">
-  <meta property="og:image"
-    content="https://res.cloudinary.com/dxy6iowwg/image/upload/v1629339198/sumunlogo_irqixh.png">
-</head>
+@section('content')
+<!-- Landing -->
+<div class="bg-main-0 md:p-0 z-0">
+  <div style="background-image: url('images/background.png')" class="bg-cover h-landing bg-local  relative">
+    <div class="w-full absolute top-0 h-1/2 bg-gradient-to-b from-main-0 z-0"></div>
+    <div class="w-1/2 absolute h-full top-0 bg-gradient-to-r from-main-0 z-0"></div>
 
-<body class="bg-main-0">
-  <div class="relative max-w-screen-3xl mx-auto">
-    @if (Auth::check())
-    <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
-      <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
-        <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
-
-
-
-        <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
-
-        <<<<<<< HEAD <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">
-          Council</a>
-          =======
-          <div class=" justify-self-center flex relative">
-            <button id="menu-btn2" class="inline-flex items-center hover:text-signup-0">
-              <span class="mr-4">Registration</span>
-              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </button>
-            <div id="dropdown2" class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="{{route('registMUN')}}">MUN</a>
-              </div>
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="{{route('regisweb')}}">Webinar</a>
-              </div>
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="#">Verif Webinar</a>
-              </div>
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="#">Verif MUN</a>
-              </div>
-            </div>
-          </div>
-          <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
-          >>>>>>> 04cebdaccd28bd3afdceba35124750f4a74e7ba0
-
-
-          <a href="{{route('landing')}}#timeline"
-            class="link justify-self-center relative hover:text-signup-0">Schedule</a>
-          <div class="justify-self-center">
-            <img class="h-20" src="images/unknown.png" alt="" />
-          </div>
-
-          <div class=" justify-self-center flex relative">
-            <button id="menu-btn2" class="inline-flex items-center hover:text-signup-0">
-              <span class="mr-4">Registration</span>
-              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </button>
-            <div id="dropdown2" class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="{{route('registMUN')}}">MUN</a>
-              </div>
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="{{route('regisweb')}}">Webinar</a>
-              </div>
-              <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                <a href="#">Verif</a>
-              </div>
-            </div>
-          </div>
-          <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
-
-          <a href="" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->name}}</a>
-
-          <form method="POST" action="{{route('logout1')}}"
-            class="justify-self-center flex  col-span-1 items-center hover:text-signup-0 transition duration-300">
-            @csrf
-            <button type="submit" class="w-full">
-              Logout
-            </button>
-          </form>
+    <div class="w-full absolute h-1/2 top-1/2 bg-gradient-to-t from-main-0 z-0"></div>
+    <div class="absolute left-20 w-1/3">
+      <img src="images/buletsmall.png" alt="" />
+    </div>
+    <div class="
+          max-w-3xl ip:max-w-lg md:max-w-7xl
+          h-full
+          pt-10
+          go:pt-24
+          mx-auto
+          relative
+          flex flex-col
+          items-center
+        ">
+      <div data-aos="fade-right" data-aos-duration="2000" class="w-full">
+        <img class="mx-auto go:mx-0 w-6/7 md:w-1/2 object-contain " src="images/sumunnn.png"
+          alt="Surabaya Model United Nations Title" />
       </div>
+      <a href="#sponsors" class="pt-40 ip:pt-64 go:pt-44 flex justify-center">
+        <img class="w-1/3 ip:w-2/3 cursor-pointer animate-bounce" src="images/arrow.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="absolute max-w-7xl w-1/3 right-0 top-1/4 opacity-30">
+    <img class="" src="images/bigbig2.png" alt="" />
+  </div>
 
-      <div class="lg:hidden px-6  flex flex-wrap items-center ">
-        <div class="flex flex-1 justify-between items-center">
-          <img class="h-10" src="images/unknown.png" alt="">
+  <!-- Sponsors -->
+
+  <div id="sponsors" class="max-w-5xl lg:max-w-7xl pt-20 mx-auto relative">
+    <h2 class="text-signup-0 opacity-70 font-navbar text-center text-2xl pb-10">
+      Sponsored by
+    </h2>
+    <!-- <div class="grid grid-rows-2 gap-8 pt-24">
+        <div class="grid grid-cols-5 gap-12 justify-items-center">
+          <img class="self-center w-1/2" src="coke.png" alt="" />
+          <img class="self-center w-1/2" src="shangri.png" alt="" />
+          <img class="self-center w-1/2" src="bni.png" alt="" />
+          <img class="self-center w-1/2" src="its.png" alt="" />
+          <img class="self-center w-1/2" src="coke.png" alt="" />
         </div>
+        <div class="grid grid-cols-4 gap-12 justify-center">
+          <img class="self-center w-1/2" src="coke.png" alt="" />
+          <img class="self-center w-1/2" src="shangri.png" alt="" />
+          <img class="self-center w-1/2" src="bni.png" alt="" />
+          <img class="self-center w-1/2" src="its.png" alt="" />
+        </div>
+      </div> -->
+    <div class="flex flex-wrap justify-evenly gap-x-10 gap-y-16">
+      <img class="self-center w-1/7" src="images/coke.png" alt="" />
+      <img class="self-center w-1/7" src="images/shangri.png" alt="" />
+      <img class="self-center w-1/7" src="images/bni.png" alt="" />
+      <img class="self-center w-1/7" src="images/its.png" alt="" />
+      <img class="self-center w-1/7" src="images/coke.png" alt="" />
+      <img class="self-center w-1/7" src="images/bni.png" alt="" />
+      <img class="self-center w-1/7" src="images/its.png" alt="" />
+      <img class="self-center w-1/7" src="images/its.png" alt="" />
+      <img class="self-center w-1/7" src="images/its.png" alt="" />
+    </div>
+  </div>
 
+  <!-- Join Us -->
 
-        <label for="menu-toggle" class="cursor-pointer ">
-          <svg class="" width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <title>Hamburger</title>
-            <rect y="0.0529785" width="25.0576" height="4.12271" rx="2.06136" fill="white" />
-            <rect x="3.91504" y="9.12292" width="21.1424" height="4.12271" rx="2.06136" fill="white" />
-            <rect x="8.61377" y="18.1929" width="16.4441" height="4.12271" rx="2.06135" fill="white" />
-          </svg>
+  <div class="max-w-7xl pt-36 mx-auto relative go:pb-20">
+    <div data-aos="fade-right" data-aos-duration="2000" class="w-1/5 mx-auto md:mx-0">
+      <img class="" src="images/joinus.png" alt="" />
+    </div>
+    <div data-aos="fade-right" data-aos-duration="2000"
+      class="font-sans text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
+      <h2>
+        Pendaftaran dibuka <span class="font-bold">15-17 Juni 2021</span>.
+        Pilih acara yang ingin diikuti.
+      </h2>
+    </div>
+    <div class="flex flex-col md:flex-row gap-14 pt-16">
+      <div data-aos="fade-right" data-aos-duration="2000" class="
+            rounded-2xl
+            bg-card-0
+            w-6/7 md:w-1/3 mx-auto md:mx-0
+            font-sans
+            text-white
+            flex flex-col
+            justify-between
+            h-80 md:h-97
+            p-8
+            gap-y-2
+          ">
+        <div class="font-semibold text-xl md:text-4xl pb-3">
+          <h2>Model United</h2>
+          <h2>Nations</h2>
+        </div>
+        <div class="pb-3">
+          <img class="w-1/3" src="images/line.png" alt="" />
+        </div>
+        <div class="
+              text-xs md:text-sm
+              h-1/2
+              overflow-y-scroll
+              scrollbar-thumb-rounded-full scrollbar-thin
+              object-contain
+              scrollbar-track-main-0 scrollbar-thumb-signup-0
+              pr-5
+            ">
+          <p>
+            apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh
+            isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
+            apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
+            kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
+            engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
+            bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
+            terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
+            aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
+            apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
+            aja sumpah engga ngadi-ngadi terserah deh isi apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah
+            deh
+            isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
+            apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
+            kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
+            engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
+            bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
+            terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
+            aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
+            apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
+            aja sumpah engga ngadi-ngadi terserah deh isi
+        </div>
+        <button type="button" class="
+              bg-signup-0
+              px-2
+              py-1
+              text-sm text-white
+              font-bold font-navbar
+              rounded-full
+              self-start
+              focus:bg-buttonactive-0
+              mt-5 md:mt-0
+            ">
+          Register Here!
+        </button>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="2000" class="
+            rounded-2xl
+            bg-card-0
+            w-6/7 md:w-1/3 mx-auto md:mx-0
+            font-sans
+            text-white
+            flex flex-col
+            justify-between
+            h-80 md:h-97
+            p-8
+            gap-y-2
+          ">
+        <div class="font-semibold text-xl md:text-4xl pb-3">
+          <h2>Model United</h2>
+          <h2>Nations</h2>
+        </div>
+        <div class="pb-3">
+          <img class="w-1/3" src="images/line.png" alt="" />
+        </div>
+        <div class="
+              text-xs md:text-sm
+              h-1/2
+              overflow-y-scroll
+              scrollbar-thumb-rounded-full scrollbar-thin
+              object-contain
+              scrollbar-track-main-0 scrollbar-thumb-signup-0
+              pr-5
+            ">
+          <p>
+            apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh
+            isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
+            apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
+            kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
+            engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
+            bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
+            terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
+            aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
+            apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
+            aja sumpah engga ngadi-ngadi terserah deh isi apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah
+            deh
+            isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
+            apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
+            kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
+            engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
+            bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
+            terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
+            aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
+            apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
+            aja sumpah engga ngadi-ngadi terserah deh isi
+        </div>
+        <button type="button" class="
+              bg-signup-0
+              px-2
+              py-1
+              text-sm text-white
+              font-bold font-navbar
+              rounded-full
+              self-start
+              focus:bg-buttonactive-0
+              mt-5 md:mt-0
+            ">
+          Register Here!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+
+  <div id="timeline" data-aos="fade-up" data-aos-duration="2000"
+    class="container  md:max-w-7xl mx-auto text-white pt-20 go:pt-52 pb-20 go:pb-52">
+    <div class="h-timeline flex flex-col items-center md:items-start md:flex-row">
+      <input class="hidden" type="radio" name="slider" checked id="home" />
+      <input class="hidden" type="radio" name="slider" id="blog" />
+      <div class="list flex flex-col justify-start md:mr-20 h-full">
+        <label for="home" class="home landing flex justify-center px-5">
+          <span class="title">Timeline</span>
         </label>
-        <input type="checkbox" class="hidden" id="menu-toggle">
+        <label for="blog" class="blog landing flex justify-center px-5">
+          <span class="title">Rundown</span>
+        </label>
 
-        <div class="hidden py-6 w-full  " id="menu">
-          <div class="flex flex-col justify-between items-end">
-            <a class="block pb-2 hover:text-signup-0" href="">Home</a>
-            <a class="block pb-2 hover:text-signup-0 " href="">About</a>
-            <a class="block pb-2 hover:text-signup-0" href="">Council & Topic</a>
-            <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
-            <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
-            <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
-            <a class="block hover:text-signup-0" href="">{{Auth::user()->name}}
-            </a>
-            <form method="POST" action="{{route('logout1')}}"
-              class="block pb-2 hover:text-signup-0 transition duration-300">
-              @csrf
-              <button type="submit" class="w-full">
-                Logout
-              </button>
-            </form>
+        <div class="slidera"></div>
+      </div>
+      <div class="text-content max-w-4xl relative">
+
+        <!-- Timeline Content -->
+
+        <div class="home text relative flex justify-between">
+          <div class="absolute mx-auto h-full w-0.5 md:w-1 bg-gray-400 right-0 left-0 rounded-full ">
+          </div>
+          <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full">
+
+          </div>
+          <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-48">
+
+          </div>
+          <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-full">
+
+          </div>
+          <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-timeline">
+
+          </div>
+          <div class="absolute mx-auto h-2 w-2 md:h-4 md:w-4 bg-gray-400 right-0 left-0 rounded-full top-96">
+
+          </div>
+          <div class=" h-full w-full flex flex-col justify-items-center md:pr-8 gap-y-16 ">
+            <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
+              <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
+                January
+              </div>
+              <div class="text-center text-xs md:text-lg relative z-10 mt-0 md:mt-3 font-sans w-5/7 mx-auto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+            </div>
+            <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
+              <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
+                February
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+            </div>
+            <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
+              <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
+                March
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+            </div>
+            <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
+              <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
+                April
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-bl from-timelinetop-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+              <div
+                class="w-full h-full absolute top-4 justify-self-center bg-gradient-to-tr from-timelinebot-0 rounded-md md:rounded-3xl z-0 opacity-40">
+              </div>
+            </div>
           </div>
 
         </div>
 
-
-
+        <!-- Blog Content -->
+        <div class="blog text max-w-4xl relative">
+          <div class="relative p-5 bg-tablebg-0 rounded-xl">
+            <table class="table-fixed w-full border-separate text-white">
+              <tbody>
+                <tr class=" text-center font-medium font-judul text-3xl h-16">
+                  <td class=" bg-time-0 rounded-md w-1/4">Time</td>
+                  <td class=" bg-timelinebot-0 rounded-md ">Day</td>
+                  <td class="bg-timelinebot-0 rounded-md">Day</td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">08.00</td>
+                  <td class=" tablekosong"></td>
+                  <td rowspan="2" class=" bg-tableisi-0">Webinar AZIK</td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">09.00</td>
+                  <td class="tablekosong"></td>
+                  <!-- <td class="">Day</td> -->
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class="tabletime">10.00</td>
+                  <td class=" bg-tableisi-0">Webinar ASHIAP</td>
+                  <td class=" tablekosong"></td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">11.00</td>
+                  <td class=" bg-tableisi-0">Webinar ah mantab</td>
+                  <td class="tablekosong"></td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime ">12.00</td>
+                  <td class="tablekosong"></td>
+                  <td class="tablekosong"></td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime ">13.00</td>
+                  <td rowspan="2" class=" bg-tableisi-0">Webinar AZIK</td>
+                  <td class=" bg-tableisi-0">Webinar ASHIAP</td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">14.00</td>
+                  <td class=" bg-tableisi-0">Webinar ah mantab</td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">15.00</td>
+                  <td class="tablekosong"></td>
+                  <td class="tablekosong"></td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">16.00</td>
+                  <td class=" bg-tableisi-0">Webinar ASHIAP</td>
+                  <td class=" tablekosong"></td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">17.00</td>
+                  <td class=" bg-tableisi-0">Webinar ah mantab</td>
+                  <td class=" bg-tableisi-0" rowspan="2">Webinar AZIK</td>
+                </tr>
+                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                  <td class=" tabletime">18.00</td>
+                  <td class="tablekosong"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <<<<<<< HEAD </nav>
-        @else
-        <nav class="bg-main-0 py-10 text-white font-navbar font-medium">
-          =======
-        </nav>
-        @else
-        {{-- <nav class="bg-main-0 py-10 text-white font-navbar font-medium">
-          >>>>>>> 04cebdaccd28bd3afdceba35124750f4a74e7ba0
-          <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
+  <!-- Footer -->
 
+  <footer class="relative">
+    <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
+    <h2 class="text-center text-lg text-signup-0 go:hidden font-semibold opacity-80">Partnership & Media Partner</h2>
+    <div class="grid grid-cols-2 max-w-7xl mx-auto md:gap-x-20 mt-8 go:mt-20 mb-20">
+      <div class="flex flex-col">
+        <div class="
+              font-semibold
+              text-lg md:text-3xl text-signup-0
+              opacity-80
+              text-center
+              pb-10
+              hidden
+              go:flex
+              justify-center
+            ">
+          Partnership
+        </div>
+        <div class="flex flex-wrap gap-x-7 gap-y-5 justify-evenly">
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
 
-
-            <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
-
-
-
-            <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
-
-            <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">Council</a>
-
-
-            <a href="{{route('landing')}}#timeline"
-              class="link justify-self-center relative hover:text-signup-0">Schedule</a>
-
-            <div class="justify-self-center">
-              <img class="h-20" src="images/unknown.png" alt="" />
-            </div>
-
-            <div class=" justify-self-center flex relative">
-              <button id="menu-btn2" class="inline-flex items-center hover:text-signup-0">
-                <span class="mr-4">Registration</span>
-                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </button>
-              <div id="dropdown2" class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
-                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                  <a href="{{route('registMUN')}}">MUN</a>
-                </div>
-                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                  <a href="{{route('regisweb')}}">Webinar</a>
-                </div>
-              </div>
-            </div>
-            <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
-
-            <div id="navitems" class="justify-self-center flex gap-4 items-center text-sm col-span-2">
-              <a href="{{route('showLoginForm')}}" class="link justify-self-start relative hover:text-signup-0">Log
-                In</a>
-              <div class="text-xs">
-                <h2>or</h2>
-              </div>
-              <a href="" class="
-                bg-signup-0
-                px-10
-                py-1
-                text-white
-                font-bold font-navbar
-                rounded-full
-                hover:bg-buttonactive-0
-              ">
-                Sign Up
-              </a>
-            </div>
-          </div>
-
-          <div class="lg:hidden px-6  flex flex-wrap items-center ">
-            <div class="flex flex-1 justify-between items-center">
-              <img class="h-10" src="images/unknown.png" alt="">
-            </div>
-
-
-            <label for="menu-toggle" class="cursor-pointer ">
-              <svg class="" width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <title>Hamburger</title>
-                <rect y="0.0529785" width="25.0576" height="4.12271" rx="2.06136" fill="white" />
-                <rect x="3.91504" y="9.12292" width="21.1424" height="4.12271" rx="2.06136" fill="white" />
-                <rect x="8.61377" y="18.1929" width="16.4441" height="4.12271" rx="2.06135" fill="white" />
-              </svg>
-            </label>
-            <input type="checkbox" class="hidden" id="menu-toggle">
-
-            <div class="hidden py-6 w-full  " id="menu">
-              <div class="flex flex-col justify-between items-end">
-                <a class="block pb-2 hover:text-signup-0" href="">Home</a>
-                <a class="block pb-2 hover:text-signup-0 " href="">About</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Council & Topic</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
-                <a class="block hover:text-signup-0" href="">Login</a>
-              </div>
-
-            </div>
-
-
-
-          </div>
-
-        </nav>
-        <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
-          <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
-            <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
-
-
-
-            <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
-
-            <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">Council</a>
-
-
-            <a href="{{route('landing')}}#timeline"
-              class="link justify-self-center relative hover:text-signup-0">Schedule</a>
-            <div class="justify-self-center">
-              <img class="h-20" src="images/unknown.png" alt="" />
-            </div>
-
-            <div class=" justify-self-center flex relative">
-              <button id="menu-btn2" class="inline-flex items-center hover:text-signup-0">
-                <span class="mr-4">Registration</span>
-                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </button>
-              <div id="dropdown2" class="hidden absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
-                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                  <a href="{{route('registMUN')}}">MUN</a>
-                </div>
-                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                  <a href="{{route('regisweb')}}">Webinar</a>
-                </div>
-
-              </div>
-            </div>
-            <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
-
-            <div id="navitems" class="justify-self-center flex gap-4 items-center text-sm col-span-2">
-              <a href="{{route('showLoginForm')}}" class="link justify-self-start relative hover:text-signup-0">Log
-                In</a>
-              <div class="text-xs">
-                <h2>or</h2>
-              </div>
-              <a href="" class="
-                  bg-signup-0
-                  px-10
-                  py-1
-                  text-white
-                  font-bold font-navbar
-                  rounded-full
-                  hover:bg-buttonactive-0
-                ">
-                Sign Up
-              </a>
-            </div>
-          </div>
-
-          <div class="lg:hidden px-6  flex flex-wrap items-center ">
-            <div class="flex flex-1 justify-between items-center">
-              <img class="h-10" src="images/unknown.png" alt="">
-            </div>
-
-
-            <label for="menu-toggle" class="cursor-pointer ">
-              <svg class="" width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <title>Hamburger</title>
-                <rect y="0.0529785" width="25.0576" height="4.12271" rx="2.06136" fill="white" />
-                <rect x="3.91504" y="9.12292" width="21.1424" height="4.12271" rx="2.06136" fill="white" />
-                <rect x="8.61377" y="18.1929" width="16.4441" height="4.12271" rx="2.06135" fill="white" />
-              </svg>
-            </label>
-            <input type="checkbox" class="hidden" id="menu-toggle">
-
-            <div class="hidden py-6 w-full  " id="menu">
-              <div class="flex flex-col justify-between items-end">
-                <a class="block pb-2 hover:text-signup-0" href="">Home</a>
-                <a class="block pb-2 hover:text-signup-0 " href="">About</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Council & Topic</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
-                <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
-                <a class="block hover:text-signup-0" href="">Login</a>
-
-              </div>
-
-            </div>
-
-
-
-          </div>
-
-        </nav>
-        @endif
-
-
-        @yield('content')
-
-
-        <footer class="relative bg-main-0 ">
-          <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
-          <div class="
-          flex
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="
+              font-semibold
+              text-lg md:text-3xl text-signup-0
+              opacity-80
+              text-center
+              pb-10
+              hidden
+              go:flex
+              justify-center
+            ">
+          Partnership
+        </div>
+        <div class="flex flex-wrap gap-x-7 gap-y-5 justify-evenly">
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+          <img class="self-center w-1/7" src="images/coke.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="
+        flex
           flex-col
           md:flex-row
           justify-evenly
@@ -362,270 +442,45 @@
           mx-auto
           pb-20
           relative
-         
         ">
-            <div class="w-20 md:w-36 items-center">
-              <img class="object-contain" src="images/unknown.png" alt="" />
-            </div>
-            <div
-              class="flex flex-col text-foot-0 font-sans w-2/3 md:w-1/4 justify-center items-center md:items-start md:justify-start h-36">
-              <div class="font-semibold text-xl pb-2 pt-10 md:pt-0">About</div>
-              <div class="text-xs font-thin text-center md:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip e
-              </div>
-            </div>
-            <div
-              class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
-              <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
-              <div class="text-xs font-thin text-center md:text-left">
-                Line : @sumunmantap <br />
-                Instagram : @surabayamun <br />
-                Email : admin@sumun.com
-              </div>
-            </div>
-            <div
-              class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
-              <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
-              <div class="text-xs font-thin text-center md:text-left">
-                Lorem ipsum dolor sit aliqua <br />
-                Lorem ipsum dolor
-              </div>
-            </div>
-          </div>
-          <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />
-          <div class="flex items-center justify-center md:justify-between mx-auto max-w-7xl relative">
-            <div class="text-foot-0 font-thin  py-6 text-xxs md:text-md">Surabaya MUN 2021. All Rights Reserved</div>
-            <div class="hidden md:flex justify-evenly items-center">
-              <img class="w-1/5" src="images/linef.png" alt="" />
-              <img class="w-1/5" src="images/ig.png" alt="" /><img class="w-1/5" src="images/mail.png" alt="" />
-            </div>
-          </div>
-        </footer>
-  </div>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-      const menuBtn2 = document.querySelector('#menu-btn2')
-      const dropdown2 = document.querySelector('#dropdown2')
-
-      menuBtn2.addEventListener('click', () => {
-        if (dropdown2.classList.contains('hidden')) {
-          dropdown2.classList.remove('hidden');
-          dropdown2.classList.add('flex');
-        } else {
-          dropdown2.classList.remove('flex');
-          dropdown2.classList.add('hidden');
-        }
-      })
-    })
-  </script>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-      const menuBtn = document.querySelector('#menu-btn')
-      const dropdown = document.querySelector('#dropdown')
-
-      menuBtn.addEventListener('click', () => {
-        if (dropdown.classList.contains('hidden')) {
-          dropdown.classList.remove('hidden');
-          dropdown.classList.add('flex');
-        } else {
-          dropdown.classList.remove('flex');
-          dropdown.classList.add('hidden');
-        }
-      })
-    })
-  </script>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-      const menuBtn3 = document.querySelector('#menu-btn3')
-      const dropdown3 = document.querySelector('#dropdown3')
-
-      menuBtn3.addEventListener('click', () => {
-        if (dropdown3.classList.contains('hidden')) {
-          dropdown3.classList.remove('hidden');
-          dropdown3.classList.add('flex');
-        } else {
-          dropdown3.classList.remove('flex');
-          dropdown3.classList.add('hidden');
-        }
-      })
-    })
-  </script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-      const adminbtn = document.querySelector('#adminbtn')
-      const unesco = document.querySelector('#unesco')
-      adminbtn.addEventListener('click', () => {
-        if (unesco.classList.contains('hidden')) {
-          unesco.classList.remove('hidden');
-          unesco.classList.add('flex');
-        } else {
-          unesco.classList.remove('flex');
-          unesco.classList.add('hidden');
-        }
-
-        // unesco.classList.toggle('hidden')
-        // unesco.classList.toggle('flex')
-      })
-
-    })
-  </script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-      const backbtn = document.querySelector('#modalback')
-      const overlay = document.querySelector('#overlay')
-      const modalbutton = document.querySelector('#overlaybtn2')
-      backbtn.addEventListener('click', () => {
-        console.log('test')
-
-        if (overlay.classList.contains('flex')) {
-          overlay.classList.remove('flex');
-          overlay.classList.add('hidden');
-        }
-
-
-      })
-
-      modalbutton.addEventListener('click', () => {
-        console.log('test')
-
-        //  if(overlay.classList.contains('hidden')){
-        //     overlay.classList.remove('hidden');
-        //     overlay.classList.add('flex');
-        // }
-
-        overlay.classList.toggle('flex');
-        overlay.classList.toggle('hidden');
-
-
-
-      })
-
-
-    })
-  </script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-
-
-      const councilbtn = document.querySelector('#councilbutton')
-      const verifbtn = document.querySelector('#verifbutton')
-      const aboutbtn = document.querySelector('#aboutbutton')
-      const addinput = document.querySelector('#addinput')
-      const column = document.querySelector('#inputcolumn')
-      councilbtn.addEventListener('click', () => {
-        console.log('test')
-
-
-        if (aboutbtn.classList.contains('hidden')) {
-          aboutbtn.classList.remove('hidden');
-          aboutbtn.classList.add('flex');
-        }
-
-
-      })
-      verifbtn.addEventListener('click', () => {
-        console.log('test')
-
-
-        if (aboutbtn.classList.contains('flex')) {
-          aboutbtn.classList.remove('flex');
-          aboutbtn.classList.add('hidden');
-        }
-
-
-      })
-
-      function createNewInput() {
-
-        var newinput = document.createElement('div');
-        newinput.classList.add('relative');
-        newinput.innerHTML = '<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">';
-
-        column.appendChild(newinput);
-      }
-
-      addinput.addEventListener('click', () => {
-
-        document.write('<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">')
-      })
-
-    })
-
-  </script>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const card = document.querySelector('.card')
-      const add = document.querySelector('.add')
-
-      add.addEventListener('click', () => {
-
-        const html = `<div  class="del py-6 px-4">
-
-    <div class="w-52 ip:w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">
-
-        <div class="py-4 px-8 md:px-16 md:py-8">
-            <div class="flex flex-col text-white">
-                <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
-                <input class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" type="text"
-                    id="Username" name="username[]" placeholder="Username">
-                <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
-                    class="">Council</label>
-                <select class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" id="Council"
-                    name="council[]">
-                    <option value="UNDP">UNDP</option>
-                    <option value="UNEP">UNEP</option>
-                    <option value="UNSC">UNSC</option>
-                </select>
-
-                <div class="flex flex-row justify-end">
-                    <!-- START : BUTTON DELETE-->
-                    <button onclick="myDelete()" type="button" class="delete flex justify-end items-center pt-4 text-sm md:text-md">
-                        Delete 
-                    </button>
-                    <!-- END : BUTTON DELETE-->
-                </div>
-            </div>
+      <div class="w-12 ip:w-20 md:w-36 items-center">
+        <img class="object-contain" src="images/unknown.png" alt="" />
+      </div>
+      <div class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/4 justify-start h-36">
+        <div class="font-semibold text-center text-xl pb-2 pt-10 md:pt-0"">About</div>
+                <div class=" text-xs font-thin text-center md:text-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip e
         </div>
-
+      </div>
+      <div
+        class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+        <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+        <div class="text-xs font-thin text-center md:text-left">
+          Line : @sumunmantap <br />
+          Instagram : @surabayamun <br />
+          Email : admin@sumun.com
+        </div>
+      </div>
+      <div
+        class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+        <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
+        <div class="text-xs font-thin text-center md:text-left">
+          Lorem ipsum dolor sit aliqua <br />
+          Lorem ipsum dolor
+        </div>
+      </div>
     </div>
-
-
-</div>`;
-        const addCard = document.querySelector(`.card`);
-        addCard.innerHTML += html;
-      });
-    })
-
-  </script>
-
-  <script>
-    function myDelete() {
-      var hapus = document.querySelector('.del')
-      hapus.remove();
-    }
-
-  </script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
-</html>
+    <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl" />
+    <div class="flex items-center justify-between mx-auto max-w-7xl relative">
+      <div class="text-foot-0 font-thin">SUMUN2021</div>
+      <div class="flex justify-evenly items-center">
+        <img class="w-1/5" src="images/linef.png" alt="" />
+        <img class="w-1/5" src="images/ig.png" alt="" /><img class="w-1/5" src="images/mail.png" alt="" />
+      </div>
+    </div>
+  </footer>
+</div>
+@endsection

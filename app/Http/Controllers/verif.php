@@ -19,7 +19,7 @@ class verif extends Controller
         if (Queueverif::where('user_id','=',$user->id)->exists()){
             $users = Queueverif::where('user_id','=',$user->id)->get();
             $price = $users->count() * 60000;
-            return view('verif',['total'=> $price]);
+            return view('verifMUN',['total'=> $price]);
         }
         if (Queueverif::where('tambahan','=',$user->id)->exists()){
             echo('wait');
