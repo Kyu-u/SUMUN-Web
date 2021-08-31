@@ -75,12 +75,17 @@
       class="drop w-30 lg:h-auto border bg-gray-600 bg-opacity-20 rounded-xl border-none rounded px-3 py-4 outline-none relative"
       name="grade" for="grade">
       <option class="py-1 font-sans">Unesco</option>
+      @foreach (\App\Price::select('id','price')->get() as $price)
+        <option value="{{ $mun->id }}" {{ $mun->id == $selected_id['mun_id'] ? 'selected' : '' }}>
+        {{ $mun['mun'] }}
+          </option>
+      @endforeach
       <option class="py-1 font-sans">Unesco</option>
       <option class="py-1 font-sans">Unesco</option>
 
 
     </select>
-  <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 ml-5 h-10 shadow-sm" type="button">Filter</button>
+  <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 ml-5 h-10 shadow-sm" type="button" value="Filter">Filter</button>
 </div>
 
   <div class="relative flex justify-center mx-auto w-6/7 h-80 sm:h-97 sm:w-97  md:w-98 lg:w-99">
@@ -123,6 +128,14 @@
             <div class="flex-wrap"> Drigo Alexander Sihombing</div>
             <div class="flex-wrap"> Drigo Alexander Sihombing</div>
             <div class="flex-wrap"> Drigo Alexander Sihombing</div>
+            @forelse($users as $users )
+	    				<div>
+	    					<div>{{ $loop->index+1 }}</div>
+	    					<div>{{ $users->name }}</div>
+	    				</div>
+	    				@empty
+	    				<p> No data Found </p>
+	    				@endforelse
           </div>
         </div>
         <div class="flex flex-col w-full md:w-4/7 md:pl-5">
