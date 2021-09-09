@@ -94,19 +94,20 @@
       class="relative w-full h-full flex-1 rounded-3xl bg-gradient-to-r from-signup-0 to-tableisi-0 p-5 md:p-10 text-white">
 
 
-      <form action="{{route('regis2')}}" method="POST" class="pt-2 sm:pt-5 flex flex-row ">
+      <form action="{{route('filter')}}" method="GET" class="pt-2 sm:pt-5 flex flex-row ">
         @csrf
         <div class="md:flex flex-col hidden items-start  w-3/7">
           <div class="w-full flex items-center">
               <select
                 style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"
                 class="drop w-30 lg:h-auto border bg-black bg-opacity-20 rounded-xl border-none rounded px-3 py-4 outline-none relative"
-                name="grade" for="grade">
-                <option class="py-1 font-sans">Unesco</option>
-                <option class="py-1 font-sans">Unesco</option>
-                <option class="py-1 font-sans">Unesco</option>
-
-
+                name="mun_id" for="grade">
+                <option value="0" class="py-1 font-sans">Select Council</option>
+                @foreach (\App\User::select('id','mun_id')->get() as $mun_id)
+                  <option value="{{ $users->id }}" {{ $users->mun_id == $selected_id['mun_id'] ? 'selected' : '' }}>
+                  {{ $users['mun_id'] }}
+                    </option>
+                @endforeach
               </select>
             <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 ml-5 h-10 shadow-sm" type="button">Filter</button>
           </div>
