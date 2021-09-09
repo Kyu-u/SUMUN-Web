@@ -48,8 +48,8 @@
 
                 <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
 
-                    <img src="images/UNDPlogo.png" alt="" class="w-1/2 animate-pulse opacity-75" data-aos="fade-right"
-                        data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200643/ruzain_pdn1sw.png" alt=""
+                        class="w-1/2 animate-pulse opacity-75" data-aos="fade-right" data-aos-duration="2000">
 
                     <div class=" flex flex-col  -ml-0 md:-ml-20 pr-0 md:pr-8 py-16 md:py-0" data-aos="fade-up"
                         data-aos-duration="2000">
@@ -80,12 +80,9 @@
                         <div class="pt-4">
                             <div
                                 class="text-white font-thin text-xxs sm:text-sm md:text-xl px-10 md:px-0 text-center md:text-left">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
-                                tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
-                                quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
-                                elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
-                                in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
-                                tincidunt est vel sodales.
+                                Achievement <br> Malang International MUN 2021 - Head Chair of ECOSOC <br> Asia World
+                                MUN 2021 - Co Chair of ECOSOC
+                                <br> Global Millenial MUN 9.0 - Best Delegate of ECOSOC
                             </div>
                         </div>
 
@@ -94,8 +91,9 @@
                 </div>
 
                 <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
-                    <img src="images/UNEPlogo.png" alt="" class="block md:hidden w-1/2 animate-pulse opacity-75"
-                        data-aos="fade-left" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200648/aliya_gun6xf.png" alt=""
+                        class="block md:hidden w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                        data-aos-duration="2000">
 
                     <div class="flex flex-col  -mr-0 md:-mr-20 pl-0 md:pl-8 py-16 md:py-0" data-aos="fade-up"
                         data-aos-duration="2000">
@@ -125,20 +123,19 @@
                         <div class="pt-4">
                             <div
                                 class="text-white font-thin text-xxs sm:text-sm md:text-xl px-16 md:px-0 text-center md:text-left">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
-                                tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
-                                quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
-                                elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
-                                in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
-                                tincidunt est vel sodales.
+                                Achievement <br> Best Delegate of UNHRC EuroMUN 2021 <br> Honorable Mention of UNFCCC
+                                TEIMUN 2021
+                                <br> Best Delegate of UNDP Bandung MUN 2020 <br> Most Outstanding Delegate of FAO
+                                Indonesia MUN 2020
                             </div>
                         </div>
 
 
                     </div>
 
-                    <img src="images/UNEPlogo.png" alt="" class="hidden md:block w-1/2 animate-pulse opacity-75"
-                        data-aos="fade-left" data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200648/aliya_gun6xf.png" alt=""
+                        class="hidden md:block w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                        data-aos-duration="2000">
 
 
                 </div>
@@ -166,7 +163,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                 </h2>
             </div>
 
-            <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
+            <!-- <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
 
                 <img src="images/UNDPlogo.png" alt="" class="w-1/2 animate-pulse opacity-75" data-aos="fade-right"
                     data-aos-duration="2000">
@@ -210,11 +207,12 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 
 
                 </div>
-            </div>
+            </div> -->
 
             <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
-                <img src="images/UNEPlogo.png" alt="" class="block md:hidden w-1/2 animate-pulse opacity-75"
-                    data-aos="fade-left" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/mu_taz_vjxbi7.png" alt=""
+                    class="block md:hidden w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
 
                 <div class="flex flex-col  -mr-0 md:-mr-20 pl-0 md:pl-8 py-16 md:py-0" data-aos="fade-up"
                     data-aos-duration="2000">
@@ -243,20 +241,20 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     <div class="pt-4">
                         <div
                             class="text-white font-thin text-xxs sm:text-sm md:text-xl px-16 md:px-0 text-center md:text-left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
-                            tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
-                            quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
-                            elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
-                            in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
-                            tincidunt est vel sodales.
+                            Achievement <br> Asia World MUN ECOSOC Best Position Paper <br> GM MUN 5.0 IOM Verbal
+                            Commendation
+                            <br> Iyouth Legacy MUN ECOSOC Best position Paper, and Honorable Mention <br> COMFORT
+                            MUN-2021-UNGA-Best Delegate <br> Online Distancing MUN-2021-ASEAN-Verbal Commendation <br>
+                            GM MUN 8.0 ILO Co-Chair
                         </div>
                     </div>
 
 
                 </div>
 
-                <img src="images/UNEPlogo.png" alt="" class="hidden md:block w-1/2 animate-pulse opacity-75"
-                    data-aos="fade-left" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/mu_taz_vjxbi7.png" alt=""
+                    class="hidden md:block w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
 
 
             </div>
@@ -284,8 +282,8 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 
             <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
 
-                <img src="images/UNDPlogo.png" alt="" class="w-1/2 animate-pulse opacity-75" data-aos="fade-right"
-                    data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200651/tharuka_ibtpw3.png" alt=""
+                    class="w-1/2 animate-pulse opacity-75" data-aos="fade-right" data-aos-duration="2000">
 
                 <div class=" flex flex-col  -ml-0 md:-ml-20 pr-0 md:pr-8 py-16 md:py-0" data-aos="fade-up"
                     data-aos-duration="2000">
@@ -315,12 +313,10 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     <div class="pt-4">
                         <div
                             class="text-white font-thin text-xxs sm:text-sm md:text-xl px-10 md:px-0 text-center md:text-left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
-                            tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
-                            quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
-                            elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
-                            in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
-                            tincidunt est vel sodales.
+                            Achievement <br> ADMUN20 UNHRC Best Delegate <br> GM MUN 5.0 IOM Verbal
+                            Commendation
+                            <br> Iyouth Legacy MUN ECOSOC Best position Paper, and Honorable Mention <br> Best Position Paper and Verbal Mention in P6MUN UNSC<br> OWMUN ECOSOC Best Delegate<br>
+                            GYUMUN UNSC Best Position Paper <br> AURAMUN UNSC Best High Commendation <br> NMSMUN UNGA1 Runner Up Best Delegate <br> ADMUN21 DISEC Best Orator <br> SDMUN CCC Honourable Mention <br> VIMUN UNHRC High Commendation <br>ALYXMUN DISEC Best Delegate <br>BHMUN UNSC Outstanding Delegate
                         </div>
                     </div>
 
@@ -329,8 +325,9 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             </div>
 
             <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
-                <img src="images/UNEPlogo.png" alt="" class="block md:hidden w-1/2 animate-pulse opacity-75"
-                    data-aos="fade-left" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/shreyas_o6rmr9.png" alt=""
+                    class="block md:hidden w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
 
                 <div class="flex flex-col  -mr-0 md:-mr-20 pl-0 md:pl-8 py-16 md:py-0" data-aos="fade-up"
                     data-aos-duration="2000">
@@ -359,20 +356,16 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     <div class="pt-4">
                         <div
                             class="text-white font-thin text-xxs sm:text-sm md:text-xl px-16 md:px-0 text-center md:text-left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
-                            tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
-                            quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
-                            elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
-                            in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
-                            tincidunt est vel sodales.
+                            Achievement <br> XMUN UNHRC President <br> Harvard MUN Dubai UNGA Assistent Director <br> Symbiosis Law School Pune MUN Chairperson <br>CMS MUN UNGA Chairperson <br>IIT INDORE MUN UNGA Chairperson
                         </div>
                     </div>
 
 
                 </div>
 
-                <img src="images/UNEPlogo.png" alt="" class="hidden md:block w-1/2 animate-pulse opacity-75"
-                    data-aos="fade-left" data-aos-duration="2000">
+                <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/shreyas_o6rmr9.png" alt=""
+                    class="hidden md:block w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
 
 
             </div>
@@ -383,7 +376,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;" >
+            -webkit-text-fill-color: transparent;">
                 Board of Dias
             </div>
 
@@ -438,445 +431,468 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                 </div>
             </div>
 
-            <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0">
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/puti_c1igfi.png"
-                            alt="Puti Syifa Khairani" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+            <div class=" grid grid-cols-3 md:px-20 gap-x-24 gap-y-32 md:gap-y-0">
+                                <div class="col-span-3 md:col-span-1 justify-self-center">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/puti_c1igfi.png"
+                                            alt="Puti Syifa Khairani" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                            data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
+                                        <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center"
+                                                style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Secretary</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Puti Syifa Khairani
-                            </h1>
-                        </div>
+                                            <h1
+                                                class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                                Puti Syifa Khairani
+                                            </h1>
+                                        </div>
 
-                    </div>
+                                    </div>
 
-                </div>
+                                </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/zakiyah_lxnofe.png"
-                            alt="Zakkiyah Athiroh" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                                <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/zakiyah_lxnofe.png"
+                                            alt="Zakkiyah Athiroh" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                            data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center"
+                                                style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Secretary</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
-                               Zakkiyah Athiroh
-                            </h1>
-                        </div>
+                                            <h1
+                                                class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
+                                                Zakkiyah Athiroh
+                                            </h1>
+                                        </div>
 
-                    </div>
+                                    </div>
 
-                </div>
+                                </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/jeane_vmbofk.png"
-                            alt="Sesilia Jeanne Arrungan" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                                <div class="col-span-3 md:col-span-1 justify-self-center">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/jeane_vmbofk.png"
+                                            alt="Sesilia Jeanne Arrungan"
+                                            class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0" data-aos="fade-down"
+                                            data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
+                                        <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center"
+                                                style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Event</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Sesilia Jeanne Arrungan
-                            </h1>
+                                            <h1
+                                                class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                                Sesilia Jeanne Arrungan
+                                            </h1>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
                         </div>
 
-                    </div>
+                        <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0 py-20 sm:py-40">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/tania_leal8l.png"
+                                        alt="Tania Ponasavira" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                </div>
-
-                
-            </div>
-
-            <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0 py-20 sm:py-40">
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/tania_leal8l.png"
-                            alt="Tania Ponasavira" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
-
-                        <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Treasurer</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Tania Ponasavira
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            Tania Ponasavira
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/alfin_jxgk79.png"
-                            alt="Alfin Alifian Zain" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/alfin_jxgk79.png"
+                                        alt="Alfin Alifian Zain" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">External Affairs</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
-                               Alfin Alifian Zain
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
+                                            Alfin Alifian Zain
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/sciencenia_qcqrgl.png"
-                            alt="Sciencinia Marin Kurnia" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/sciencenia_qcqrgl.png"
+                                        alt="Sciencinia Marin Kurnia" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Delegates Affairs</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Sciencinia Marin Kurnia
-                            </h1>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            Sciencinia Marin Kurnia
+                                        </h1>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
 
-                    </div>
+                        <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087545/ken_ff67ae.png"
+                                        alt="Kennard Mahib Bariumanto" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                </div>
-
-                
-            </div>
-
-            <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0">
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087545/ken_ff67ae.png"
-                            alt="Kennard Mahib Bariumanto" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
-
-                        <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Substance</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Kennard Mahib Bariumanto
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            Kennard Mahib Bariumanto
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/yere_nglhgp.png"
-                            alt="Yeremia Nathannael" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/yere_nglhgp.png"
+                                        alt="Yeremia Nathannael" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Substance</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
-                               Yeremia Nathannael
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
+                                            Yeremia Nathannael
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087547/jose_qjbdhp.png"
-                            alt="Josephine Ricardia Putri Gale" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087547/jose_qjbdhp.png"
+                                        alt="Josephine Ricardia Putri Gale"
+                                        class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0" data-aos="fade-down"
+                                        data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Substance</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Josephine Ricardia Putri Gale
-                            </h1>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            Josephine Ricardia Putri Gale
+                                        </h1>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
 
-                    </div>
+                        <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0 py-20 sm:py-40">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/bayu_kwy1hj.png"
+                                        alt="Bayu Prayogo Andriyanto" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                </div>
-
-                
-            </div>
-
-            <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0 py-20 sm:py-40">
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/bayu_kwy1hj.png"
-                            alt="Bayu Prayogo Andriyanto" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
-
-                        <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Substance</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Bayu Prayogo Andriyanto
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            Bayu Prayogo Andriyanto
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/yakina_rqpkd6.png"
-                            alt="Yakina Athiyyah Darmawan" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/yakina_rqpkd6.png"
+                                        alt="Yakina Athiyyah Darmawan" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Substance</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
-                               Yakina Athiyyah Darmawan
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
+                                            Yakina Athiyyah Darmawan
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087542/fajrul_lmrthr.png"
-                            alt="M Fajrul Alam Ulin Nuha" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087542/fajrul_lmrthr.png"
+                                        alt="M Fajrul Alam Ulin Nuha" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Substance</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                M Fajrul Alam Ulin Nuha
-                            </h1>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            M Fajrul Alam Ulin Nuha
+                                        </h1>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
 
-                    </div>
+                        <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087971/drigo_jf8i3n.png"
+                                        alt="Drigo Alexander Sihombing" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                </div>
-
-                
-            </div>
-
-            <div class="grid grid-cols-3  md:px-20 gap-x-24 gap-y-32 md:gap-y-0">
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087971/drigo_jf8i3n.png"
-                            alt="Drigo Alexander Sihombing" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
-
-                        <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Website</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                Drigo Alexander
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            Drigo Alexander
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087970/edrick_fviw8f.png"
-                            alt="Jonathan Edrick" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087970/edrick_fviw8f.png"
+                                        alt="Jonathan Edrick" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Sponsorship</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
-                               Jonathan Edrick
-                            </h1>
-                        </div>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-xl md:text-3xl text-center">
+                                            Jonathan Edrick
+                                        </h1>
+                                    </div>
 
-                    </div>
+                                </div>
 
-                </div>
+                            </div>
 
-                <div class="col-span-3 md:col-span-1 justify-self-center">
-                    <div class="flex flex-col items-center justify-center">
-                        <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087970/fikrar_zlguiw.png"
-                            alt="M Fikrar Claverio" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
-                            data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-span-3 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087970/fikrar_zlguiw.png"
+                                        alt="M Fikrar Claverio" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                        <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
 
 
-                            <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  text-sm ip:text-xl md:text-2xl text-center" style="background: #57CA85;
                         background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">Design</h1>
 
-                            <h1 class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                M Fikrar Claverio
-                            </h1>
+                                        <h1
+                                            class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
+                                            M Fikrar Claverio
+                                        </h1>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
 
-                    </div>
-
-                </div>
-
-                
-            </div>
-
-            <h2 class="flex justify-center items-center text-2xl ip:text-4xl  md:text-5xl font-semibold pt-44 pb-20" style="background: #57CA85;
+                        <h2 class="flex justify-center items-center text-2xl ip:text-4xl  md:text-5xl font-semibold pt-44 pb-20"
+                            style="background: #57CA85;
             background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;" >
-                Meet the website team
-        </h2>
+            -webkit-text-fill-color: transparent;">
+                            Meet the website team
+                        </h2>
 
 
-        <div class="grid grid-cols-2 py-20 gap-y-32 md:gap-y-0">
-            <div class="col-span-2 md:col-span-1 justify-self-center">
-                <div class="flex flex-col ip:flex-row items-center justify-center">
-                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087971/drigo_jf8i3n.png"
-                        alt="Drigo Alexander" class="w-24 h-24 ip:w-32 ip:h-32"
-                        data-aos="fade-down" data-aos-duration="1000">
+                        <div class="grid grid-cols-2 py-20 gap-y-32 md:gap-y-0">
+                            <div class="col-span-2 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col ip:flex-row items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087971/drigo_jf8i3n.png"
+                                        alt="Drigo Alexander" class="w-24 h-24 ip:w-32 ip:h-32" data-aos="fade-down"
+                                        data-aos-duration="1000">
 
-                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-right"
+                                        data-aos-duration="2000">
 
 
-                        <h1 class="font-bold pt-2  md:text-xl text-center ip:text-left" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  md:text-xl text-center ip:text-left" style="background: #57CA85;
                     background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;">Project Manager</h1>
 
-                        <h1 class="font-thin  text-white  md:text-2xl text-center ip:text-left">
-                            Drigo Alexander
-                        </h1>
-                    </div>
+                                        <h1 class="font-thin  text-white  md:text-2xl text-center ip:text-left">
+                                            Drigo Alexander
+                                        </h1>
+                                    </div>
 
-                </div>
+                                </div>
 
-            </div>
-            <div class="col-span-2 md:col-span-1 justify-self-center">
+                            </div>
+                            <div class="col-span-2 md:col-span-1 justify-self-center">
 
-                <div class="flex flex-col ip:flex-row items-center justify-center">
-                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630147908/mel_qa5xd9.png"
-                        alt="Melanchthon Bonifacio" class="w-24 h-24 ip:w-32 ip:h-32"
-                        data-aos="fade-down" data-aos-duration="1000">
+                                <div class="flex flex-col ip:flex-row items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630147908/mel_qa5xd9.png"
+                                        alt="Melanchthon Bonifacio" class="w-24 h-24 ip:w-32 ip:h-32"
+                                        data-aos="fade-down" data-aos-duration="1000">
 
-                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-left" data-aos-duration="2000">
-                        <h1 class="font-bold md:text-xl text-center ip:text-left" style="background: #57CA85;
+                                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h1 class="font-bold md:text-xl text-center ip:text-left" style="background: #57CA85;
                     background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
@@ -884,53 +900,54 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     -webkit-text-fill-color: transparent;" "
                     >Front-end Developer</h1>
 
-                    <h1 class=" font-thin  text-white  md:text-2xl text-center ip:text-left" 
-                    >
-                        Melanchthon Bonifacio
-                    </h1>
-                    </div>
-                    
-                </div>
-            </div>
+                    <h1 class=" font-thin text-white md:text-2xl text-center ip:text-left">
+                                            Melanchthon Bonifacio
+                                        </h1>
+                                    </div>
+
+                                </div>
+                            </div>
 
 
-            
-        </div>
 
-        <div class="grid grid-cols-2 py-20 gap-y-32 md:gap-y-0">
-            <div class="col-span-2 md:col-span-1 justify-self-center">
-                <div class="flex flex-col ip:flex-row items-center justify-center">
-                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630122492/bayu2_kkfw34.png"
-                        alt="Bayu Adjie Sidharta" class="w-24 h-24 ip:w-32 ip:h-32"
-                        data-aos="fade-down" data-aos-duration="1000">
+                        </div>
 
-                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="grid grid-cols-2 py-20 gap-y-32 md:gap-y-0">
+                            <div class="col-span-2 md:col-span-1 justify-self-center">
+                                <div class="flex flex-col ip:flex-row items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630122492/bayu2_kkfw34.png"
+                                        alt="Bayu Adjie Sidharta" class="w-24 h-24 ip:w-32 ip:h-32" data-aos="fade-down"
+                                        data-aos-duration="1000">
+
+                                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-right"
+                                        data-aos-duration="2000">
 
 
-                        <h1 class="font-bold pt-2  md:text-xl text-left" style="background: #57CA85;
+                                        <h1 class="font-bold pt-2  md:text-xl text-left" style="background: #57CA85;
                     background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;">Lead Back-end Developer</h1>
 
-                        <h1 class="font-thin  text-white  md:text-2xl text-center ip:text-left">
-                            Bayu Adjie Sidharta
-                        </h1>
-                    </div>
+                                        <h1 class="font-thin  text-white  md:text-2xl text-center ip:text-left">
+                                            Bayu Adjie Sidharta
+                                        </h1>
+                                    </div>
 
-                </div>
+                                </div>
 
-            </div>
-            <div class="col-span-2 md:col-span-1 justify-self-center">
+                            </div>
+                            <div class="col-span-2 md:col-span-1 justify-self-center">
 
-                <div class="flex flex-col ip:flex-row items-center justify-center">
-                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630147907/ivan_i09h47.png"
-                        alt="Christoffer Ivano" class="w-24 h-24 ip:w-32 ip:h-32"
-                        data-aos="fade-down" data-aos-duration="1000">
+                                <div class="flex flex-col ip:flex-row items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630147907/ivan_i09h47.png"
+                                        alt="Christoffer Ivano" class="w-24 h-24 ip:w-32 ip:h-32" data-aos="fade-down"
+                                        data-aos-duration="1000">
 
-                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-left" data-aos-duration="2000">
-                        <h1 class="font-bold md:text-xl text-center ip:text-left" style="background: #57CA85;
+                                    <div class="flex flex-col pt-2 ip:pt-0 md:pt-4 pl-4" data-aos="fade-left"
+                                        data-aos-duration="2000">
+                                        <h1 class="font-bold md:text-xl text-center ip:text-left" style="background: #57CA85;
                     background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
@@ -938,29 +955,28 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     -webkit-text-fill-color: transparent;" "
                     >Back-end Developer</h1>
 
-                    <h1 class=" font-thin  text-white  md:text-2xl text-center ip:text-left" 
-                    >
-                        Christoffer Ivano
-                    </h1>
+                    <h1 class=" font-thin text-white md:text-2xl text-center ip:text-left">
+                                            Christoffer Ivano
+                                        </h1>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
                     </div>
-                    
+
+
                 </div>
+
+
+
             </div>
-
-
-            
-        </div>
-
-
-
-        </div>
-
-       
-        </div>
-
-
-        
-        </div>
         </div>
     </section>
 @endsection
