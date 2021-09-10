@@ -73,7 +73,7 @@
         <div data-aos="fade-right" data-aos-duration="2000" class="w-1/5 mx-auto md:mx-0">
             <img class="" src="images/joinus.png" alt="" />
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000" class="font-sans text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
+        <div data-aos="fade-right" data-aos-duration="2000" class="font-judul text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
             <h2>
                 Pendaftaran dibuka <span class="font-bold">15-17 Juni 2021</span>.
                 Pilih acara yang ingin diikuti.
@@ -84,7 +84,7 @@
             rounded-2xl
             bg-card-0
             w-6/7 md:w-1/3 mx-auto md:mx-0
-            font-sans
+            font-judul
             text-white
             flex flex-col
             justify-between
@@ -129,7 +129,8 @@
                         apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
                         aja sumpah engga ngadi-ngadi terserah deh isi
                 </div>
-                <button type="button" class="
+                @if (Auth::check())
+                <a href="{{route('registMUN')}}" class="
               bg-signup-0
               px-2
               py-1
@@ -139,15 +140,36 @@
               self-start
               focus:bg-buttonactive-0
               mt-5 md:mt-0
+              font-judul
             ">
                     Register Here!
-                </button>
+            </a>
+
+            @else
+
+            <a href="{{route('signup1')}}" class="
+            bg-signup-0
+            px-2
+            py-1
+            text-sm text-white
+            font-bold font-navbar
+            rounded-full
+            self-start
+            focus:bg-buttonactive-0
+            mt-5 md:mt-0
+            font-judul
+          ">
+                  Register Here!
+          </a>
+          
+          @endif
+
             </div>
             <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300" class="
             rounded-2xl
             bg-card-0
             w-6/7 md:w-1/3 mx-auto md:mx-0
-            font-sans
+            font-judul
             text-white
             flex flex-col
             justify-between
@@ -192,7 +214,8 @@
                         apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
                         aja sumpah engga ngadi-ngadi terserah deh isi
                 </div>
-                <button type="button" class="
+                @if (Auth::check())
+                <a href="{{route('registMUN')}}" class="
               bg-signup-0
               px-2
               py-1
@@ -202,9 +225,30 @@
               self-start
               focus:bg-buttonactive-0
               mt-5 md:mt-0
+              font-judul
             ">
                     Register Here!
-                </button>
+            </a>
+
+            @else
+
+            <a href="{{route('signup1')}}" class="
+            bg-signup-0
+            px-2
+            py-1
+            text-sm text-white
+            font-bold font-navbar
+            rounded-full
+            self-start
+            focus:bg-buttonactive-0
+            mt-5 md:mt-0
+            font-judul
+          ">
+                  Register Here!
+          </a>
+          
+          @endif
+
             </div>
         </div>
     </div>
@@ -253,7 +297,7 @@
                             <div class="relative z-10 font-judul  text-lg md:text-3xl font-medium text-center">
                                 January
                             </div>
-                            <div class="text-center text-xs md:text-lg relative z-10 mt-0 md:mt-3 font-sans w-5/7 mx-auto">
+                            <div class="text-center text-xs md:text-lg relative z-10 mt-0 md:mt-3 font-judul w-5/7 mx-auto">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             </div>
                             <div
@@ -442,7 +486,7 @@
             <div class="w-12 ip:w-20 md:w-36 items-center">
                 <img class="object-contain" src="images/unknown.png" alt="" />
             </div>
-            <div class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/4 justify-start h-36">
+            <div class="flex flex-col text-foot-0 font-judul w-1/2 md:w-1/4 justify-start h-36">
                 <div class="font-semibold text-center text-xl pb-2 pt-10 md:pt-0"">About</div>
                 <div class=" text-xs font-thin text-center md:text-left">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -452,7 +496,7 @@
                 </div>
             </div>
             <div
-                class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                class="flex flex-col text-foot-0 font-judul w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
                 <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
                 <div class="text-xs font-thin text-center md:text-left">
                     Line : @sumunmantap <br />
@@ -461,7 +505,7 @@
                 </div>
             </div>
             <div
-                class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                class="flex flex-col text-foot-0 font-judul w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
                 <div class="font-semibold text-xl pb-2 pt-20 md:pt-0">About</div>
                 <div class="text-xs font-thin text-center md:text-left">
                     Lorem ipsum dolor sit aliqua <br />
