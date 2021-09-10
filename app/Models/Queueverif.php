@@ -14,5 +14,6 @@ class Queueverif extends Model
     protected $fillable = [
         'user_id',
         'tambahan',
+        'mun_id',
     ];
 }

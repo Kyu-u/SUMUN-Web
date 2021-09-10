@@ -28,8 +28,8 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin')->default(0);
             $table->integer('verified')->default(0);
             $table->integer('webinar_id')->default(0);
-            $table->string('mun_id')->nullable();
             $table->string('country')->nullable();
+            $table->string('mun_id')->nullable();
             $table->integer('transaction_id')->default(0);
             $table->timestamps();
         });

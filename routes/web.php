@@ -9,7 +9,6 @@ use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\verif;
 use App\Http\Controllers\StorageFileController;
-use App\Http\Controllers\Admin2Controller;
 use App\Http\Controllers\HomeController;
 use App\Models\User;
 
@@ -30,27 +29,10 @@ Route::post('/regis5',[registerController::class,'store5'])->name('regis5');
 Route::get('auth/google/callback', [registerController::class,'handleGoogleCallback'])->name('googleCallback');
 Route::get('auth/google', [registerController::class,'redirectToGoogle'])->name('googleRedirect');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
-Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
 Route::get('/regisweb', [HomeController::class, 'index'])->name('regisweb');
+Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
 
-
-
-Route::get('/', function (Request $request) {
-    
-    $user = User::where( function($query) use($request){
-                     return $request->mun_id ?
-                            $query->from('users')->where('id',$request->mun_id) : '';
-                })
-                ->with('mun')
-                ->get();
-     
-    $selected_id = [];
-    $selected_id['mun_id'] = $request->mun_id;
-
-    return view('admin2',compact('user','selected_id'));
-
-})->name('filter');
 
 /* Login Logout MUN */
 Route::get('/login',[LoginController::class,'showLoginForm'])->name('showLoginForm');
@@ -62,8 +44,9 @@ Route::get('/registerMUN',[registerController::class,'registMUN'])->name('regist
 Route::POST('/registerMUN/post', [registerController::class,'registMember'])->name('registMUN.post');
 
 /* Admin Verif */
+Route::post('/admin/assign', [AdminController::class, 'assignCountry'])->name('assignCountry');
 Route::post('/adminVerif-post', [AdminController::class, 'verify'])->name('verify.post');
-
+Route::get('/admin', [AdminController::class, 'adminAssign'])->name('adminAssign');
 /* User Verif */
 Route::get('/verifMUN', [verif::class, 'MUN'])->name('verifMUN.index');
 Route::get('/verifWebinar', [verif::class, 'Webinar'])->name('verifWebinar.index');
@@ -75,5 +58,6 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/merch', [HomeController::class, 'merch'])->name('merch');
 Route::get('/council', [HomeController::class, 'council'])->name('council');
 Route::get('/regisweb', [HomeController::class, 'regisweb'])->name('regisweb');
-
+Route::get('/verifNotRegist', [HomeController::class, 'verifNotRegist'])->name('verifNotRegist');
+Route::get('/currentlyRegistered', [HomeController::class, 'currentlyRegistered'])->name('currentlyRegistered');
 

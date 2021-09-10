@@ -3,12 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Auth;
 
 class HomeController extends Controller
 {
     public function index()
     {
         return view('dashboard');
+    }
+    public function profile()
+    {
+        $user = Auth::user();
+        return view('profile',['user' => $user]);
     }
     public function landing()
     {
@@ -29,5 +36,13 @@ class HomeController extends Controller
     public function regisweb()
     {
         return view('regisweb');
+    }
+    public function verifNotRegist()
+    {
+        return view('verifNotRegist');
+    }
+    public function currentlyRegistered()
+    {
+        return view('currentlyRegistered');
     }
 }
