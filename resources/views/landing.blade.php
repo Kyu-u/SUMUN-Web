@@ -143,7 +143,7 @@
                     Register Here!
                 </button>
             </div>
-            <div data-aos="fade-right" data-aos-duration="2000" class="
+            <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300" class="
             rounded-2xl
             bg-card-0
             w-6/7 md:w-1/3 mx-auto md:mx-0
@@ -305,7 +305,7 @@
                     <div class="relative p-5 bg-tablebg-0 rounded-xl">
                         <table class="table-fixed w-full border-separate text-white">
                             <tbody>
-                                <tr class=" text-center font-medium font-judul text-3xl h-16">
+                                <tr class=" text-center font-medium font-judul text-lg md:text-3xl h-16">
                                     <td class=" bg-time-0 rounded-md w-1/4">Time</td>
                                     <td class=" bg-timelinebot-0 rounded-md ">Day</td>
                                     <td class="bg-timelinebot-0 rounded-md">Day</td>

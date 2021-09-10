@@ -1,45 +1,46 @@
-@extends('layouts.signup ')
+@extends('layouts.navbarnotlogin ')
 
 @section('content')
+{{-- <img class="absolute top-0 z-10" src="images/batik.png" alt=""> --}}
 <section class="font-navbar ">
-  <div class="bg-main-0 py-36 flex justify-center text-white relative grid grid-cols-1 px-60">
-    <div class="grid-span-1 overflow-hidden rounded-lg relative text-white max-w-7xl min-w-min mx-auto">
-      <img src="images/bgbg.png" alt="">
-      <div class="absolute text-xl text-white top-1/16 left-1/2">
-        <h1 class="font-bold lg:text-5xl xl:text-8xl">Welcome <br>Back</h1>
+  <div class="bg-main-0 py-36 flex justify-center text-white relative grid grid-cols-1">
+    <div class="grid-span-1 overflow-hidden rounded-lg relative text-white max-w-7xl min-w-min w-3/4  md:w-2/3 lg:w-3/4 mx-auto">
+      <img class="flex md:hidden" src="images/bgbgm.png" alt="">
+      <img class="hidden md:flex" src="images/bgbg.png" alt="">
 
-        <h2 class="font-medium pt-2 pb-6 lg:text-sm xl:text-2xl">Please Log In to your account</h2>
+      <div class="absolute p-5 md:p-10 lg:p-16 flex flex-col md:right-0 top-0 w-full md:w-1/2 pt-10 md:pt-10 mt-6 md:mt-0 min-w-min">
+        <h1 class="font-bold text-base go:text-2xl md:text-lg lg:text-5xl xl:text-8xl">Welcome <br>Back</h1>
+
+        <h2 class="font-medium pt-2 pb-2 lg:pb-6 text-xs md:text-xs xl:text-2xl">Please Log In to your account</h2>
         @foreach ($errors->all() as $error)
         {{ $error }}<br />
         @endforeach
         <form class="flex flex-col" action="{{ route('login.post') }}" method="post">
           @csrf
-          <label class="pb-2 text-sm" for="Email" class="">Your Email</label>
-          <input class="rounded-lg lg:w-60 xl:w-96 px-4 py-2 lg:text-sm xl:text-xl" type="text" id="email" name="email"
+          <label class="pb-2 text-xs lg:text-sm" for="Email" class="">Your Email</label>
+          <input class="rounded-lg w-full  lg:w-60 xl:w-96 h-6 go:h-10 md:h-6 lg:h-8 px-4 py-2 text-xs md:text-sm xl:text-xl mr-10 md:m-0" type="text" id="email" name="email"
             placeholder="example@example.com">
-          <label class="py-2 text-sm" for="Password">Password</label>
-          <input class="rounded-lg lg:w-60 xl:w-96 px-4 py-2 lg:text-sm xl:text-xl" type="password" id="password"
+          <label class="py-2 text-xs lg:text-sm" for="Password">Password</label>
+          <input class="rounded-lg w-full lg:w-60 xl:w-96 h-6 go:h-10 md:h-6 lg:h-8 px-4 py-2 text-xs md:text-sm xl:text-xl mr-10 md:m-0" type="password" id="password"
             name="password" placeholder="example@example.com">
 
-          <div class="flex flex-row pt-6">
-            <button type="submit" class="lg:w-36 xl:w-56 bg-signup-0 rounded-lg py-1 lg:text-sm xl:text-xl">
+          <div class="flex flex-row pt-2 pt-3 lg:pt-6">
+            <button type="submit" class="w-10 flex-1 lg:flex-initial ip:w-16 md:w-24 lg:w-36 xl:w-56 h-6 go:h-8 md:h-6 lg:h-8 bg-signup-0 rounded-lg text-xs lg:text-sm xl:text-xl">
               Login
             </button>
 
-            <div class="px-4">
-              <button class="lg:w-20 xl:w-36 border-signup-0 border-2 py-1 rounded-lg lg:text-sm xl:text-xl">
+              <button class="w-16   ip:w-16 lg:w-20 xl:w-36 h-6  go:h-8 md:h-6 lg:h-8 border-2 border-signup-0 rounded-lg  text-xs lg:text-sm xl:text-xl ml-4 flex-1 md:flex-initial">
                 <a href="{{ route('signup1') }}">Sign Up</a>
               </button>
-            </div>
           </div>
-          <a class="lg:pl-36 xl:pl-70  text-white hover:text-signup-0 lg:text-xs xl:text-sm pt-4" href="">Forgot
+          <a class="lg:pl-36 xl:pl-70  text-white hover:text-signup-0 text-xs xl:text-sm pt-4" href="">Forgot
             password?</a>
 
         </form>
-        <img class="lg:w-60 xl:w-96 py-6 pt-10" src="images/orlog.png" alt="">
+        <img class="w-auto lg:w-60 xl:w-96 py-4 " src="images/orlog.png" alt="">
 
         <button class="">
-          <img class="xl:pt-2 lg:mx-26 xl:mx-44 lg:w-7 xl:w-10" src="images/google.png" alt="">
+          <img class="xl:pt-2 mx-auto w-5 lg:mx-26 xl:mx-44 lg:w-7 xl:w-10" src="images/google.png" alt="">
         </button>
       </div>
     </div>

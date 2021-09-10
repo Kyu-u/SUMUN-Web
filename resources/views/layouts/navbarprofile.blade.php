@@ -113,8 +113,25 @@
                             <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Council &
                                 Topic</a>
                             <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Schedule</a>
-                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Registration</a>
-                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Merchandise</a>
+                            <div class="flex flex-col">
+                                <button id="mobilenavbardropdownbtn" class="inline-flex items-center hover:text-signup-0 pb-2">
+                                  <span class="mr-4">Registration</span>
+                                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                  </svg>
+                                </button>
+                                <div id="mobilenavbardropdown" class="flex-col hidden items-end">
+                                  <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                    <a href="{{route('registMUN')}}">MUN</a>
+                                  </div>
+                                  <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                    <a href="{{route('regisweb')}}">Webinar</a>
+                                  </div>
+                                  <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                    <a href="#">Verif MUN</a>
+                                  </div>
+                                </div>
+                              </div>                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Merchandise</a>
                             <a class="block hover:text-signup-0 transition duration-300" href=""> {{Auth::user()->name}}</a>
                             <form method="POST" action="{{route('logout1')}}"
                                 class="block pb-2 hover:text-signup-0 transition duration-300">
@@ -295,6 +312,27 @@
                     })
                 })
             </script>
+            
+            <script>
+                window.addEventListener('DOMContentLoaded', () => {
+                
+                const mnbtn = document.querySelector('#mobilenavbardropdownbtn');
+                        const mnbd = document.querySelector('#mobilenavbardropdown')
+                      
+                        mnbtn.addEventListener('click', () => {
+                          console.log('test')
+                          
+                          if(mnbd.classList.contains('hidden')){
+                                mnbd.classList.remove('hidden');
+                                mnbd.classList.add('flex');
+                            }else{
+                                mnbd.classList.remove('flex');
+                                mnbd.classList.add('hidden');
+                            } 
+                            
+                        })
+                  })
+              </script>
 
             <script>
                 window.addEventListener('DOMContentLoaded', () => {

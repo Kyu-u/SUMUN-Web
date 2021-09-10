@@ -108,7 +108,12 @@ module.exports = {
 
       maxWidth: {
         'screen-3xl' : '1920px',
-      }
+      },
+
+      fontSize: {
+        xxs: ['0.65rem','1.15rem'],
+        xxxs: ['0.475rem','0.84rem']
+       },
       
     },
   },
