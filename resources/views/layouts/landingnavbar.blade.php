@@ -31,9 +31,9 @@
 </head>
 
 <body class="bg-main-0">
-  <div class="relative max-w-screen-3xl mx-auto">
+  <div  class="relative max-w-screen-3xl mx-auto">
   @if (Auth::check())
-  <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
+  <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-50">
             <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
               <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
 
@@ -63,9 +63,7 @@
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                             <a href="{{route('regisweb')}}">Webinar</a>
                         </div>
-                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">Verif Webinar</a>
-                        </div>
+
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                           <a href="#">Verif MUN</a>
                       </div>
@@ -107,8 +105,25 @@
                         <a class="block pb-2 hover:text-signup-0 " href="">About</a>
                         <a class="block pb-2 hover:text-signup-0" href="">Council & Topic</a>
                         <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
-                        <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
-                        <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
+                        <div class="flex flex-col">
+                          <button id="mobilenavbardropdownbtn" class="inline-flex items-center hover:text-signup-0 pb-2">
+                            <span class="mr-4">Registration</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                          </button>
+                          <div id="mobilenavbardropdown" class="flex-col hidden items-end">
+                            <div class="flex py-2 justify-center hover:text-dropdown-0 ">
+                              <a href="{{route('registMUN')}}">MUN</a>
+                            </div>
+                            <div class="flex py-2 justify-center hover:text-dropdown-0 ">
+                              <a href="{{route('regisweb')}}">Webinar</a>
+                            </div>
+                            <div class="flex py-2 justify-center hover:text-dropdown-0 ">
+                              <a href="#">Verif MUN</a>
+                            </div>
+                          </div>
+                        </div>                        <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
                         <a class="block hover:text-signup-0" href="">{{Auth::user()->name}}
                         </a>
                         <form method="POST" action="{{route('logout1')}}"
@@ -218,7 +233,7 @@
       </div>
 
     </nav> --}}
-    <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
+    <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-50">
       <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
         <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
 
@@ -235,7 +250,7 @@
           </div>
 
           <div class=" justify-self-center flex relative">
-              <button id="menu-btn2" class="inline-flex items-center hover:text-signup-0">
+              <button id="menu-btn2" class="inline-flex items-center line-through text-gray-700" disabled>
                   <span class="mr-4">Registration</span>
                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -295,7 +310,7 @@
                   <a class="block pb-2 hover:text-signup-0 " href="">About</a>
                   <a class="block pb-2 hover:text-signup-0" href="">Council & Topic</a>
                   <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
-                  <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
+                  <a class="block pb-2 line-through text-gray-700" href="" aria-disabled="true">Registration</a>
                   <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
                   <a class="block hover:text-signup-0" href="">Login</a>
 
@@ -392,6 +407,28 @@
 
         })
   </script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+  
+  const mnbtn = document.querySelector('#mobilenavbardropdownbtn');
+          const mnbd = document.querySelector('#mobilenavbardropdown')
+        
+          mnbtn.addEventListener('click', () => {
+            console.log('test')
+            
+            if(mnbd.classList.contains('hidden')){
+                  mnbd.classList.remove('hidden');
+                  mnbd.classList.add('flex');
+              }else{
+                  mnbd.classList.remove('flex');
+                  mnbd.classList.add('hidden');
+              } 
+              
+          })
+    })
+</script>
+
   <script>
     window.addEventListener('DOMContentLoaded', ()=> {
       
