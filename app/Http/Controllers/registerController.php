@@ -168,7 +168,7 @@ class registerController extends BaseController {
                     Auth::login($newUser);
                 }
      
-                return redirect('/');
+                return redirect('/landing');
             }
     
         } catch (Exception $e) {
@@ -197,10 +197,10 @@ class registerController extends BaseController {
         foreach($datas as $data){
             $user = User::where('username','=',$data['username'])->first();
             if(!$user){
-                return redirect('registerMUN')->withErrors('User not found');
+                return redirect('verifNotRegist');
             }
             if($user->verified==1){
-                return redirect('registerMUN')->withErrors('Ada user yang sedang diverifikasi');
+                return redirect('currentlyRegistered');
             }
             if($user->verified==2){
                 return redirect('registerMUN')->withErrors('Ada user sudah terverifikasi');
@@ -212,6 +212,7 @@ class registerController extends BaseController {
             Queueverif::create([
                 'user_id' => auth()->user()->id,
                 'tambahan' => $user->id,
+                'mun_id' => $data['council'],
             ]);
         }
         return redirect()->route('verifMUN.index')->with('success', 'Success');
