@@ -31,7 +31,14 @@
     <meta property="og:image"
         content="https://res.cloudinary.com/dxy6iowwg/image/upload/v1629339198/sumunlogo_irqixh.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-main-0">
@@ -41,16 +48,19 @@
             <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-10">
 
                 <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid relative z-10">
-                    <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
+                    <a href="{{route('landing')}}"
+                        class="link justify-self-center relative hover:text-signup-0">Home</a>
 
 
 
                     <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
 
-                    <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">Council</a>
+                    <a href="{{route('council')}}"
+                        class="link justify-self-center relative hover:text-signup-0">Council</a>
 
 
-                    <a href="{{route('landing')}}#timeline" class="link justify-self-center relative hover:text-signup-0">Schedule</a>
+                    <a href="{{route('landing')}}#timeline"
+                        class="link justify-self-center relative hover:text-signup-0">Schedule</a>
                     <div class="justify-self-center">
                         <img class="h-20" src="images/unknown.png" alt="" />
                     </div>
@@ -75,7 +85,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
+                    <a href="{{route('merch')}}"
+                        class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
 
                     <a href="" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->name}}</a>
@@ -114,25 +125,30 @@
                                 Topic</a>
                             <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Schedule</a>
                             <div class="flex flex-col">
-                                <button id="mobilenavbardropdownbtn" class="inline-flex items-center hover:text-signup-0 pb-2">
-                                  <span class="mr-4">Registration</span>
-                                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                  </svg>
+                                <button id="mobilenavbardropdownbtn"
+                                    class="inline-flex items-center hover:text-signup-0 pb-2">
+                                    <span class="mr-4">Registration</span>
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
                                 </button>
                                 <div id="mobilenavbardropdown" class="flex-col hidden items-end">
-                                  <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                    <a href="{{route('registMUN')}}">MUN</a>
-                                  </div>
-                                  <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                    <a href="{{route('regisweb')}}">Webinar</a>
-                                  </div>
-                                  <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                    <a href="#">Verif MUN</a>
-                                  </div>
+                                    <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                        <a href="{{route('registMUN')}}">MUN</a>
+                                    </div>
+                                    <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                        <a href="{{route('regisweb')}}">Webinar</a>
+                                    </div>
+                                    <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                        <a href="#">Verif MUN</a>
+                                    </div>
                                 </div>
-                              </div>                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Merchandise</a>
-                            <a class="block hover:text-signup-0 transition duration-300" href=""> {{Auth::user()->name}}</a>
+                            </div> <a class="block pb-2 hover:text-signup-0 transition duration-300"
+                                href="">Merchandise</a>
+                            <a class="block hover:text-signup-0 transition duration-300" href="">
+                                {{Auth::user()->name}}</a>
                             <form method="POST" action="{{route('logout1')}}"
                                 class="block pb-2 hover:text-signup-0 transition duration-300">
                                 @csrf
@@ -150,7 +166,7 @@
                 <img src="images/batik2.png" alt="" class="hidden md:block z-0 top-0 lg:-top-1/2  2xl:-top-40 absolute">
 
             </nav>
-            
+
             <div class="flex items-center justify-center bg-main-0 py-0 md:py-6 lg:py-2">
                 <div class="flex flex-col justify-center">
                     <h1 class="text-signup-0 text-2xl sm:text-5xl pb-10">
@@ -158,22 +174,26 @@
                     <div class="w-2/3 h-2 bg-signup-0 rounded-full self-center"></div>
                 </div>
             </div>
-            
+
             @else
 
             <div class="relative">
                 <nav class="bg-main-0 py-10 text-white font-navbar font-medium z-10">
                     <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
-                        <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
+                        <a href="{{route('landing')}}"
+                            class="link justify-self-center relative hover:text-signup-0">Home</a>
 
 
 
-                        <a href="{{route('about')}}" class="link justify-self-center relative hover:text-signup-0">About</a>
+                        <a href="{{route('about')}}"
+                            class="link justify-self-center relative hover:text-signup-0">About</a>
 
-                        <a href="{{route('council')}}" class="link justify-self-center relative hover:text-signup-0">Council</a>
-    
-    
-                        <a href="{{route('landing')}}#timeline" class="link justify-self-center relative hover:text-signup-0">Schedule</a>
+                        <a href="{{route('council')}}"
+                            class="link justify-self-center relative hover:text-signup-0">Council</a>
+
+
+                        <a href="{{route('landing')}}#timeline"
+                            class="link justify-self-center relative hover:text-signup-0">Schedule</a>
                         <div class="justify-self-center">
                             <img class="h-20" src="images/unknown.png" alt="" />
                         </div>
@@ -197,7 +217,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
+                        <a href="{{route('merch')}}"
+                            class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
                         <div id="navitems" class="justify-self-center flex gap-4 items-center text-sm col-span-2">
                             <a href={{ route('showLoginForm') }}
@@ -258,7 +279,10 @@
                 </nav>
             </div>
             @endif
-            @yield('content')
+            <div class="font-judul">
+                @yield('content')
+
+            </div>
 
 
 
@@ -312,7 +336,7 @@
                     })
                 })
             </script>
-            
+
             <script>
                 window.addEventListener('DOMContentLoaded', () => {
                 
@@ -332,7 +356,7 @@
                             
                         })
                   })
-              </script>
+            </script>
 
             <script>
                 window.addEventListener('DOMContentLoaded', () => {
