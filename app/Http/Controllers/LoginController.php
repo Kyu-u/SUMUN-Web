@@ -21,9 +21,12 @@ class LoginController extends BaseController
             'email' => 'required|email',
             'password' => 'required'
         ]);
-
-        if(!Auth::attempt($request->only('email', 'password'), $request->remember)){
-            return back()->with('status', 'Invalid login details');
+        
+        $user = User::where('email','=',$request->email)->first();
+        if($user->is_email_verified == 1){
+            if(!Auth::attempt($request->only('email', 'password'), $request->remember)){
+                return back()->with('status', 'Invalid login details');
+            }
         }
 
         return redirect()->route('landing');

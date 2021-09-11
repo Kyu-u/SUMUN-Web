@@ -32,6 +32,7 @@ Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('/adminVerif', [AdminController::class, 'verifIndex'])->name('admin.verif');
 Route::get('/regisweb', [HomeController::class, 'index'])->name('regisweb');
 Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
+Route::get('account/verify/{token}', [registerController::class, 'verifyAccount'])->name('user.verify'); 
 
 
 /* Login Logout MUN */

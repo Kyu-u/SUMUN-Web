@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Queueverif;
+use App\Models\UserVerify;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -14,6 +15,8 @@ use Illuminate\Http\Re;
 use Illuminate\Routing\Controller as BaseController;
 use Faker\Factory as Faker;
 use Socialite;
+use Str;
+use Mail; 
 
 class registerController extends BaseController {
 
@@ -67,7 +70,7 @@ class registerController extends BaseController {
             'name' => 'required',
             'username' => 'required|unique:users,username',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|confirmed',
+            'password' => 'required|confirmed|min:6',
         ]);
         
         $users = new User();
@@ -98,12 +101,23 @@ class registerController extends BaseController {
             'grade' => 'required',
             'major' => 'required',
         ]);
-
         $users = $request->session()->get('users');
         $users->fill($validatedData);
         $request->session()->put('users', $users);
         $users->save();
         $request->session()->forget('users');
+
+        $token = Str::random(64);
+        $user = User::where('username','=',$users->username)->first();
+        UserVerify::create([
+              'user_id' => $user->id, 
+              'token' => $token
+            ]);
+        
+        Mail::send('verificationEmail', ['token' => $token], function($message) use($user){
+            $message->to($user->email);
+            $message->subject('Email Verification Mail');
+        });
 
         return redirect()->route('landing');
     } 
@@ -120,7 +134,18 @@ class registerController extends BaseController {
         $request->session()->put('users', $users);
         $users->save();
         $request->session()->forget('users');
-
+        
+        $token = Str::random(64);
+        $user = User::where('username','=',$users->username)->first();
+        UserVerify::create([
+              'user_id' => $user->id, 
+              'token' => $token
+            ]);
+        
+        Mail::send('verificationEmail', ['token' => $token], function($message) use($user){
+            $message->to($user->email);
+            $message->subject('Email Verification Mail');
+        });
         return redirect()->route('landing');
     } 
 
@@ -174,6 +199,25 @@ class registerController extends BaseController {
         } catch (Exception $e) {
             dd($e->getMessage());
         }
+    }
+    public function verifyAccount($token)
+    {
+        $verifyUser = UserVerify::where('token', $token)->first();
+  
+        $message = 'Sorry your email cannot be identified.';
+  
+        if(!is_null($verifyUser) ){
+            $user = $verifyUser->user;
+              
+            if(!$user->is_email_verified) {
+                $verifyUser->user->is_email_verified = 1;
+                $verifyUser->user->save();
+                $message = "Your e-mail is verified. You can now login.";
+            } else {
+                $message = "Your e-mail is already verified. You can now login.";
+            }
+        }
+      return redirect()->route('showLoginForm')->with('message', $message);
     }
     public function registMUN()
     {
