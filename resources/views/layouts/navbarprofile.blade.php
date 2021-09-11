@@ -5,40 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
-        content="width=device-width, initial-scale=1.0,viewport-fit=cover,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="/css/app.css">
-
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover,minimum-scale=1,maximum-scale=1,user-scalable=no"">
+        <link rel=" stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Surabaya Model United Nations</title>
     <style>
         #menu-toggle:checked+#menu {
             display: block;
+            transitions: 0.5s;
         }
-    </style>
 
+    </style>
     <meta name="description"
         content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
     <meta name="keywords" content="Surabaya,MUN,SUMUN,Surabaya MUN,Conference">
-    <meta name="author" content="sumun">
+    <meta name="author" content="surabayamun">
     <link rel="shortcut icon" type="image/x-icon" href="images/surabayamunlogo.png">
     <link rel="apple-touch-icon" href="images/surabayamunlogo.png" sizes="128x128">
     <link rel="apple-touch-icon" href="images/surabayamunlogo.png" sizes="192x192">
+    <link rel="canonical" href="https://www.surabayamun.com/landing" />
     <meta property="og:title" content="Surabaya Model United Nations">
-    <meta property="og:site_name" content="sumun">
-    <meta property="og:url" content="sumun.com">
+    <meta property="og:site_name" content="surabayamun">
+    <meta property="og:url" content="surabayamun.com">
     <meta property="og:description"
         content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://res.cloudinary.com/dxy6iowwg/image/upload/v1629339198/sumunlogo_irqixh.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-main-0">
@@ -81,7 +74,7 @@
                                 <a href="{{route('regisweb')}}">Webinar</a>
                             </div>
                             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                <a href="#">Verif</a>
+                                <a href="{{route('verifMUN.index')}}">Verif MUN</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +82,8 @@
                         class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
 
-                    <a href="" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->name}}</a>
+                    <a href="{{route('profile')}}"
+                        class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->username}}</a>
 
                     <form method="POST" action="{{route('logout1')}}"
                         class="justify-self-center flex  col-span-1 items-center hover:text-signup-0 transition duration-300">
@@ -119,11 +113,10 @@
 
                     <div class="hidden py-6 w-full  " id="menu">
                         <div class="flex flex-col justify-between items-end">
-                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Home</a>
-                            <a class="block pb-2 hover:text-signup-0 transition duration-300 " href="">About</a>
-                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Council &
-                                Topic</a>
-                            <a class="block pb-2 hover:text-signup-0 transition duration-300" href="">Schedule</a>
+                            <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Home</a>
+                            <a class="block pb-2 hover:text-signup-0 " href="{{route('about')}}">About</a>
+                            <a class="block pb-2 hover:text-signup-0" href="{{route('council')}}">Council & Topic</a>
+                            <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Schedule</a>
                             <div class="flex flex-col">
                                 <button id="mobilenavbardropdownbtn"
                                     class="inline-flex items-center hover:text-signup-0 pb-2">
@@ -142,13 +135,13 @@
                                         <a href="{{route('regisweb')}}">Webinar</a>
                                     </div>
                                     <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                        <a href="#">Verif MUN</a>
+                                        <a href="{{route('verifMUN.index')}}">Verif MUN</a>
                                     </div>
                                 </div>
-                            </div> <a class="block pb-2 hover:text-signup-0 transition duration-300"
-                                href="">Merchandise</a>
-                            <a class="block hover:text-signup-0 transition duration-300" href="">
-                                {{Auth::user()->name}}</a>
+                            </div>
+                            <a class="block pb-2 hover:text-signup-0" href="{{route('merch')}}">Merchandise</a>
+                            <a class="block hover:text-signup-0 transition duration-300" href="{{route('profile')}}">
+                                {{Auth::user()->username}}</a>
                             <form method="POST" action="{{route('logout1')}}"
                                 class="block pb-2 hover:text-signup-0 transition duration-300">
                                 @csrf
@@ -261,13 +254,35 @@
 
                         <div class="hidden py-6 w-full  " id="menu">
                             <div class="flex flex-col justify-between items-end">
-                                <a class="block pb-2 hover:text-signup-0" href="">Home</a>
-                                <a class="block pb-2 hover:text-signup-0 " href="">About</a>
-                                <a class="block pb-2 hover:text-signup-0" href="">Council & Topic</a>
-                                <a class="block pb-2 hover:text-signup-0" href="">Schedule</a>
-                                <a class="block pb-2 hover:text-signup-0" href="">Registration</a>
-                                <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
-                                <a class="block hover:text-signup-0" href="">Login</a>
+                                <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Home</a>
+                                <a class="block pb-2 hover:text-signup-0 " href="{{route('about')}}">About</a>
+                                <a class="block pb-2 hover:text-signup-0" href="{{route('council')}}">Council &
+                                    Topic</a>
+                                <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Schedule</a>
+                                <div class="flex flex-col">
+                                    <button id="mobilenavbardropdownbtn"
+                                        class="inline-flex items-center hover:text-signup-0 pb-2" disabled>
+                                        <span class="mr-4">Registration</span>
+                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </button>
+                                    <div id="mobilenavbardropdown" class="flex-col hidden items-end">
+                                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                            <a href="{{route('registMUN')}}">MUN</a>
+                                        </div>
+                                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                            <a href="{{route('regisweb')}}">Webinar</a>
+                                        </div>
+                                        <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                            <a href="{{route('verifMUN.index')}}">Verif MUN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="block pb-2 hover:text-signup-0" href="{{route('merch')}}">Merchandise</a>
+                                <a class="block hover:text-signup-0" href="{{route('showLoginForm')}}">Login</a>
                             </div>
 
                         </div>
@@ -284,7 +299,62 @@
 
             </div>
 
-
+            <footer class="relative bg-main-0 ">
+                <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
+                <div class="
+                  flex
+                  flex-col
+                  md:flex-row
+                  justify-evenly
+                  items-center
+                  w-full
+                  h-full
+                  pt-20
+                  max-w-7xl
+                  mx-auto
+                  pb-20
+                  relative
+                 
+                ">
+                    <div class="w-20 md:w-36 items-center">
+                        <img class="object-contain" src="images/unknown.png" alt="" />
+                    </div>
+                    <div
+                        class="flex flex-col text-foot-0 font-sans w-2/3 md:w-1/4 justify-center items-center md:items-start md:justify-start h-36">
+                        <div class="font-semibold text-xl pb-2 pt-10 md:pt-0">About</div>
+                        <div class="text-xs font-light text-center md:text-left">
+                            Surabaya MUN, is the first International Model United Nations in Surabaya held by ITS MUN
+                            Club supported by Institut Teknologi Sepuluh Nopember.
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                        <div class="font-semibold text-xl pb-2 pt-20  md:pt-0">Social Media</div>
+                        <div class="font-thin text-center md:text-left pb-20 flex flex-col">
+                            <a href="https://www.instagram.com/surabayamun/" target="_blank"
+                                class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Linkedin</a>
+                            <a href="https://www.linkedin.com/company/surabaya-model-united-nations/mycompany/"
+                                target="_blank"
+                                class="text-white hover:text-signup-0 transform translate duration-300 text-lg px-4 md:px-0 py-0 md:py-2 font-light">Instagram</a>
+                            <a href="https://vt.tiktok.com/ZSJKm7RkF/" target="_blank"
+                                class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Tiktok</a>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
+                        <div class="font-semibold text-xl pb-2  md:pt-0">Contact Us</div>
+                        <div class="text-xs font-thin text-center md:text-left">
+                            <a href="mailto:surabayamun@gmail.com"
+                                class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />
+                <div class="flex items-center justify-center  mx-auto max-w-7xl relative">
+                    <div class="text-foot-0 font-thin  py-6 text-xxs md:text-md">Surabaya MUN 2021. All Rights Reserved
+                    </div>
+                </div>
+            </footer>
 
             <script>
                 window.addEventListener('DOMContentLoaded', () => {
@@ -301,6 +371,7 @@
                         }
                     })
                 })
+
             </script>
 
             <script>
@@ -318,6 +389,7 @@
                         }
                     })
                 })
+
             </script>
 
             <script>
@@ -335,27 +407,29 @@
                         }
                     })
                 })
+
             </script>
 
             <script>
                 window.addEventListener('DOMContentLoaded', () => {
-                
-                const mnbtn = document.querySelector('#mobilenavbardropdownbtn');
-                        const mnbd = document.querySelector('#mobilenavbardropdown')
-                      
-                        mnbtn.addEventListener('click', () => {
-                          console.log('test')
-                          
-                          if(mnbd.classList.contains('hidden')){
-                                mnbd.classList.remove('hidden');
-                                mnbd.classList.add('flex');
-                            }else{
-                                mnbd.classList.remove('flex');
-                                mnbd.classList.add('hidden');
-                            } 
-                            
-                        })
-                  })
+
+                    const mnbtn = document.querySelector('#mobilenavbardropdownbtn');
+                    const mnbd = document.querySelector('#mobilenavbardropdown')
+
+                    mnbtn.addEventListener('click', () => {
+                        console.log('test')
+
+                        if (mnbd.classList.contains('hidden')) {
+                            mnbd.classList.remove('hidden');
+                            mnbd.classList.add('flex');
+                        } else {
+                            mnbd.classList.remove('flex');
+                            mnbd.classList.add('hidden');
+                        }
+
+                    })
+                })
+
             </script>
 
             <script>
@@ -389,34 +463,36 @@
                         }
                     })
                 })
+
             </script>
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
                 AOS.init();
                 // You can also pass an optional settings object
-// below listed default settings
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+                // below listed default settings
+                AOS.init({
+                    // Global settings:
+                    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                    initClassName: 'aos-init', // class applied after initialization
+                    animatedClassName: 'aos-animate', // class applied on animation
+                    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-});
+                    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                    offset: 120, // offset (in px) from the original trigger point
+                    delay: 0, // values from 0 to 3000, with step 50ms
+                    duration: 400, // values from 0 to 3000, with step 50ms
+                    easing: 'ease', // default easing for AOS animations
+                    once: false, // whether animation should happen only once - while scrolling down
+                    mirror: false, // whether elements should animate out while scrolling past them
+                    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+                });
+
             </script>
 </body>
 

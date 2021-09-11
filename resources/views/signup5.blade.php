@@ -19,7 +19,7 @@
       </div>
 
 
-      <form method="post" action="" class=" pt-5 flex flex-col">
+      <form method="POST" action="{{ route('regis5') }}" class=" pt-5 flex flex-col">
         @csrf
         <label class="pb-2 pt-2 text-base md:text-xl text-white" for="university">University</label>
         <input class=" outline-none px-3 w-full md:h-10 lg:h-auto lg:w-96  rounded-md text-sm py-4 " type="text"
@@ -46,10 +46,12 @@
             Back
           </div>
 
-          <button type="button"
-            class="bg-signup-0 text-white text-md md:text-xl font-semibold font-sans w-20 h-7 md:w-30 md:h-10 lg:w-40 lg:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
-            Submit
-          </button>
+          <a href="{{ route('landing')}} ">
+            <button type="submit"
+              class="bg-signup-0 text-white text-md md:text-xl font-semibold font-sans w-20 h-7 md:w-30 md:h-10 lg:w-40 lg:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+              Submit
+            </button>
+          </a>
 
         </div>
       </form>
