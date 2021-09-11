@@ -7,7 +7,8 @@
             <img class="w-1/2" src="images/registmun.png" alt="">
 
             @if($errors->any())
-            <h4 class='text-red-600'>{{$errors->first()}}</h4>
+            
+            <h4 class='text-white font-semibold border-2 rounded-md w-auto px-4 py-2 border-red-600 mt-10'>{{$errors->first()}}</h4>
             @endif
             <form method="post" action="{{route('registMUN.post')}}" class="bg-main-0 px-10 xl:px-40 py-20 ">
                 @csrf

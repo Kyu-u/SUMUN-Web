@@ -1,4 +1,4 @@
-@extends('layouts.signup ')
+@extends('layouts.navbarnotlogin ')
 
 @section('content')
 

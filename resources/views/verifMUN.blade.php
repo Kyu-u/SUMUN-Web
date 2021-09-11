@@ -30,14 +30,33 @@
                             <h1 class="text-sm md:text-xl font-bold">
                                 Total
                             </h1>
-
+                            
                             <p class="text-xs md:text-md pt-4">
-                                {{$total}}
+                                
+                                Rp. {{$total}},00 <span class="px-2">or</span> USD {{round($total/14258,2)}}$
                             </p>
+
                         </div>
                     </div>
                 </div>
 
+            </div>
+            <div
+                class="pt-4 text-white text-lg ip:text-xl tracking-widest md:text-2xl flex justify-center items-center">
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li class="border-2 rounded-md w-auto px-4 py-2 border-red-600 font-semibold">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @else
+                <div
+                    class="pt-4 text-signup-0 text-lg ip:text-xl tracking-widest md:text-2xl flex justify-center items-center">
+                    Image uploaded, wait admin to verif
+                </div>
+                @endif
             </div>
 
         </div>
@@ -46,15 +65,6 @@
     <!-- END NOREK-->
 
     <div class="bg-main-0 flex flex-col px-2 md:px-20  justify-center py-10 md:py-40 ">
-        @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
         <form method="POST" enctype="multipart/form-data" class='relative z-10' action="{{route('verif.post')}}">
             @csrf
             <div class=" flex flex-col md:flex-row justify-evenly items-center relative z-10">

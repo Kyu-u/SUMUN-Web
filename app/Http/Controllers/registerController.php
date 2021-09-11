@@ -183,14 +183,8 @@ class registerController extends BaseController {
                     Auth::login($finduserEmail);
                 }
                 else{
-                    $newUser = User::create([
-                        'name' => $user->name,
-                        'email' => $user->email,
-                        'google_id'=> $user->id,
-                        'password' => encrypt('123456dummy')
-                    ]);
-        
-                    Auth::login($newUser);
+                    return redirect('/landing')->withErrors('User not found');
+
                 }
      
                 return redirect('/landing');
@@ -241,10 +235,10 @@ class registerController extends BaseController {
         foreach($datas as $data){
             $user = User::where('username','=',$data['username'])->first();
             if(!$user){
-                return redirect('verifNotRegist');
+                return redirect('registerMUN')->withErrors('User not found');
             }
             if($user->verified==1){
-                return redirect('currentlyRegistered');
+                return redirect('registerMUN')->withErrors('Ada user yang sedang diverifikasi');
             }
             if($user->verified==2){
                 return redirect('registerMUN')->withErrors('Ada user sudah terverifikasi');

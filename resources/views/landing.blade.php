@@ -36,8 +36,8 @@
     <!-- Sponsors -->
 
     <div id="sponsors" class="max-w-5xl lg:max-w-7xl pt-20 mx-auto relative">
-        <h2 class="text-signup-0 opacity-70 font-navbar text-center text-2xl pb-10">
-            Sponsored by
+        <h2 class="text-signup-0 opacity-70 font-navbar text-center md:text-4xl font-semibold lg:text-6xl pb-10">
+            No Sponsors Yet
         </h2>
         <!-- <div class="grid grid-rows-2 gap-8 pt-24">
         <div class="grid grid-cols-5 gap-12 justify-items-center">
@@ -54,17 +54,7 @@
           <img class="self-center w-1/2" src="its.png" alt="" />
         </div>
       </div> -->
-        <div class="flex flex-wrap justify-evenly gap-x-10 gap-y-16">
-            <img class="self-center w-1/7" src="images/coke.png" alt="" />
-            <img class="self-center w-1/7" src="images/shangri.png" alt="" />
-            <img class="self-center w-1/7" src="images/bni.png" alt="" />
-            <img class="self-center w-1/7" src="images/its.png" alt="" />
-            <img class="self-center w-1/7" src="images/coke.png" alt="" />
-            <img class="self-center w-1/7" src="images/bni.png" alt="" />
-            <img class="self-center w-1/7" src="images/its.png" alt="" />
-            <img class="self-center w-1/7" src="images/its.png" alt="" />
-            <img class="self-center w-1/7" src="images/its.png" alt="" />
-        </div>
+
     </div>
 
     <!-- Join Us -->
@@ -419,10 +409,10 @@
 
     <footer class="relative">
         <div class="bg-gradient-to-t from-footgr-0 absolute w-full h-full opacity-50"></div>
-        <h2 class="text-center text-lg text-signup-0 go:hidden font-semibold opacity-80">Partnership & Media Partner</h2>
+        <h2 class="text-center text-lg text-signup-0 font-semibold opacity-80">Partnership & Media Partner</h2>
         <div class="grid grid-cols-2 max-w-7xl mx-auto md:gap-x-20 mt-8 go:mt-20 mb-20">
             <div class="flex flex-col">
-                <div class="
+                {{-- <div class="
               font-semibold
               text-lg md:text-3xl text-signup-0
               opacity-80
@@ -433,7 +423,7 @@
               justify-center
             ">
                     Partnership
-                </div>
+                </div> --}}
                 <div class="flex flex-wrap gap-x-7 gap-y-5 justify-evenly">
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
@@ -446,7 +436,7 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <div class="
+                {{-- <div class="
               font-semibold
               text-lg md:text-3xl text-signup-0
               opacity-80
@@ -457,7 +447,7 @@
               justify-center
             ">
                     Partnership
-                </div>
+                </div> --}}
                 <div class="flex flex-wrap gap-x-7 gap-y-5 justify-evenly">
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />
                     <img class="self-center w-1/7" src="images/coke.png" alt="" />

@@ -1,4 +1,4 @@
-@extends('layouts.signup ')
+@extends('layouts.navbarnotlogin ')
 
 @section('content')
 
@@ -11,10 +11,10 @@
       Back
     </div>
     <div class="absolute p-10 lg:p-16 flex flex-col md:right-0 top-0 w-full md:w-1/2 pt-20 md:pt-10 mt-6 md:mt-0">
-      <div class="text-white font-sans font-semibold text-3xl md:text-4xl ">
+      <div class="text-white font-sans font-semibold text-xl md:text-3xl lg::text-4xl ">
         Create a <br> New Account
       </div>
-      <div class="text-white font-sans font-semibold text-xl md:text-3xl pt-4">
+      <div class="text-white font-sans font-semibold text-lg md:text-xl lg:text-3xl pt-4">
         *Senior High School Student
       </div>
 

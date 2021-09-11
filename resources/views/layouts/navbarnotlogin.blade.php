@@ -261,7 +261,7 @@
         <div class="text-xs">
           <h2>or</h2>
         </div>
-        <a href="" class="
+        <a href="{{route('signup1')}}" class="
                   bg-signup-0
                   px-10
                   py-1
