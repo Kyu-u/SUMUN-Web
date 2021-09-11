@@ -39,9 +39,9 @@
         </form>
         <img class="w-auto lg:w-60 xl:w-96 py-4 " src="images/orlog.png" alt="">
 
-        <button class="">
+        <a href="{{route('googleRedirect')}}" class="">
           <img class="xl:pt-2 mx-auto w-5 lg:mx-26 xl:mx-44 lg:w-7 xl:w-10" src="images/google.png" alt="">
-        </button>
+        </a>
       </div>
     </div>
   </div>

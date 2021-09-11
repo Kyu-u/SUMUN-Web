@@ -75,13 +75,13 @@
             </div>
 
             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-              <a href="#">Verif MUN</a>
+              <a href="{{route('verifMUN.index')}}">Verif MUN</a>
             </div>
           </div>
         </div>
         <a href="{{route('merch')}}" class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
-        <a href="" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->name}}</a>
+        <a href="" class="link text-center justify-self-center relative hover:text-signup-0">{{Auth::user()->username}}</a>
 
         <form method="POST" action="{{route('logout1')}}"
           class="justify-self-center flex  col-span-1 items-center hover:text-signup-0 transition duration-300">
@@ -129,11 +129,11 @@
                   <a href="{{route('regisweb')}}">Webinar</a>
                 </div>
                 <div class="flex py-2 justify-center hover:text-dropdown-0 ">
-                  <a href="#">Verif MUN</a>
+                  <a href="{{route('verifMUN.index')}}">Verif MUN</a>
                 </div>
               </div>
             </div> <a class="block pb-2 hover:text-signup-0" href="">Merchandise</a>
-            <a class="block hover:text-signup-0" href="">{{Auth::user()->name}}
+            <a class="block text-center hover:text-signup-0" href="{{route('profile')}}">{{Auth::user()->username}}
             </a>
             <form method="POST" action="{{route('logout1')}}"
               class="block pb-2 hover:text-signup-0 transition duration-300">
@@ -282,7 +282,7 @@
         <div class="text-xs">
           <h2>or</h2>
         </div>
-        <a href="" class="
+        <a href="{{route('signup1')}}" class="
                   bg-signup-0
                   px-10
                   py-1
@@ -540,11 +540,11 @@
             <div class="flex flex-col text-white">
                 <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
                 <input class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" type="text"
-                    id="Username" name="Username" placeholder="Username">
+                    id="Username" name="username[]" placeholder="Username">
                 <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
                     class="">Council</label>
                 <select class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" id="Council"
-                    name="Council">
+                    name="council[]">
                     <option value="UNDP">UNDP</option>
                     <option value="UNEP">UNEP</option>
                     <option value="UNSC">UNSC</option>

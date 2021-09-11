@@ -19,10 +19,10 @@
             click the button  to register :
         </h3>
         <div class="flex flex-col items-center justify-center ">
-            <a href=" " class="py-1 text-white hover:text-signup-0 transition duration-300
+            <a href="{{route('registMUN')}}" class="py-1 text-white hover:text-signup-0 transition duration-300
             py-1 text-white hover:text-signup-0 transition duration-300">  Surabaya Model United Nations </a>
 
-            <a href="" class="py-1 text-white hover:text-signup-0 transition duration-300
+            <a href="{{route('regisweb')}}" class="py-1 text-white hover:text-signup-0 transition duration-300
             py-1 text-white hover:text-signup-0 transition duration-300">Webinar</a>
         </div>
 

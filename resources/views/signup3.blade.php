@@ -1,4 +1,4 @@
-@extends('layouts.signup ')
+@extends('layouts.navbarnotlogin ')
 
 @section('content')
 
@@ -20,7 +20,7 @@
 
       <a href={{ route('signup4') }}>
         <button type="button"
-          class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-full md:w-80 h-14 rounded-md self-center mt-16">
+          class="bg-signup-0 hover:bg-buttonactive-0  text-white text-xl font-semibold font-sans w-full md:w-80 h-14 rounded-md self-center mt-10 md:mt-12 lg:mt-16">
           Senior High School Student
         </button>
       </a>
@@ -32,7 +32,7 @@
         </button>
       </a>
 
-      <div class="flex justify-between w-96 pt-20">
+      <div class="flex justify-between w-96 pt-5 md:pt-10 lg:pt-20">
 
         <div class="flex text-white text-xl font-semibold font-sans gap-x-5 items-center">
           <button type="button" onclick="javascript:history.back()"><img class="  w-4 h-4 md:w-8 md:h-8 " src="images/back.png"

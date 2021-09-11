@@ -31,14 +31,14 @@
                     @if($user->mun_id)
                     {{$user->mun_id}}
                     @else
-                    -
+                    Not yet
                     @endif
                 </p>
                 <p class="py-2">
                     @if($user->country)
                     {{$user->country}}
                     @else
-                    -
+                    Not yet
                     @endif
                 </p>
             </ul>

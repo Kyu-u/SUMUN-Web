@@ -13,19 +13,18 @@ class verif extends Controller
     {
         $user = auth()->user();
         if ($user->verified == 2){
-            echo('verified');
-            return; 
+            return redirect('profile');
         }
         if (Queueverif::where('user_id','=',$user->id)->exists()){
             $users = Queueverif::where('user_id','=',$user->id)->get();
-            $price = $users->count() * 60000;
+            $price = $users->count() * 80000;
             return view('verifMUN',['total'=> $price]);
         }
         if (Queueverif::where('tambahan','=',$user->id)->exists()){
-            echo('wait');
-            return; 
+            return redirect('currentlyRegistered');
+
         }
-        else return redirect('registerMUN');
+        else return redirect('verifNotRegist');
         
     }
     public function Webinar()
