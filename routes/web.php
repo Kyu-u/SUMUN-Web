@@ -12,7 +12,7 @@ use App\Http\Controllers\StorageFileController;
 use App\Http\Controllers\HomeController;
 use App\Models\User;
 
-Route::get('/landing',[HomeController::class,'landing'])->name('landing');
+Route::get('/',[HomeController::class,'landing'])->name('landing');
 Route::get('/register',[registerController::class,'index'])->name('signup1');
 Route::get('/forgot',[ForgotPasswordController::class,'index'])->name('forgot');
 Route::get('/forgot2',[ForgotPasswordController::class,'index2'])->name('forgot2');
