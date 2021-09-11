@@ -183,11 +183,11 @@ class registerController extends BaseController {
                     Auth::login($finduserEmail);
                 }
                 else{
-                    return redirect('/landing')->withErrors('User not found');
+                    return redirect('landing')->withErrors('User not found');
 
                 }
      
-                return redirect('/landing');
+                return redirect('landing');
             }
     
         } catch (Exception $e) {

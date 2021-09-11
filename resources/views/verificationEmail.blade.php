@@ -1,40 +1,5 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-	xmlns:o="urn:schemas-microsoft-com:office:office">
-
-<head>
-	<!--[if gte mso 9]>
-	<xml>
-		<o:OfficeDocumentSettings>
-		<o:AllowPNG/>
-		<o:PixelsPerInch>96</o:PixelsPerInch>
-		</o:OfficeDocumentSettings>
-	</xml>
-	<![endif]-->
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="format-detection" content="date=no" />
-	<meta name="format-detection" content="address=no" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="x-apple-disable-message-reformatting" />
-	<!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-		rel="stylesheet">
-	<!--<![endif]-->
-	<title>Email Template</title>
-	<!--[if gte mso 9]>
-	<style type="text/css" media="all">
-		sup { font-size: 100% !important; }
-	</style>
-	<![endif]-->
-
-
+<body class="body"
+	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#469766; -webkit-text-size-adjust:none;">
 	<style type="text/css" media="screen">
 		/* Linked Styles */
 		body {
@@ -149,10 +114,6 @@
 			}
 		}
 	</style>
-</head>
-
-<body class="body"
-	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#469766; -webkit-text-size-adjust:none;">
 	<table width="50%" border="0" cellspacing="0" cellpadding="0" style="margin: auto; padding:40px 0; ">
 		<tbody>
 			<tr>
@@ -173,16 +134,9 @@
 											<tr>
 												<td
 													style="color:white;font-family:'Cabin',sans-serif;font-size:14px;line-height:26px;text-align:center;padding-bottom:20px">
-													Click the link bellow to verify your email and start your journey in
-													Surabaya MUN
+													Click the link bellow to verify your email
 												</td>
 											</tr>
-
-
-
-
-
-
 											<tr>
 												<td align="center" ">
 										<table border=" 0" cellspacing="0" cellpadding="0">
@@ -191,8 +145,8 @@
 												<td
 													style=" background:#469766;font-family:'Muli',Arial,sans-serif;font-size:14px;line-height:18px;padding:12px 30px;text-align:center;border-radius:10px 10px 10px 10px;font-weight:bold">
 													<a href="{{ route('user.verify', $token) }}"><span
-															style="color:#ffffff;text-decoration:none">Claim
-															Reward</span></a>
+															style="color:#ffffff;text-decoration:none">Verify</span>
+													</a>
 												</td>
 											</tr>
 										</tbody>
@@ -206,5 +160,3 @@
 
 
 </body>
-
-</html>

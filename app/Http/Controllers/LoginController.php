@@ -36,6 +36,6 @@ class LoginController extends BaseController
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('landing');
+        return redirect()->route('landing');
     }
 }
