@@ -153,62 +153,42 @@
 
 <body class="body"
 	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#469766; -webkit-text-size-adjust:none;">
-	<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#469766">
-		<tr>
-			<td align="center" valign="top">
-				<table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+	<table width="50%" border="0" cellspacing="0" cellpadding="0" style="margin: auto; padding:40px 0; ">
+		<tbody><tr>
+			<td style="padding-bottom:10px ">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#57CA85" style="border-radius:10px 10px 10px 10px;">
+					<tbody>
 					<tr>
-						<td class="td container"
-							style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; margin:0; font-weight:normal; padding:180px 0px; ">
-							<!-- Header -->
-							<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin: auto;">
-								<tr>
-									<td class="p30-15" style="padding: 0px 30px 30px 30px;">
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<th class="column-empty" width="1"
-													style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
-												</th>
-												
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- END Header -->
-
-							<!-- Intro -->
+						<td style="padding:20px 77px ">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tbody><tr>
+									<td style="color:white;font-family:'Cabin',sans-serif;font-size:30px;line-height:34px;text-align:center;padding-bottom:20px">
+										Reset password
+</td>
+								</tr>
 								<tr>
-									<td style="padding-bottom: 10px; justify-content: center; display:flex; align-items: center;">
-										<table width="75%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<td class="tbrr p30-15"
-													style="padding: 60px 30px;  background: #57CA85;"
-													>
-													<table width="100%" border="0" cellspacing="0" cellpadding="0">
-														<tr style="display:flex; flex-direction:column;">
-															<td class="h1 pb25"
-																style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:24px; line-height:30px; text-align:center; ">
-																Reset password
-																</td>
-															<td style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:12px; line-height:22px; text-align:center; padding:20px 0 10px 0; ">
-																Click the link bellow to reset your password.
-															</td>
-															<td style="padding:10px 0; width: 50%; margin:auto; background-color: #469766; display:flex; justify-content:center; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:22px; text-align:center; padding:10px 0; ">
-																<a href="{{ route('reset.password.get', $token) }}" style="color:white;">Reset Password</a>
-															</td>
-															
-														</tr>
-														
-														<!-- END Button -->
-													</table>
-												</td>
+									<td style="color:white;font-family:'Cabin',sans-serif;font-size:14px;line-height:26px;text-align:center;padding-bottom:20px">
+										Click the link bellow to reset your password.
+</td>
+								</tr>
+
+								
+
+								
+
+								
+								<tr>
+									<td align="center" ">
+										<table border="0" cellspacing="0" cellpadding="0">
+											<tbody><tr>
+												<td style=" background:#469766;font-family:'Muli',Arial,sans-serif;font-size:14px;line-height:18px;padding:12px 30px;text-align:center;border-radius:10px 10px 10px 10px;font-weight:bold">
+													<a href="{{ route('reset.password.get', $token) }}"span style="color:#ffffff;text-decoration:none">Claim Reward</span></a></td>
 											</tr>
-										</table>
+										</tbody></table>
 									</td>
 								</tr>
-							</table>
+								
+							</tbody></table>
 							<!-- END Intro -->
 
 							
