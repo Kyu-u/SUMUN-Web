@@ -60,12 +60,10 @@
                 src="images/back.png" alt=""></button>
             Back
           </div>
-          <a href="{{ route('landing')}} ">
             <button type="submit"
               class="bg-signup-0 text-white text-md md:text-xl font-semibold font-sans w-20 h-7 md:w-30 md:h-10 lg:w-40 lg:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
               Submit
             </button>
-          </a>
 
         </div>
 

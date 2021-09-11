@@ -152,7 +152,7 @@
 </head>
 
 <body class="body"
-	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#469766; -webkit-text-size-adjust:none;">
+	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; -webkit-text-size-adjust:none;">
 	<table width="50%" border="0" cellspacing="0" cellpadding="0" style="margin: auto; padding:40px 0; ">
 		<tbody><tr>
 			<td style="padding-bottom:10px ">

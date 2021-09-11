@@ -45,4 +45,8 @@ class HomeController extends Controller
     {
         return view('currentlyRegistered');
     }
+    public function waitemail()
+    {
+        return view('waitemail');
+    }
 }
