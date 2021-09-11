@@ -15,7 +15,7 @@
 
         <div class="flex items-center justify-between py-10">
             <div class="w-auto bg-signup-0 rounded-xl">
-                <a href="" class="px-4 py-2 ">Home</a>
+                <a href="{{route('landing')}}" class="px-4 py-2 ">Home</a>
             </div>
 
 

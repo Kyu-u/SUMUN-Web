@@ -1,5 +1,5 @@
 <body class="body"
-	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#469766; -webkit-text-size-adjust:none;">
+	style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; -webkit-text-size-adjust:none;">
 	<style type="text/css" media="screen">
 		/* Linked Styles */
 		body {
@@ -8,7 +8,6 @@
 			display: block !important;
 			min-width: 100% !important;
 			width: 100% !important;
-			background: #001736;
 			-webkit-text-size-adjust: none
 		}
 

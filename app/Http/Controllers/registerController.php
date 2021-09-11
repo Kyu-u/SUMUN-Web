@@ -119,13 +119,14 @@ class registerController extends BaseController {
             $message->subject('Email Verification Mail');
         });
 
-        return redirect()->route('landing');
+        return redirect()->route('waitemail');
     } 
 
     public function store5(Request $request)
     {
         $validatedData = $request->validate([
             'university' => 'required',
+            'grade' => 'required',
             'major' => 'required',
         ]);
 
@@ -146,7 +147,7 @@ class registerController extends BaseController {
             $message->to($user->email);
             $message->subject('Email Verification Mail');
         });
-        return redirect()->route('landing');
+        return redirect()->route('waitemail');
     } 
 
     public function redirectToGoogle()

@@ -51,7 +51,7 @@ class verif extends Controller
                 "file_path" => $request->file->hashName()
             ]);
             $verif->save(); 
-            return back();
+            return redirect()->back()->withErrors(['File successfuly uploaded!']);
         }
         else {
             return redirect()->back()->withErrors(['No file given']);

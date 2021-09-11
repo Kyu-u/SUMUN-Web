@@ -14,7 +14,7 @@
                         <div class="py-6 px-6 flex flex-col">
 
                             <h1 class="text-sm md:text-xl font-bold">
-                                Webinar
+                                Model United Nations
                             </h1>
 
                             <hr class="pb-4">
@@ -30,9 +30,8 @@
                             <h1 class="text-sm md:text-xl font-bold">
                                 Total
                             </h1>
-                            
+
                             <p class="text-xs md:text-md pt-4">
-                                
                                 Rp. {{$total}},00 <span class="px-2">or</span> USD {{round($total/14258,2)}}$
                             </p>
 
@@ -50,11 +49,6 @@
                         <li class="border-2 rounded-md w-auto px-4 py-2 border-red-600 font-semibold">{{ $error }}</li>
                         @endforeach
                     </ul>
-                </div>
-                @else
-                <div
-                    class="pt-4 text-signup-0 text-lg ip:text-xl tracking-widest md:text-2xl flex justify-center items-center">
-                    Image uploaded, wait admin to verif
                 </div>
                 @endif
             </div>

@@ -27,16 +27,17 @@
         <label class="pb-2 pt-2 text-base md:text-xl text-white" for="yearofclass">Year Of Class</label>
         <select
           style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"
-          class="drop w-full lg:w-96 md:h-10 lg:h-auto border bg-white rounded px-3 py-4 outline-none relative">
-          <option class="py-1 font-sans">2018</option>
-          <option class="py-1 font-sans">2019</option>
-          <option class="py-1 font-sans">2020</option>
-          <option class="py-1 font-sans">2021</option>
+          class="drop w-full lg:w-96 md:h-10 lg:h-auto border bg-white rounded px-3 py-4 outline-none relative"
+          name="grade">
+          <option value="2018" class="py-1 font-sans">2018</option>
+          <option value="2019" class="py-1 font-sans">2019</option>
+          <option value="2020" class="py-1 font-sans">2020</option>
+          <option value="2021" class="py-1 font-sans">2021</option>
           <img class="absolute right-4" src="images/droparrow.png" alt="">
         </select>
         <label class="pb-2 pt-2 text-base md:text-xl text-white" for="univmajor">Major</label>
         <input class=" outline-none px-3 w-full md:h-10 lg:h-auto lg:w-96 rounded-md text-sm py-4 " type="text"
-          id="univmajor" name="univmajor" placeholder="Your Major...">
+          id="univmajor" name="major" placeholder="Your Major...">
 
         <div class="flex justify-between w-full pt-5 lg:w-96">
 
@@ -46,12 +47,10 @@
             Back
           </div>
 
-          <a href="{{ route('landing')}} ">
-            <button type="submit"
-              class="bg-signup-0 text-white text-md md:text-xl font-semibold font-sans w-20 h-7 md:w-30 md:h-10 lg:w-40 lg:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
-              Submit
-            </button>
-          </a>
+          <button type="submit"
+            class="bg-signup-0 text-white text-md md:text-xl font-semibold font-sans w-20 h-7 md:w-30 md:h-10 lg:w-40 lg:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+            Submit
+          </button>
 
         </div>
       </form>

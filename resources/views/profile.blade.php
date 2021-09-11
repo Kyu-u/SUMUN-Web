@@ -24,7 +24,9 @@
 
             <ul class="text-xxs sm:text-base flex flex-col text-white py-6 pl-2">
                 <p class="py-2">
-                    {{ $user->school_name }}</p>
+                    {{$user->school_name}}
+                    {{$user->university}}
+                </p>
                 <p class="py-2">
                     {{ $user->major }}</p>
                 <p class="py-2">

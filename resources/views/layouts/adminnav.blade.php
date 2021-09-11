@@ -24,7 +24,8 @@
 
 
 
-        <a href="" class="link justify-self-center relative hover:text-signup-0 col-start-4">Council Form</a>
+        <a href="{{route('adminAssign')}}"
+          class="link justify-self-center relative hover:text-signup-0 col-start-4">Council Form</a>
         <div class="justify-self-center col-start-5">
           <img class="h-20" src="images/unknown.png" alt="" />
         </div>
