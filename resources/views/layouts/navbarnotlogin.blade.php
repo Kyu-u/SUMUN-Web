@@ -69,7 +69,7 @@
                             <a href="{{route('regisweb')}}">Webinar</a>
                         </div>
                         <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                            <a href="#">Verif MUN</a>
+                            <a href="{{route('verifMUN.index')}}">Verif MUN</a>
                         </div>
                     </div>
                 </div>
@@ -121,13 +121,13 @@
                                 </svg>
                             </button>
                             <div id="mobilenavbardropdown" class="flex-col hidden items-end">
-                                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                <div class="flex py-2 justify-center hover:text-dropdown-0 ">
                                     <a href="{{route('registMUN')}}">MUN</a>
                                 </div>
-                                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                <div class="flex py-2 justify-center hover:text-dropdown-0 ">
                                     <a href="{{route('regisweb')}}">Webinar</a>
                                 </div>
-                                <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                <div class="flex py-2 justify-center hover:text-dropdown-0 ">
                                     <a href="{{route('verifMUN.index')}}">Verif MUN</a>
                                 </div>
                             </div>
@@ -301,7 +301,7 @@
                     <a class="block pb-2 hover:text-signup-0" href="{{route('council')}}">Council & Topic</a>
                     <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Schedule</a>
                     <div class="flex flex-col">
-                        <button id="mobilenavbardropdownbtn" class="inline-flex items-center hover:text-signup-0 pb-2"
+                        <button id="mobilenavbardropdownbtn" class="inline-flex items-center line-through text-gray-700 pb-2"
                             disabled>
                             <span class="mr-4">Registration</span>
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -309,13 +309,13 @@
                             </svg>
                         </button>
                         <div id="mobilenavbardropdown" class="flex-col hidden items-end">
-                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                            <div class="flex py-2 justify-center hover:text-dropdown-0 ">
                                 <a href="{{route('registMUN')}}">MUN</a>
                             </div>
-                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                            <div class="flex py-2 justify-center hover:text-dropdown-0 ">
                                 <a href="{{route('regisweb')}}">Webinar</a>
                             </div>
-                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                            <div class="flex py-2 justify-center hover:text-dropdown-0 ">
                                 <a href="{{route('verifMUN.index')}}">Verif MUN</a>
                             </div>
                         </div>
