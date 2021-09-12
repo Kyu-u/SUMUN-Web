@@ -29,7 +29,7 @@ class LoginController extends BaseController
             }
         }
 
-        return redirect()->route('landing');
+        return redirect()->route('landing')->withErrors('Invalid Credentials');
     }
 
     public function logout(Request $request){

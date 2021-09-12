@@ -7,7 +7,7 @@
     background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;">Verification</h1>
-    <div class="flex flex-wrap justify-center items-center px-10">
+    <div class="flex flex-col gap-y-10 justify-center items-center px-10">
         @foreach($images as $image)
         <form method="post" action="{{route('verify.post')}}">
 

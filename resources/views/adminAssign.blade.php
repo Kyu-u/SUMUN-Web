@@ -36,13 +36,13 @@
             <div class="w-full flex items-center">
               <select
                 style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"
-                class="drop w-30 lg:h-auto border bg-black bg-opacity-20 rounded-xl border-none rounded px-3 py-4 outline-none relative"
+                class="drop w-auto lg:h-auto border bg-black bg-opacity-20 rounded-xl border-none text-left px-10 py-4 outline-none relative"
                 name="term" for="grade">
                 <option class="py-1 font-sans" value="UNDP">UNDP</option>
                 <option class="py-1 font-sans" value="UNEP">UNEP</option>
                 <option class="py-1 font-sans" value="UNSC">UNSC</option>
               </select>
-              <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 ml-5 h-10 shadow-sm"
+              <button class="bg-signup-0 bg-opacity-80 rounded-md w-14 px-5 text-center flex justify-center items-center ml-5 h-10 shadow-sm"
                 type="submit">Filter</button>
             </div>
             <div class="mt-5 flex flex-col text-xl gap-7 overflow-y-scroll items-center h-64 sm:h-72 md:h-80 lg:h-80  scrollbar-thumb-rounded-full scrollbar-thin object-contain
@@ -55,21 +55,21 @@
           </div>
         </form>
 
-        <div class="">
+        <div class="flex-1 pl-4">
           <form action="{{route('assignCountry')}}" method="POST" class="pt-2 sm:pt-5 flex flex-row ">
             @csrf
-            <div class="flex flex-col w-full md:w-4/7 md:pl-5">
+            <div class="flex flex-col items-start w-full md:w-4/7 md:pl-5">
               <h2 class="text-white font-sans text-sm sm:text-2xl font-semibold">
                 Please fill out the form.
               </h2>
               <label class="pb-2 text-sm:text-xl text-white" for="Email/Phone">Username</label>
-              <input class="text-black outline-none px-3 w-full rounded-md text-sm py-1 sm:py-4 " type="text"
+              <input class="text-black outline-none h-10 px-3 w-full rounded-md text-sm py-1 sm:py-4 " type="text"
                 id="username" name="username" placeholder="Your Name...">
               <label class="pt-2 pb-2 text-sm:text-xl text-white" for="Email/Phone">Country</label>
-              <input class="text-black outline-none px-3 w-full  rounded-md text-sm py-1 sm:py-4 " type="text"
+              <input class="text-black outline-none h-10 px-3 w-full  rounded-md text-sm py-1 sm:py-4 " type="text"
                 id="country" name="country" placeholder="Your Country...">
               <button type="submit"
-                class="bg-signup-0 text-white text-sm sm:text-xl font-semibold font-sans w-20 sm:w-40 h-10 sm:h-14 rounded-md self-center mt-2 ml-20 flex justify-center items-center">
+                class="bg-signup-0 text-white text-sm sm:text-xl font-semibold font-sans w-16 sm:w-40 h-10 sm:h-10 rounded-md self-start mt-10 flex justify-center items-center">
                 Submit
               </button>
             </div>

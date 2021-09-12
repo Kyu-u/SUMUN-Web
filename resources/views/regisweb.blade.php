@@ -30,19 +30,19 @@
     </div> --}}
     <img class="w-3/4 mx-auto md:w-1/2 pb-10 md:pb-20 lg:pb-36" src="https://res.cloudinary.com/varkyu/image/upload/v1631288441/regiswebtitle_nztbsk.png" alt="">
     <div class="relative w-screen max-w-screen-3xl flex flex-col items-center box-border">
-        <img class="hidden md:block absolute" src="images/regiswebnew1.png" alt="">
+        <img class="hidden md:block absolute" src="https://res.cloudinary.com/varkyu/image/upload/v1631439624/regiswebnew1_kgupqm.png" alt="">
         <img class="block md:hidden absolute" src="https://res.cloudinary.com/varkyu/image/upload/v1631287650/regiswebnewmobile1_xghvrs.png" alt="">
 
         <div class=" w-full max-w-7xl mx-auto h-auto lg:h-98 z-10 pt-80 px-4 md:px-10 md:pt-20 lg:pt-24 pb-10">
 
             <div class="w-full flex flex-col items-start md:items-end">
-                <h1 class="text-2xl md:text-3xl lg:text-6xl pb-2 md:pb-4 font-semibold" style="background: #57CA85;
+                <h1 class="max-w-3xl text-2xl md:text-3xl lg:text-6xl pb-2 md:pb-4 font-semibold text-right" style="background: #57CA85;
                 background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                 background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                 background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
-                    Webinar Ah Mantab
+                    Tackling Recruitment Process to Land Your Dream Job and Internship
                 </h1>
                 <svg class="w-60 md:w-72" width="437" height="7" viewBox="0 0 437 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="433.5" y1="3.5" x2="3.5" y2="3.5" stroke="url(#paint0_linear)" stroke-opacity="0.5"
@@ -80,8 +80,8 @@
                             background: -moz-linear-gradient(to bottom, #F1F1F1 0%, #184E68 100%);
                             background: linear-gradient(to bottom, #F1F1F1 0%, #184E68 100%);
                             -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;">Ariana Grande</h1>
-                        <span class="text-secondheader-0 text-sm md:text-lg lg:text-xl pb-5">CEO of Mantab Company</span>
+                            -webkit-text-fill-color: transparent;">Alvia Anjani</h1>
+                        <span class="text-secondheader-0 text-sm md:text-lg lg:text-xl pb-5">HR Practitioner</span>
     
                     </div>
     
@@ -94,32 +94,14 @@
         </div>
     </div>
 
-    {{-- <div class="absolute top-regiswebmobile right-0 md:overflow-hidden md:w-regisgradient md:block">
-        <img src="images/regisgradient.png" alt="">
-    </div> --}}
-
-    {{-- BANNER TEXT --}}
 
 
-    <form action="">
-        @csrf
-        <div id="inputcolumn" class="flex flex-col">
-            <span class="text-xl text-secondheader-0 pb-5">Username</span>
-            <div class="relative">
+<div class="w-full flex justify-center items-center  lg:mt-64">
+    <a class="bg-signup-0 w-28 h-11 rounded-md text-white font-semibold self-end mt-10 flex justify-center items-center">Register</a>
 
-                <input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="" id="">
-                {{-- <button type="button" id="addinput" class=""><svg class=" absolute right-2 my-auto top-0 bottom-0"
-                        width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5 1V9" stroke="#51B77A" stroke-width="2" stroke-linecap="square"
-                            stroke-linejoin="round" />
-                        <path d="M10 5L1 5" stroke="#51B77A" stroke-width="2" stroke-linecap="square"
-                            stroke-linejoin="round" />
-                    </svg></button> --}}
-            </div>
-            <button class="bg-signup-0 w-28 h-11 rounded-md text-white font-semibold self-end mt-10">Register</button>
+</div>
 
-        </div>
-    </form>
+
 
 
 </div>
