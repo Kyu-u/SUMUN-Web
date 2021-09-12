@@ -100,6 +100,7 @@ class registerController extends BaseController {
             'school_name' => 'required',
             'grade' => 'required',
             'major' => 'required',
+            'experience' => 'required',
         ]);
         $users = $request->session()->get('users');
         $users->fill($validatedData);
@@ -128,6 +129,7 @@ class registerController extends BaseController {
             'university' => 'required',
             'grade' => 'required',
             'major' => 'required',
+            'experience' => 'required',
         ]);
 
         $users = $request->session()->get('users');

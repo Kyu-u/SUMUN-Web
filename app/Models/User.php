@@ -39,6 +39,7 @@ class User extends Authenticatable
         'verified',
         'transaction_id',
         'is_email_verified',
+        'experience',
         'created_at',
         'updated_at',
     ];

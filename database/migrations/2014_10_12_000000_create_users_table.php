@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('university')->nullable();
             $table->string('grade')->nullable();
             $table->string('major')->nullable();
+            $table->string('experience')->nullable();
             $table->boolean('is_admin')->default(0);
             $table->integer('verified')->default(0);
             $table->integer('webinar_id')->default(0);

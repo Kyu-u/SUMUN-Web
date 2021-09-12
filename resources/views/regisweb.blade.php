@@ -57,9 +57,8 @@
                 </svg>
                 <div class="md:w-1/2 pt-1 md:pt-4 lg:pt-10">
                     <p class="text-xxs lg:text-lg  md:text-right text-white pb-1 md:pb-3 lg:pb-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac tellus at,
-                        porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque, quis venenatis ipsum
-                        rutrum. Aenean lectus tortor, consequat sit amet pharetra ut, elementum in mauris.
+                    Today, the number of people looking for jobs exceeds the number of
+vacancies available. This situation is faced by all types of job seekers, including fresh graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their filters to find the best candidates. Therefore, a good CV and interview session is necessary if someone wants to be a stand-out candidate. We are eager to learn and show our members how to make a good CV and win an interview from the HR recruiter’s perspective directly.
                     </p>
     
                     <div class="flex text-white gap-x-6 md:gap-x-16 font-sans pb-1 md:pb-2 lg:pb-6">
