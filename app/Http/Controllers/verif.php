@@ -37,11 +37,9 @@ class verif extends Controller
         $request->validate([
             'payment' => 'required',
         ]);
-
         if ($request->hasFile('file')) {
-
             $request->validate([
-                'image' => 'mimes:jpeg,bmp,png'
+                'file' => 'required|mimes:jpeg,png|max:2048'
             ]);
             $request->file->store('verif', 'public');
             $verif = new Verifikasi([
