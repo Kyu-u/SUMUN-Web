@@ -76,7 +76,7 @@
                 <a href="{{route('merch')}}"
                     class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
-                <a href="" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->username}}</a>
+                <a href="{{route('profile')}}" class="link justify-self-center relative hover:text-signup-0">{{Auth::user()->username}}</a>
 
                 <form method="POST" action="{{route('logout1')}}"
                     class="justify-self-center flex  col-span-1 items-center hover:text-signup-0 transition duration-300">
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                         <a class="block pb-2 hover:text-signup-0" href="{{route('merch')}}">Merchandise</a>
-                        <a class="block hover:text-signup-0" href="">{{Auth::user()->username}}
+                        <a class="block hover:text-signup-0" href="{{route('profile')}}">{{Auth::user()->username}}
                         </a>
                         <form method="POST" action="{{route('logout1')}}"
                             class="block pb-2 hover:text-signup-0 transition duration-300">
