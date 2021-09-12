@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, viewport-fit=cover,minimum-scale=1,maximum-scale=1,user-scalable=no"">
-        <link rel="stylesheet" href="/css/app.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel=" stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Surabaya Model United Nations</title>
     <style>
         #menu-toggle:checked+#menu {
@@ -296,35 +296,33 @@
 
             <div class="hidden py-6 w-full  " id="menu">
                 <div class="flex flex-col justify-between items-end">
-                  <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Home</a>
-                  <a class="block pb-2 hover:text-signup-0 " href="{{route('about')}}">About</a>
-                  <a class="block pb-2 hover:text-signup-0" href="{{route('council')}}">Council & Topic</a>
-                  <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Schedule</a>
-                  <div class="flex flex-col">
-                      <button id="mobilenavbardropdownbtn"
-                          class="inline-flex items-center hover:text-signup-0 pb-2" disabled>
-                          <span class="mr-4">Registration</span>
-                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20">
-                              <path
-                                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                          </svg>
-                      </button>
-                      <div id="mobilenavbardropdown" class="flex-col hidden items-end">
-                          <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                              <a href="{{route('registMUN')}}">MUN</a>
-                          </div>
-                          <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                              <a href="{{route('regisweb')}}">Webinar</a>
-                          </div>
-                          <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                              <a href="{{route('verifMUN.index')}}">Verif MUN</a>
-                          </div>
-                      </div>
-                  </div>
-                  <a class="block pb-2 hover:text-signup-0" href="{{route('merch')}}">Merchandise</a>
-                  <a class="block hover:text-signup-0" href="{{route('showLoginForm')}}">Login</a>
-                </a>
+                    <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Home</a>
+                    <a class="block pb-2 hover:text-signup-0 " href="{{route('about')}}">About</a>
+                    <a class="block pb-2 hover:text-signup-0" href="{{route('council')}}">Council & Topic</a>
+                    <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Schedule</a>
+                    <div class="flex flex-col">
+                        <button id="mobilenavbardropdownbtn" class="inline-flex items-center hover:text-signup-0 pb-2"
+                            disabled>
+                            <span class="mr-4">Registration</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </button>
+                        <div id="mobilenavbardropdown" class="flex-col hidden items-end">
+                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                <a href="{{route('registMUN')}}">MUN</a>
+                            </div>
+                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                <a href="{{route('regisweb')}}">Webinar</a>
+                            </div>
+                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
+                                <a href="{{route('verifMUN.index')}}">Verif MUN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="block pb-2 hover:text-signup-0" href="{{route('merch')}}">Merchandise</a>
+                    <a class="block hover:text-signup-0" href="{{route('showLoginForm')}}">Login</a>
+                    </a>
 
                 </div>
 
@@ -565,7 +563,7 @@
 
                 document.write(
                     '<input class="bg-transparent border-b-2 h-12 w-72 text-white" type="text" name="">'
-                    )
+                )
             })
         })
 
@@ -575,32 +573,40 @@
         window.addEventListener('DOMContentLoaded', () => {
             const card = document.querySelector('.card')
             const add = document.querySelector('.add')
+
             add.addEventListener('click', () => {
+
                 const html = `<div  class="del py-6 px-4">
-    <div class="w-52 ip:w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">
-        <div class="py-4 px-8 md:px-16 md:py-8">
-            <div class="flex flex-col text-white">
-                <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
-                <input class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" type="text"
-                    id="Username" name="Username" placeholder="Username">
-                <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
-                    class="">Council</label>
-                <select class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" id="Council"
-                    name="Council">
-                    <option value="UNDP">UNDP</option>
-                    <option value="UNEP">UNEP</option>
-                    <option value="UNSC">UNSC</option>
-                </select>
-                <div class="flex flex-row justify-end">
-                    <!-- START : BUTTON DELETE-->
-                    <button onclick="myDelete()" type="button" class="delete flex justify-end items-center pt-4 text-sm md:text-md">
-                        Delete 
-                    </button>
-                    <!-- END : BUTTON DELETE-->
-                </div>
+
+<div class="w-52 ip:w-64 md:w-96 bg-gradient-to-r from-signup-0 to-border-0 rounded-3xl ">
+
+    <div class="py-4 px-8 md:px-16 md:py-8">
+        <div class="flex flex-col text-white">
+            <label class="pb-2 text-sm md:text-md" for="Username" class="">Username</label>
+            <input class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" type="text"
+                id="Username" name="username[]" placeholder="Username">
+            <label class="pt-4 pb-2 text-white text-sm md:text-md" for="Email"
+                class="">Council</label>
+            <select class="text-black rounded-md py-1 px-2 md:px-4 md:py-2" id="Council"
+                name="council[]">
+                <option value="UNDP">UNDP</option>
+                <option value="UNEP">UNEP</option>
+                <option value="UNSC">UNSC</option>
+            </select>
+
+            <div class="flex flex-row justify-end">
+                <!-- START : BUTTON DELETE-->
+                <button onclick="myDelete()" type="button" class="delete flex justify-end items-center pt-4 text-sm md:text-md">
+                    Delete 
+                </button>
+                <!-- END : BUTTON DELETE-->
             </div>
         </div>
     </div>
+
+</div>
+
+
 </div>`;
                 const addCard = document.querySelector(`.card`);
                 addCard.innerHTML += html;
