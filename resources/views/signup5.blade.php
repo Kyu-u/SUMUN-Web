@@ -18,6 +18,15 @@
         Undergraduate
       </div>
 
+      @if ($errors->any())
+      <div class="alert alert-danger text-white">
+        <ul>
+          @foreach ($errors->all() as $error)
+          <li>*{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+      @endif
 
       <form method="POST" action="{{ route('regis5') }}" class=" pt-5 flex flex-col">
         @csrf
@@ -50,7 +59,7 @@
           <option class="py-1 font-sans">Expert</option>
           <!-- <img class="absolute right-4" src="images/droparrow.png" alt=""> -->
         </select>
-        
+
         <div class="flex justify-between w-full pt-5 lg:w-96">
 
           <div class="flex text-white text-base md:text-xl font-semibold font-sans gap-x-5 items-center">

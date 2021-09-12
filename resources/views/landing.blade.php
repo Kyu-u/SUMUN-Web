@@ -87,8 +87,8 @@
             gap-y-2
           ">
                 <div class="font-semibold text-xl md:text-4xl pb-3">
-                    <h2>Model United</h2>
-                    <h2>Nations</h2>
+                    <h2>Surabaya Model</h2>
+                    <h2>United Nations</h2>
                 </div>
                 <div class="pb-3">
                     <img class="w-1/3" src="https://res.cloudinary.com/varkyu/image/upload/v1631439591/line_ogdu4t.png"
@@ -183,7 +183,7 @@
             gap-y-2
           ">
                 <div class="font-semibold text-xl md:text-4xl pb-3">
-                    <h2>Webinar</h2>
+                    <h2>Pre-Event</h2>
                 </div>
                 <div class="pb-3">
                     <img class="w-1/3" src="https://res.cloudinary.com/varkyu/image/upload/v1631439591/line_ogdu4t.png"
@@ -199,26 +199,9 @@
               pr-5
             ">
                     <p>
-                        apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh
-                        isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
-                        apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
-                        kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
-                        engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
-                        bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
-                        terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
-                        aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
-                        apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
-                        aja sumpah engga ngadi-ngadi terserah deh isi apa aja boleh ini apa aja sumpah engga ngadi-ngadi
-                        terserah deh
-                        isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
-                        apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
-                        kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
-                        engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
-                        bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
-                        terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
-                        aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
-                        apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
-                        aja sumpah engga ngadi-ngadi terserah deh isi
+                    Today, the number of people looking for jobs exceeds the number of
+vacancies available. This situation is faced by all types of job seekers, including fresh graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their filters to find the best candidates. Therefore, a good CV and interview session is necessary if someone wants to be a stand-out candidate. We are eager to learn and show our members how to make a good CV and win an interview from the HR recruiter’s perspective directly.
+We acknowledge this is an important thing to be discussed since there is much information on the recruitment process especially on how to make a good CV and win an interview that contradict each other. In order to straighten perspective and upgrade insights on this topic, we have decided to help out the young generation by organizing a webinar. We believe that the speaker we have chosen would be able to provide new insights and make us better prepared seeking a job in the future.
                 </div>
                 <div class="flex justify-between items-center mt-5 md:mt-0">
                     @if (Auth::check())
@@ -252,7 +235,7 @@
 
                     @endif
 
-                    <p class="text-white text-xs md:text-sm lg:text-lg font-semibold">Rp.20000,00</p>
+                    <p class="text-white text-xs md:text-sm lg:text-lg font-semibold">FREE!</p>
                 </div>
 
             </div>
