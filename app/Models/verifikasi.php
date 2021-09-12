@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class verifikasi extends Model
 {
     use HasFactory;
-    public $table = "verifikasi";
+    public $table = "Verifikasi";
     protected $primaryKey = 'id';
 
     protected $fillable = [
