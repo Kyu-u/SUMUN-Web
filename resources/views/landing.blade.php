@@ -198,7 +198,7 @@
               scrollbar-track-main-0 scrollbar-thumb-signup-0
               pr-5
             ">
-                    <p>
+                    <p class="text-justify">
                     Today, the number of people looking for jobs exceeds the number of
 vacancies available. This situation is faced by all types of job seekers, including fresh graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their filters to find the best candidates. Therefore, a good CV and interview session is necessary if someone wants to be a stand-out candidate. We are eager to learn and show our members how to make a good CV and win an interview from the HR recruiter’s perspective directly.
 We acknowledge this is an important thing to be discussed since there is much information on the recruitment process especially on how to make a good CV and win an interview that contradict each other. In order to straighten perspective and upgrade insights on this topic, we have decided to help out the young generation by organizing a webinar. We believe that the speaker we have chosen would be able to provide new insights and make us better prepared seeking a job in the future.
