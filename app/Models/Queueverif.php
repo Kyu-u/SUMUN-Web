@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Queueverif extends Model
 {
     use HasFactory;
-    public $table = "queueverif";
+    public $table = "queueVerif";
     protected $primaryKey = 'id';
 
     protected $fillable = [
