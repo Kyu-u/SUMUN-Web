@@ -14,9 +14,9 @@
         <h1 class="font-bold text-base go:text-2xl md:text-lg lg:text-5xl xl:text-8xl">Welcome <br>Back</h1>
 
         <h2 class="font-medium pt-2 pb-2 lg:pb-6 text-xs md:text-xs xl:text-2xl">Please Log In to your account</h2>
-        @foreach ($errors->all() as $error)
-        {{ $error }}<br />
-        @endforeach
+        @if ($errors->any())
+          <p class="text-white pb-5">*{{$errors->first()}}<br></p> 
+        @endif
         <form class="flex flex-col" action="{{ route('login.post') }}" method="post">
           @csrf
           <label class="pb-2 text-xs lg:text-sm" for="Email" class="">Your Email</label>
