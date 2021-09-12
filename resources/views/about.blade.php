@@ -145,119 +145,169 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 
 
         <div class="flex flex-col justify-center text-xl md:text-5xl pb-20 md:pb-40" data-aos="fade-up"
-            data-aos-duration="3000">
-            <h2 class="text-center" style="background: #57CA85;
+                data-aos-duration="3000">
+                <h2 class="text-center" style="background: #57CA85;
 background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;">
-                United Nations Environment Programme
-            </h2>
-            <h2 class="text-center" style="background: #57CA85;
+                    United Nations Environment Programme
+                </h2>
+                <h2 class="text-center" style="background: #57CA85;
 background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;">
-                (UNEP)
-            </h2>
-        </div>
+                    (UNEP)
+                </h2>
+            </div>
 
-        <!-- <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
+            <!-- <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
 
-            <img src="images/UNDPlogo.png" alt="" class="w-1/2 animate-pulse opacity-75" data-aos="fade-right"
-                data-aos-duration="2000">
+                <img src="images/UNDPlogo.png" alt="" class="w-1/2 animate-pulse opacity-75" data-aos="fade-right"
+                    data-aos-duration="2000">
 
-            <div class=" flex flex-col  -ml-0 md:-ml-20 pr-0 md:pr-8 py-16 md:py-0" data-aos="fade-up"
-                data-aos-duration="2000">
-                <div class="flex flex-col  items-center md:items-start">
-                    <h1 class="text-signup-0 text-lg sm:text-xl md:text-2xl px-16 md:px-0  " style="background: #57CA85;
-                    background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;">
-                        Head Chair
+                <div class=" flex flex-col  -ml-0 md:-ml-20 pr-0 md:pr-8 py-16 md:py-0" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <div class="flex flex-col  items-center md:items-start">
+                        <h1 class="text-signup-0 text-lg sm:text-xl md:text-2xl px-16 md:px-0  " style="background: #57CA85;
+                        background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">
+                            Head Chair
 
-                    </h1>
-                    <h1 class="pt-4 px-10 sm:px-0 text-3xl sm:text-5xl text-center md:text-left" style="background: #57CA85;
-                    background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;">Arya Dika</h1>
-                </div>
-
-                <div class="pt-6 flex justify-center md:justify-start">
-                    <div class="h-0.5 md:h-1  w-1/4 bg-gradient-to-r from-transparent to-councilbar-0 rounded-full">
+                        </h1>
+                        <h1 class="pt-4 px-10 sm:px-0 text-3xl sm:text-5xl text-center md:text-left" style="background: #57CA85;
+                        background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">Arya Dika</h1>
                     </div>
+
+                    <div class="pt-6 flex justify-center md:justify-start">
+                        <div class="h-0.5 md:h-1  w-1/4 bg-gradient-to-r from-transparent to-councilbar-0 rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <div
+                            class="text-white font-thin text-xxs sm:text-sm md:text-xl px-10 md:px-0 text-center md:text-left">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
+                            tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
+                            quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
+                            elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
+                            in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
+                            tincidunt est vel sodales.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div> -->
+
+            <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
+                <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/mu_taz_vjxbi7.png" alt=""
+                    class="block md:hidden w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
+                    <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/mu_taz_vjxbi7.png" alt=""
+                    class="hidden md:block w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
+                <div class="flex flex-col  -mr-0 md:-ml-20 pl-0 md:pl-8 py-16 md:py-0" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <div class="flex flex-col  items-center md:items-start">
+                        <h1 class="text-signup-0 text-lg sm:text-xl md:text-2xl px-16 md:px-0  " style="background: #57CA85;
+                        background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">
+                            Head Chair
+
+                        </h1>
+                        <h1 class="pt-4 px-10 sm:px-0 text-3xl sm:text-5xl text-center md:text-left" style="background: #57CA85;
+                        background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">Mu'taz Syahputra</h1>
+                    </div>
+                    <div class="pt-6 flex justify-center md:justify-start">
+                        <div class="h-0.5 md:h-1 w-1/4 bg-gradient-to-r from-transparent to-councilbar-0 rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <div
+                            class="text-white font-thin text-xxs sm:text-sm md:text-xl px-16 md:px-0 text-center md:text-left">
+                            <span class="text-signup-0 font-semibold pt-4">Achievement</span> <br> Asia World MUN ECOSOC Best Position Paper <br> GM MUN 5.0 IOM Verbal
+                            Commendation
+                            <br> Iyouth Legacy MUN ECOSOC Best position Paper, and Honorable Mention <br> COMFORT
+                            MUN-2021-UNGA-Best Delegate <br> Online Distancing MUN-2021-ASEAN-Verbal Commendation <br>
+                            GM MUN 8.0 ILO Co-Chair
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <div class="pt-4">
-                    <div
-                        class="text-white font-thin text-xxs sm:text-sm md:text-xl px-10 md:px-0 text-center md:text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit ante, iaculis ac
-                        tellus at, porttitor ultricies lacus. Nulla sollicitudin ante vitae tellus scelerisque,
-                        quis venenatis ipsum rutrum. Aenean lectus tortor, consequat sit amet pharetra ut,
-                        elementum in mauris. Morbi ac libero vel velit sodales dictum vel vitae sem. Suspendisse
-                        in eros non nulla imperdiet sodales nec ac tortor. Etiam eu lectus justo. Nulla vehicula
-                        tincidunt est vel sodales.
-                    </div>
-                </div>
+                
 
 
             </div>
-        </div> -->
+            <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
+                <img src="https://res.cloudinary.com/varkyu/image/upload/v1631448763/farkhan_gbrhgf.png" alt=""
+                    class="block md:hidden w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
 
-        <div class="flex flex-col md:flex-row py-20 items-center lg:items-center justify-center">
-            <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/mu_taz_vjxbi7.png" alt=""
-                class="block md:hidden w-1/2 animate-pulse opacity-75" data-aos="fade-left" data-aos-duration="2000">
+                <div class="flex flex-col  -mr-0 md:-mr-20 pl-0 md:pl-8 py-16 md:py-0" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <div class="flex flex-col  items-center md:items-start">
+                        <h1 class="text-signup-0 text-lg sm:text-xl md:text-2xl px-16 md:px-0  " style="background: #57CA85;
+                        background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">
+                            Co-Head Chair
 
-            <div class="flex flex-col  -mr-0 md:-mr-20 pl-0 md:pl-8 py-16 md:py-0" data-aos="fade-up"
-                data-aos-duration="2000">
-                <div class="flex flex-col  items-center md:items-start">
-                    <h1 class="text-signup-0 text-lg sm:text-xl md:text-2xl px-16 md:px-0  " style="background: #57CA85;
-                    background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;">
-                        Co-Head Chair
-
-                    </h1>
-                    <h1 class="pt-4 px-10 sm:px-0 text-3xl sm:text-5xl text-center md:text-left" style="background: #57CA85;
-                    background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;">Mu'taz Syahputra</h1>
-                </div>
-                <div class="pt-6 flex justify-center md:justify-start">
-                    <div class="h-0.5 md:h-1 w-1/4 bg-gradient-to-r from-transparent to-councilbar-0 rounded-full">
+                        </h1>
+                        <h1 class="pt-4 px-10 sm:px-0 text-3xl sm:text-5xl text-center md:text-left" style="background: #57CA85;
+                        background: -webkit-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: -moz-linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">Muhammad Farkhan</h1>
                     </div>
+                    <div class="pt-6 flex justify-center md:justify-start">
+                        <div
+                            class="h-0.5 md:h-1 w-1/4 bg-gradient-to-r from-transparent to-councilbar-0 rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <div
+                            class="text-white font-thin text-xxs sm:text-sm md:text-xl px-16 md:px-0 text-center md:text-left">
+                            <span class="text-signup-0 font-semibold pt-4">Achievement</span> <br> Best Delegate Malang International MUN 2021 Crisis Council <br> Most Outstanding Delegate AirlanggaMUN 2021 UNEP
+                            <br>Most Outstanding Delegate ITBMUN 2021 Crisis Council
+                            <br> Best Delegate Parahyangan MUN 2021 African Union
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <div class="pt-4">
-                    <div
-                        class="text-white font-thin text-xxs sm:text-sm md:text-xl px-16 md:px-0 text-center md:text-left">
-                        <span class="text-signup-0 font-semibold pt-4">Achievement</span> <br> Asia World MUN ECOSOC
-                        Best Position Paper <br> GM MUN 5.0 IOM Verbal
-                        Commendation
-                        <br> Iyouth Legacy MUN ECOSOC Best position Paper, and Honorable Mention <br> COMFORT
-                        MUN-2021-UNGA-Best Delegate <br> Online Distancing MUN-2021-ASEAN-Verbal Commendation <br>
-                        GM MUN 8.0 ILO Co-Chair
-                    </div>
-                </div>
+                <img src="https://res.cloudinary.com/varkyu/image/upload/v1631448763/farkhan_gbrhgf.png" alt=""
+                    class="hidden md:block w-1/2 animate-pulse opacity-75" data-aos="fade-left"
+                    data-aos-duration="2000">
 
 
             </div>
-
-            <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1631200241/mu_taz_vjxbi7.png" alt=""
-                class="hidden md:block w-1/2 animate-pulse opacity-75" data-aos="fade-left" data-aos-duration="2000">
-
-
-        </div>
+            </div>
 
 
         <div class="flex flex-col justify-center text-xl md:text-5xl pb-20 md:pb-40" data-aos="fade-up"

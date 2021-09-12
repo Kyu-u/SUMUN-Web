@@ -77,7 +77,7 @@
                 <a href="{{route('merch')}}"
                     class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
-                <a href=""
+                <a href="{{route('profile')}}"
                     class="link text-center justify-self-center relative hover:text-signup-0">{{Auth::user()->username}}</a>
 
                 <form method="POST" action="{{route('logout1')}}"
