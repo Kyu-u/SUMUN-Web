@@ -330,7 +330,7 @@
                     <div
                         class="flex flex-col text-foot-0 font-sans w-1/2 md:w-1/6 justify-center md:justify-start items-center md:items-start h-36">
                         <div class="font-semibold text-xl pb-2 pt-20  md:pt-0">Social Media</div>
-                        <div class="font-thin text-center md:text-left pb-20 flex flex-col">
+                        <div class="font-thin text-center md:text-left pb-20 flex flex-row md:flex-col">
                             <a href="https://www.instagram.com/surabayamun/" target="_blank"
                                 class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Linkedin</a>
                             <a href="https://www.linkedin.com/company/surabaya-model-united-nations/mycompany/"

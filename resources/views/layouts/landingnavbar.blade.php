@@ -325,7 +325,7 @@
                   <a class="block pb-2 hover:text-signup-0" href="{{route('landing')}}">Schedule</a>
                   <div class="flex flex-col">
                       <button id="mobilenavbardropdownbtn"
-                          class="inline-flex items-center hover:text-signup-0 pb-2">
+                          class="inline-flex items-center line-through text-gray-700 pb-2" disabled>
                           <span class="mr-4">Registration</span>
                           <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20">

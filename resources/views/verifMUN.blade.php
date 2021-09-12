@@ -46,7 +46,7 @@
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
-                        <li class="border-2 rounded-md w-auto px-4 py-2 border-red-600 font-semibold">{{ $error }}</li>
+                        <li class="border-2 rounded-md w-auto px-4 py-2 border-white font-semibold">{{ $error }}</li>
                         @endforeach
                     </ul>
                 </div>
