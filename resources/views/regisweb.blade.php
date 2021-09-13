@@ -96,7 +96,7 @@ vacancies available. This situation is faced by all types of job seekers, includ
 
 
 <div class="w-full flex justify-center items-center  lg:mt-64">
-    <a class="bg-signup-0 w-28 h-11 rounded-md text-white font-semibold self-end mt-10 flex justify-center items-center">Register</a>
+    <a class="bg-signup-0 w-28 h-11 rounded-md text-white font-semibold self-end mt-10 flex justify-center items-center line-through text-gray-700" disabled>Register</a>
 
 </div>
 
