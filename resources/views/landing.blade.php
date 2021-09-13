@@ -87,8 +87,8 @@
             gap-y-2
           ">
                 <div class="font-semibold text-xl md:text-4xl pb-3">
-                    <h2>Surabaya Model</h2>
-                    <h2>United Nations</h2>
+                    <h2>Model United</h2>
+                    <h2>Nations</h2>
                 </div>
                 <div class="pb-3">
                     <img class="w-1/3" src="https://res.cloudinary.com/varkyu/image/upload/v1631439591/line_ogdu4t.png"
@@ -104,26 +104,7 @@
               pr-5
             ">
                     <p>
-                        apa aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh
-                        isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
-                        apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
-                        kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
-                        engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
-                        bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
-                        terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
-                        aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
-                        apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
-                        aja sumpah engga ngadi-ngadi terserah deh isi apa aja boleh ini apa aja sumpah engga ngadi-ngadi
-                        terserah deh
-                        isi apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini
-                        apa aja sumpah engga ngadi-ngadi terserah deh isi apa deskripsi
-                        kek apa kek bebas bos lanjot.apa aja boleh ini apa aja sumpah
-                        engga ngadi-ngadi terserah deh isi apa deskripsi kek apa kek bebas
-                        bos lanjot.apa aja boleh ini apa aja sumpah engga ngadi-ngadi
-                        terserah deh isi apa deskripsi kek apa kek bebas bos lanjot.apa
-                        aja boleh ini apa aja sumpah engga ngadi-ngadi terserah deh isi
-                        apa deskripsi kek apa kek bebas bos lanjot.apa aja boleh ini apa
-                        aja sumpah engga ngadi-ngadi terserah deh isi
+                    In this year event, Surabaya Model United Nations brings "The Projection of Global Societies: Mobilizing Contemporary Technological Discourses" as our Grand Theme.  In a span of decades, the world has experienced rapid changes and development in global societies, which in dynamic increases global challenges. Therefore, it lies on the hands of the current youth and future generations to mobilize contemporary ideas and discourses to resolve the ever growing global challenges. With the rapid technological advancements, the youths bear the potential to undertake challenges through the utilization of technologies.
                 </div>
                 <div class="flex flex-row justify-between mt-5 md:mt-0 items-center">
                     @if (Auth::check())
