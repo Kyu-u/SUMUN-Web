@@ -52,11 +52,11 @@
         <select
           style="background-image: url(images/droparrow.png); background-repeat: no-repeat; background-position-x: 96%; background-position-y: 50%; background-size: 20px;"
           class="drop w-full lg:w-96 md:h-10 lg:h-auto border bg-white rounded px-3 py-4 outline-none relative"
-          name="exp" for="exp">
-          <option class="py-1 font-sans">Beginner</option>
-          <option class="py-1 font-sans">Intermediate</option>
-          <option class="py-1 font-sans">Advanced</option>
-          <option class="py-1 font-sans">Expert</option>
+          name="experience" for="experience">
+          <option class="py-1 font-sans" value="Beginner">Beginner</option>
+          <option class="py-1 font-sans" value="Intermediate">Intermediate</option>
+          <option class="py-1 font-sans" value="Advanced">Advanced</option>
+          <option class="py-1 font-sans" value="Expert">Expert</option>
           <!-- <img class="absolute right-4" src="images/droparrow.png" alt=""> -->
         </select>
 
