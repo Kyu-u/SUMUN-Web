@@ -20,11 +20,14 @@
                             <hr class="pb-4">
 
                             <h1 class="text-sm md:text-xl font-bold">
-                                Bank Account / Bank Name
+                                Name / Payment Option / Number
                             </h1>
 
                             <p class="text-xs md:text-md pt-4 pb-6">
-                                Surabaya Model United Nations / BCA
+                               Raysya Farah Mumtaz / BCA / 7391384472 <br>
+                               Novita Wahyu Saputri / GOPAY / 081325127784 <br>
+                               Salsabilla Kharisma / OVO / 087754055717 <br>
+                               Sciencenia / Paypal / <a href="paypal.me/sciencenia" target="_blank" class="text-white hover:text-signup-0">paypal.me/sciencenia</a>
                             </p>
 
                             <h1 class="text-sm md:text-xl font-bold">
