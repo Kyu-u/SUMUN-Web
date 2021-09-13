@@ -434,7 +434,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">
-            Board of Dias
+            Board of Dais
         </div>
 
         <div class="grid grid-cols-2 px-10 md:px-20 gap-x-40 py-20 sm:py-40 gap-y-32 md:gap-y-0">
@@ -574,7 +574,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/tania_leal8l.png"
-                                    alt="Tania Ponasavira" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Tania Pronasavira" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
@@ -589,7 +589,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 
                                     <h1
                                         class="font-thin  text-white text-xs ip:text-md sm:text-2xl md:text-3xl text-center">
-                                        Tania Ponasavira
+                                        Tania Pronasavira
                                     </h1>
                                 </div>
 
