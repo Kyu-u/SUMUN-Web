@@ -258,28 +258,28 @@ We acknowledge this is an important thing to be discussed since there is much in
                                 <td class="bg-timelinebot-0 rounded-md">Day - 2</td>
                             </tr>
                             <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class=" tablekosong"></td>
-                                <td rowspan="2" class=" bg-tableisi-0">TBA</td>
+                                <td class=" tabletime">09.00 - 09.30</td>
+                                <td  class=" bg-tableisi-0">Opening</td>
+                                <td  class=" tablekosong ">-</td>
                             </tr>
                             <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class="tablekosong"></td>
-                                <!-- <td class="">Day</td> -->
+                                <td class=" tabletime">10.00 - 12.00</td>
+                                <td class="tablekosong">Comses 1</td>
+                                <td class="">Comses 4</td>
                             </tr>
                             <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class="tabletime">TBA</td>
-                                <td class=" bg-tableisi-0">TBA</td>
-                                <td class=" tablekosong"></td>
+                                <td class="tabletime">12.00 - 12.30</td>
+                                <td class=" bg-tableisi-0">Break</td>
+                                <td class=" tablekosong">Break</td>
                             </tr>
                             <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class=" bg-tableisi-0">TBA</td>
-                                <td class="tablekosong"></td>
+                                <td class=" tabletime">12.30 - 14.00</td>
+                                <td rowspan="2" class=" bg-tableisi-0">Comses 2</td>
+                                <td class="tablekosong">Comses 5</td>
                             </tr>
                             <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime ">TBA</td>
-                                <td class="tablekosong"></td>
+                                <td class=" tabletime ">14.00 - 14.30</td>
+                                <!-- <td class="tablekosong"></td> -->
                                 <td class="tablekosong"></td>
                             </tr>
                             <tr class=" text-center h-6 text-xs md:text-md md:h-12">
@@ -385,7 +385,7 @@ We acknowledge this is an important thing to be discussed since there is much in
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
                             <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
-                                November
+                                2 October
                             </div>
                             <div
                                 class="text-center flex items-center justify-center text-xs md:text-lg relative z-10 mt-4 md:mt-0 lg:mt-3 font-judul w-5/7 mx-auto">
@@ -400,7 +400,7 @@ We acknowledge this is an important thing to be discussed since there is much in
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
                             <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
-                                November
+                                13 November
                             </div>
                             <div
                                 class="text-center flex items-center justify-center text-xs md:text-lg relative z-10 mt-4 md:mt-0 lg:mt-3 font-judul w-5/7 mx-auto">
@@ -415,7 +415,7 @@ We acknowledge this is an important thing to be discussed since there is much in
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
                             <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
-                                November
+                                14 November
                             </div>
                             <div
                                 class="text-center flex items-center justify-center text-xs md:text-lg relative z-10 mt-4 md:mt-0 lg:mt-3 font-judul w-5/7 mx-auto">
