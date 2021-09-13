@@ -104,7 +104,13 @@
               pr-5
             ">
                     <p>
-                    In this year event, Surabaya Model United Nations brings "The Projection of Global Societies: Mobilizing Contemporary Technological Discourses" as our Grand Theme.  In a span of decades, the world has experienced rapid changes and development in global societies, which in dynamic increases global challenges. Therefore, it lies on the hands of the current youth and future generations to mobilize contemporary ideas and discourses to resolve the ever growing global challenges. With the rapid technological advancements, the youths bear the potential to undertake challenges through the utilization of technologies.
+                        In this year event, Surabaya Model United Nations brings "The Projection of Global Societies:
+                        Mobilizing Contemporary Technological Discourses" as our Grand Theme. In a span of decades, the
+                        world has experienced rapid changes and development in global societies, which in dynamic
+                        increases global challenges. Therefore, it lies on the hands of the current youth and future
+                        generations to mobilize contemporary ideas and discourses to resolve the ever growing global
+                        challenges. With the rapid technological advancements, the youths bear the potential to
+                        undertake challenges through the utilization of technologies.
                 </div>
                 <div class="flex flex-row justify-between mt-5 md:mt-0 items-center">
                     @if (Auth::check())
@@ -180,9 +186,18 @@
               pr-5
             ">
                     <p class="text-justify">
-                    Today, the number of people looking for jobs exceeds the number of
-vacancies available. This situation is faced by all types of job seekers, including fresh graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their filters to find the best candidates. Therefore, a good CV and interview session is necessary if someone wants to be a stand-out candidate. We are eager to learn and show our members how to make a good CV and win an interview from the HR recruiter’s perspective directly.
-We acknowledge this is an important thing to be discussed since there is much information on the recruitment process especially on how to make a good CV and win an interview that contradict each other. In order to straighten perspective and upgrade insights on this topic, we have decided to help out the young generation by organizing a webinar. We believe that the speaker we have chosen would be able to provide new insights and make us better prepared seeking a job in the future.
+                        Today, the number of people looking for jobs exceeds the number of
+                        vacancies available. This situation is faced by all types of job seekers, including fresh
+                        graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their
+                        filters to find the best candidates. Therefore, a good CV and interview session is necessary if
+                        someone wants to be a stand-out candidate. We are eager to learn and show our members how to
+                        make a good CV and win an interview from the HR recruiter’s perspective directly.
+                        We acknowledge this is an important thing to be discussed since there is much information on the
+                        recruitment process especially on how to make a good CV and win an interview that contradict
+                        each other. In order to straighten perspective and upgrade insights on this topic, we have
+                        decided to help out the young generation by organizing a webinar. We believe that the speaker we
+                        have chosen would be able to provide new insights and make us better prepared seeking a job in
+                        the future.
                 </div>
                 <div class="flex justify-between items-center mt-5 md:mt-0">
                     @if (Auth::check())
@@ -249,70 +264,64 @@ We acknowledge this is an important thing to be discussed since there is much in
 
                 <div class="home text relative flex justify-between
                 ">
-                <div class="relative p-5 bg-tablebg-0 rounded-xl">
-                    <table class="table-fixed w-full border-separate text-white">
-                        <tbody>
-                            <tr class=" text-center font-medium font-judul text-lg md:text-3xl h-16">
-                                <td class=" bg-time-0 rounded-md w-1/4">Time</td>
-                                <td class=" bg-timelinebot-0 rounded-md ">Day - 1</td>
-                                <td class="bg-timelinebot-0 rounded-md">Day - 2</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">09.00 - 09.30</td>
-                                <td  class=" bg-tableisi-0">Opening</td>
-                                <td  class=" tablekosong ">-</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">10.00 - 12.00</td>
-                                <td class="tablekosong">Comses 1</td>
-                                <td class="">Comses 4</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class="tabletime">12.00 - 12.30</td>
-                                <td class=" bg-tableisi-0">Break</td>
-                                <td class=" tablekosong">Break</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">12.30 - 14.00</td>
-                                <td rowspan="2" class=" bg-tableisi-0">Comses 2</td>
-                                <td class="tablekosong">Comses 5</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime ">14.00 - 14.30</td>
-                                <!-- <td class="tablekosong"></td> -->
-                                <td class="tablekosong"></td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime ">TBA</td>
-                                <td rowspan="2" class=" bg-tableisi-0">TBA</td>
-                                <td class=" bg-tableisi-0">TBA</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class=" bg-tableisi-0">TBA</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class="tablekosong"></td>
-                                <td class="tablekosong"></td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class=" bg-tableisi-0">TBA</td>
-                                <td class=" tablekosong"></td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class=" bg-tableisi-0">TBA</td>
-                                <td class=" bg-tableisi-0" rowspan="2">TBA</td>
-                            </tr>
-                            <tr class=" text-center h-6 text-xs md:text-md md:h-12">
-                                <td class=" tabletime">TBA</td>
-                                <td class="tablekosong"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    <div class="relative p-5 bg-tablebg-0 rounded-xl">
+                        <table class="table-fixed w-full border-separate text-white">
+                            <tbody>
+                                <tr class=" text-center font-medium font-judul text-lg md:text-3xl h-16">
+                                    <td class=" bg-time-0 rounded-md w-1/5">Time</td>
+                                    <td class=" bg-timelinebot-0 rounded-md ">Day - 1</td>
+                                    <td class=" bg-time-0 rounded-md w-1/5">Time</td>
+                                    <td class="bg-timelinebot-0 rounded-md">Day - 2</td>
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class=" tabletime">09.00 - 09.30</td>
+                                    <td class=" bg-tableisi-0">Opening</td>
+                                    <td class=" tabletime">10.00 - 12.00</td>
+
+                                    <td class=" bg-tableisi-0 ">Comses 4</td>
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class=" tabletime">10.00 - 10.30</td>
+                                    <td class="bg-tableisi-0">Comses 1</td>
+                                    <td class=" tabletime">12.00 - 12.30</td>
+
+                                    <td class="bg-tableisi-0">Break</td>
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class="tabletime">12.00 - 12.30</td>
+                                    <td class=" bg-tableisi-0">Break</td>
+                                    <td class=" tabletime">12.30 - 14.00</td>
+
+                                    <td class=" bg-tableisi-0">Comses 5</td>
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class=" tabletime">12.30 - 14.00</td>
+                                    <td rowspan="2" class=" bg-tableisi-0">Comses 2</td>
+                                    <td rowspan="2" class=" tabletime">14.30 - 15.00</td>
+
+                                    <td rowspan="2" class="bg-tableisi-0">Games and Feedback</td>
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class=" tabletime ">14.00 - 14.30</td>
+                                    <!-- <td class="tablekosong"></td> -->
+
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class=" tabletime ">14.30 - 14.45</td>
+                                    <td class=" bg-tableisi-0">Break</td>
+                                    <td class=" tabletime">18.30 - 19.50</td>
+
+                                    <td class="bg-tableisi-0">Closing</td>
+                                </tr>
+                                <tr class=" text-center h-6 text-xs md:text-md md:h-12">
+                                    <td class=" tabletime ">14.45 - 16.45</td>
+                                    <td class=" bg-tableisi-0">Comses 3</td>
+                                    <td class=" tablekosong"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
 
@@ -339,7 +348,8 @@ We acknowledge this is an important thing to be discussed since there is much in
                     </div>
                     <div class=" h-full w-full flex flex-col justify-items-center md:pr-8 gap-y-16 ">
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
-                            <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
+                            <div
+                                class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
                                 13 September
                             </div>
                             <div
@@ -354,7 +364,8 @@ We acknowledge this is an important thing to be discussed since there is much in
                             </div>
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
+                            <div
+                                class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
                                 1 October
                             </div>
                             <div
@@ -369,7 +380,8 @@ We acknowledge this is an important thing to be discussed since there is much in
                             </div>
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
-                            <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
+                            <div
+                                class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
                                 22 October
                             </div>
                             <div
@@ -384,7 +396,8 @@ We acknowledge this is an important thing to be discussed since there is much in
                             </div>
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
+                            <div
+                                class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
                                 2 October
                             </div>
                             <div
@@ -399,7 +412,8 @@ We acknowledge this is an important thing to be discussed since there is much in
                             </div>
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative">
-                            <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
+                            <div
+                                class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
                                 13 November
                             </div>
                             <div
@@ -414,7 +428,8 @@ We acknowledge this is an important thing to be discussed since there is much in
                             </div>
                         </div>
                         <div class="w-28 h-24 go:w-48 go:h-32 md:w-72 md:h-36 items-center relative self-end">
-                            <div class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
+                            <div
+                                class="relative z-10 font-judul  text-base pt-1 md:text-lg lg:text-3xl font-medium text-center">
                                 14 November
                             </div>
                             <div
