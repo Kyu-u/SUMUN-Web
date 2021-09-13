@@ -128,21 +128,7 @@
 
                                 <div class="pt-0">
                                     <p class="text-xxxs md:text-lg pt-4">
-                                        The well-being of the world population has depended on the earth’s ecosystem and
-                                        its biodiversity since ??? (bingung udah lama pokoknya, jaman Yesus). Yet,
-                                        ecosystem degradation and biodiversity loss is still happening at unprecedented
-                                        rates, imposing threats not only towards nature itself, but also the people who
-                                        live in it. While the environmental aspect is indisputably a pressing issue to
-                                        address, it is equally urgent to highlight the socio-economic impact of this
-                                        degradation. On June 2021, UNEP released a synthesis report for the
-                                        #GenerationRestoration movement as a call to action to prevent, halt and reverse
-                                        the degradation of ecosystems worldwide. “Degradation is already affecting the
-                                        well-being of an estimated 3.2 billion people — that is 40 percent of the
-                                        world’s population,” UNEP executive director Inger Andersen and FAO
-                                        director-general Qu Dongyu, wrote in the report. A comprehensive approach to
-                                        sustainable initiatives is necessary in order to overcome the challenges in
-                                        ecosystem restoration efforts, and that includes the deployment of science and
-                                        technology where it is feasible.
+                                    The well-being of the world population has depended on the earth’s ecosystem and its biodiversity since the dawn of history. Yet, ecosystem degradation and biodiversity loss is still happening at unprecedented rates, imposing threats not only towards nature itself, but also the people who live in it. While the environmental aspect is indisputably a pressing issue to address, it is equally urgent to highlight the socio-economic impact of this degradation. On June 2021, UNEP released a synthesis report for the #GenerationRestoration movement as a call to action to prevent, halt and reverse the degradation of ecosystems worldwide. “Degradation is already affecting the well-being of an estimated 3.2 billion people — that is 40 percent of the world’s population,” UNEP executive director Inger Andersen and FAO director-general Qu Dongyu, wrote in the report. A comprehensive approach to sustainable initiatives is necessary in order to overcome the challenges in ecosystem restoration efforts, and that includes the deployment of science and technology where it is feasible.
                                     </p>
                                 </div>
 
