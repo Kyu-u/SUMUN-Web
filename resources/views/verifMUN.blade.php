@@ -35,7 +35,7 @@
                             </h1>
 
                             <p class="text-xs md:text-md pt-4">
-                                Rp. {{$total}},00 <span class="px-2">or</span> USD {{round($total/14258,2)}}$
+                                Rp. {{$total}},00 <span class="px-2">or</span> USD {{round($total/14250)}}$
                             </p>
 
                         </div>

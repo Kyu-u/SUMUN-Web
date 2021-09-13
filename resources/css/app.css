@@ -166,12 +166,12 @@ height: 54rem;
   @layer components{
 
     .tabletime{
-      @apply text-xl h-5;
+      @apply text-base md:text-lg lg:text-xl h-5;
     }
 
-    .tablekosong{
+    /* .tablekosong{
       @apply bg-timelinebot-0 opacity-30;
-    }
+    } */
 
     .rad{
       @apply hidden;

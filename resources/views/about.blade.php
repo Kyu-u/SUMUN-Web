@@ -364,10 +364,8 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                     <div
                         class="text-white font-thin text-xxs sm:text-sm md:text-xl px-10 md:px-0 text-center md:text-left">
                         <span class="text-signup-0 font-semibold pt-4">Achievement</span> <br> ADMUN20 UNHRC Best
-                        Delegate <br class="pt-4"> GM MUN 5.0 IOM Verbal
-                        Commendation
-                        <br class="pt-4"> Iyouth Legacy MUN ECOSOC Best position Paper, and Honorable Mention <br
-                            class="pt-4"> Best Position Paper and Verbal Mention in P6MUN UNSC<br class="pt-4"> OWMUN
+                        Delegate
+                        <br class="pt-4"> Best Position Paper and Verbal Mention in P6MUN UNSC<br class="pt-4"> OWMUN
                         ECOSOC Best Delegate<br class="pt-4">
                         GYUMUN UNSC Best Position Paper <br class="pt-4"> AURAMUN UNSC Best High Commendation <br
                             class="pt-4"> NMSMUN UNGA1 Runner Up Best Delegate <br class="pt-4"> ADMUN21 DISEC Best
