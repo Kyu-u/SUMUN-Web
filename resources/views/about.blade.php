@@ -441,7 +441,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
             <div class="col-span-2 md:col-span-1 justify-self-center">
                 <div class="flex flex-col items-center justify-center">
                     <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630080716/najla_ndmwnm.png"
-                        alt="Najla Rasikha Putri Harza" class="px-16 ip:px-28 go:px-44 sm:px-52 md:px-0"
+                        alt="Najla Rasikha Putri Harza" class="w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96"
                         data-aos="fade-down" data-aos-duration="1000">
 
                     <div class="flex flex-col pt-0 md:pt-4" data-aos="fade-right" data-aos-duration="2000">
@@ -466,7 +466,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
 
                 <div class="flex flex-col items-center justify-center">
                     <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630080716/jemima_d24tma.png"
-                        alt="Jemima Audrey Natasha" class="px-16 ip:px-28 go:px-44 sm:px-52 md:px-0"
+                        alt="Jemima Audrey Natasha" class="w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96"
                         data-aos="fade-down" data-aos-duration="1000">
 
                     <div class="flex flex-col pt-0 md:pt-4" data-aos="fade-left" data-aos-duration="2000">
@@ -492,7 +492,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                             <div class="col-span-3 md:col-span-1 justify-self-center">
                                 <div class="flex flex-col items-center justify-center">
                                     <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/puti_c1igfi.png"
-                                        alt="Puti Syifa Khairani" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        alt="Puti Syifa Khairani" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                         data-aos="fade-down" data-aos-duration="1000">
 
                                     <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
@@ -518,7 +518,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                             <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
                                 <div class="flex flex-col items-center justify-center">
                                     <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/zakiyah_lxnofe.png"
-                                        alt="Zakkiyah Athiroh" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        alt="Zakkiyah Athiroh" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                         data-aos="fade-down" data-aos-duration="1000">
 
                                     <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
@@ -544,7 +544,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                             <div class="col-span-3 md:col-span-1 justify-self-center">
                                 <div class="flex flex-col items-center justify-center">
                                     <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630085821/jeane_vmbofk.png"
-                                        alt="Sesilia Jeanne Arrungan" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                        alt="Sesilia Jeanne Arrungan" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                         data-aos="fade-down" data-aos-duration="1000">
 
                                     <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
@@ -574,7 +574,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/tania_leal8l.png"
-                                    alt="Tania Pronasavira" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Tania Pronasavira" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
@@ -600,7 +600,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/alfin_jxgk79.png"
-                                    alt="Alfin Alifian Zain" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Alfin Alifian Zain" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
@@ -626,7 +626,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630086645/sciencenia_qcqrgl.png"
-                                    alt="Sciencinia Marin Kurnia" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Sciencinia Marin Kurnia" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
@@ -656,7 +656,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087545/ken_ff67ae.png"
-                                    alt="Kennard Mahib Bariumanto" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Kennard Mahib Bariumanto" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
@@ -682,7 +682,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/yere_nglhgp.png"
-                                    alt="Yeremia Nathannael" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Yeremia Nathannael" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
@@ -708,7 +708,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087547/jose_qjbdhp.png"
-                                    alt="Josephine Ricardia Putri Gale" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Josephine Ricardia Putri Gale" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
@@ -738,7 +738,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/bayu_kwy1hj.png"
-                                    alt="Bayu Prayogo Andriyanto" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Bayu Prayogo Andriyanto" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
@@ -764,7 +764,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087544/yakina_rqpkd6.png"
-                                    alt="Yakina Athiyyah Darmawan" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Yakina Athiyyah Darmawan" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
@@ -790,7 +790,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087542/fajrul_lmrthr.png"
-                                    alt="M Fajrul Alam Ulin Nuha" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="M Fajrul Alam Ulin Nuha" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
@@ -820,7 +820,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087971/drigo_jf8i3n.png"
-                                    alt="Drigo Alexander Sihombing" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Drigo Alexander Sihombing" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-left" data-aos-duration="2000">
@@ -846,7 +846,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center -mt-0 md:-mt-10 ">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087970/edrick_fviw8f.png"
-                                    alt="Jonathan Edrick" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="Jonathan Edrick" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-up" data-aos-duration="2000">
@@ -872,7 +872,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
                         <div class="col-span-3 md:col-span-1 justify-self-center">
                             <div class="flex flex-col items-center justify-center">
                                 <img src="https://res.cloudinary.com/dxy6iowwg/image/upload/v1630087970/fikrar_zlguiw.png"
-                                    alt="M Fikrar Claverio" class="px-24 ip:px-36 go:px-56 sm:px-60 md:px-0"
+                                    alt="M Fikrar Claverio" class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
                                     data-aos="fade-down" data-aos-duration="1000">
 
                                 <div class="flex flex-col" data-aos="fade-right" data-aos-duration="2000">
