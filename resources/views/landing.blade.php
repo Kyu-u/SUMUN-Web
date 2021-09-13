@@ -69,8 +69,8 @@
         <div data-aos="fade-right" data-aos-duration="2000"
             class="font-judul text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
             <h2>
-                Pendaftaran dibuka <span class="font-bold">15-17 Juni 2021</span>.
-                Pilih acara yang ingin diikuti.
+                Early registration for MUN is open from <span class="font-bold">13 - 26 september</span>.
+                Don't miss it!
             </h2>
         </div>
         <div class="flex flex-col md:flex-row gap-14 pt-16">
