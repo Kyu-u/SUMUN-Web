@@ -228,6 +228,9 @@ class registerController extends BaseController {
         ]);
         $username = array_filter($request->username);
         $council = array_filter($request->council);
+        if (count($username) !== count(array_unique($username))){
+            return redirect('registerMUN')->withErrors('The same user cannot register twice');
+        }
         if(count($username)==0||count($council)==0||count($username)!=count($council)){
             return redirect('registerMUN')->withErrors('Please fill out all the forms');
         }

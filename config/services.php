@@ -33,7 +33,7 @@ return [
     'google' => [
         'client_id' => '734410856497-f6lam2edrk4laq3t26ao42v55ig0ejfr.apps.googleusercontent.com',
         'client_secret' => 'UiNeT38z5oFd_-RXXFrUtaul',
-        'redirect' => 'http://localhost:8000/auth/google/callback',
+        'redirect' => 'http://surabayamun/auth/google/callback',
     ],
 
 ];

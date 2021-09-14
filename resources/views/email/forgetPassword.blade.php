@@ -150,8 +150,7 @@
 												<td
 													style=" background:#469766;font-family:'Muli',Arial,sans-serif;font-size:14px;line-height:18px;padding:12px 30px;text-align:center;border-radius:10px 10px 10px 10px;font-weight:bold">
 													<a href="{{ route('reset.password.get', $token) }}" span
-														style="color:#ffffff;text-decoration:none">Claim
-														Reward</span></a>
+														style="color:#ffffff;text-decoration:none">Reset!</span></a>
 												</td>
 											</tr>
 										</tbody>

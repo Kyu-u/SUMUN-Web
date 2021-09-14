@@ -15,7 +15,7 @@
 
         <h2 class="font-medium pt-2 pb-2 lg:pb-6 text-xs md:text-xs xl:text-2xl">Please Log In to your account</h2>
         @if ($errors->any())
-          <p class="text-white pb-5">*{{$errors->first()}}<br></p> 
+        <p class="text-white pb-5">*{{$errors->first()}}<br></p>
         @endif
         <form class="flex flex-col" action="{{ route('login.post') }}" method="post">
           @csrf
@@ -35,11 +35,12 @@
             </button>
 
             <button
-              class="w-16   ip:w-16 lg:w-20 xl:w-36 h-6  go:h-8 md:h-6 lg:h-8 border-2 border-signup-0 rounded-lg  text-xs lg:text-sm xl:text-xl ml-4 flex-1 md:flex-initial">
+              class="w-16 ip:w-16 lg:w-20 xl:w-36 h-6  go:h-8 md:h-6 lg:h-8 border-2 border-signup-0 rounded-lg  text-xs lg:text-sm xl:text-xl ml-4 flex-1 md:flex-initial">
               <a href="{{ route('signup1') }}">Sign Up</a>
             </button>
           </div>
-          <a class="lg:pl-36 xl:pl-70  text-white hover:text-signup-0 text-xs xl:text-sm pt-4" href="">Forgot
+          <a class="lg:pl-36 xl:pl-70  text-white hover:text-signup-0 text-xs xl:text-sm pt-4"
+            href="{{route('forgot')}}">Forgot
             password?</a>
 
         </form>
