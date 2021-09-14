@@ -903,7 +903,7 @@ background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
         background: linear-gradient(to bottom, #57CA85 0%, #184E68 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">
-                        Meet the website team
+                        MEET THE WEBSITE TEAM
                     </h2>
 
 
