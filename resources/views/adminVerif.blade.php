@@ -39,11 +39,21 @@
                     </div>
                 </div>
                 <input type="hidden" id="user_id" name="user_id" value="{{$image->user_id}}">
+
+                <div class="flex flex-row gap-5">
+                <button type="submit" class="w-auto rounded-md px-4 py-2 bg-white-0 text-signup-0">
+
+Delete
+
+</button>
+
                 <button type="submit" class="w-auto rounded-md px-4 py-2 bg-signup-0">
 
-                    Verify
+Verify
 
-                </button>
+</button>
+                </div>
+              
 
             </div>
         </form>
