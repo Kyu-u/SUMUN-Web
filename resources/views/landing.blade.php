@@ -41,6 +41,9 @@
     <div id="sponsors" class="max-w-5xl lg:max-w-7xl pt-20 mx-auto relative">
         <h2 class="text-signup-0 opacity-70 font-navbar text-center md:text-4xl font-semibold lg:text-6xl pb-10">
             No Sponsors Yet
+            @if(Auth::check() && Auth::user()->verified==1)
+            {{$nama}}
+            @endif
         </h2>
         <!-- <div class="grid grid-rows-2 gap-8 pt-24">
         <div class="grid grid-cols-5 gap-12 justify-items-center">
