@@ -58,17 +58,17 @@
                 <div class="md:w-1/2 pt-1 md:pt-4 lg:pt-10">
                     <p class="text-xxs lg:text-lg  md:text-right text-white pb-1 md:pb-3 lg:pb-5">
                     Today, the number of people looking for jobs exceeds the number of
-vacancies available. This situation is faced by all types of job seekers, including fresh graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their filters to find the best candidates. Therefore, a good CV and interview session is necessary if someone wants to be a stand-out candidate. We are eager to learn and show our members how to make a good CV and win an interview from the HR recruiter’s perspective directly.
+vacancies available. This situation is faced by all types of job seekers, including fresh graduates. Human Resources (HR) relies on Curriculum Vitae (CV) and interviews as one of their filters to find the best candidates. Therefore, a good CV and interview session is necessary if someone wants to be a stand-out candidate. We are eager to learn and show students how to make a good CV and win an interview from the HR recruiter’s perspective directly.
                     </p>
     
                     <div class="flex text-white gap-x-6 md:gap-x-16 font-sans pb-1 md:pb-2 lg:pb-6">
                         <div class="flex-1 flex flex-col items-center">
                             <span class="text-secondheader-0 text-sm lg:text-xl pb-1 md:pb-2 lg:pb-2">Join on:</span>
-                            <span class="text-sm lg:text-4xl font-semibold">1 September</span>
+                            <span class="text-sm lg:text-4xl font-semibold">2 October</span>
                         </div>
                         <div class="flex-1 flex flex-col items-center">
                             <span class="text-secondheader-0 text-sm lg:text-xl pb-1 md:pb-2 lg:pb-2">Time:</span>
-                            <span class="text-sm lg:text-4xl font-semibold">12:00 - 15:00</span>
+                            <span class="text-sm lg:text-4xl font-semibold">13:00 - 15:00</span>
                         </div>
     
                     </div>
@@ -96,7 +96,7 @@ vacancies available. This situation is faced by all types of job seekers, includ
 
 
 <div class="w-full flex justify-center items-center  lg:mt-64">
-    <a class="bg-signup-0 w-28 h-11 rounded-md text-white font-semibold self-end mt-10 flex justify-center items-center line-through text-gray-700" disabled>Register</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgbthVpWdizaRHYraylUpQZFwoAKz3B6wVOkXbl0JRuTHa7w/viewform?usp=sf_link" target="_blank" class="bg-signup-0 w-28 h-11 rounded-md text-white font-semibold self-end mt-10 flex justify-center items-center" >Register</a>
 
 </div>
 
