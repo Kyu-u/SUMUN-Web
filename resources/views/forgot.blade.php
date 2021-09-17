@@ -27,7 +27,7 @@
             <label class="pb-2 text-xs nd:text-sm" for="Email" class="">Your Email</label>
             <input class="rounded-lg md:w-full px-4 py-2 text-sm md:text-sm  text-xl text-black" type="text" id="email"
               name="email" placeholder="example@example.com">
-            <button class="flex justify-end items-end">
+            <button class="flex justify-end items-end pt-4">
               <a href="forgot2.html" type="submit">
                 <div class="w-auto bg-signup-0 rounded-md py-2 px-8">
                   <p>Send</p>

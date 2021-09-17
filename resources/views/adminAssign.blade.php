@@ -38,8 +38,10 @@
             scrollbar-track-main-0 scrollbar-thumb-signup-0 pr-10">
                             <div class="flex items-center w-full">
                                 @foreach($users as $user)
-                                {{$user->username}} <br>
-                                Level: {{$user->experience}}
+                                <p class="py-2">
+                                    {{$user->username}} <br>
+                                    Level: {{$user->experience}}
+                                </p>
                                 @endforeach
                             </div>
 

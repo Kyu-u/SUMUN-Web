@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\verifikasi;
 use App\Models\Queueverif;
+use App\Models\User;
 use auth;
 
 class verif extends Controller
@@ -49,6 +50,11 @@ class verif extends Controller
                 "file_path" => $request->file->hashName()
             ]);
             $verif->save(); 
+            $users = User::join('queueVerif','queueVerif.tambahan','=','users.id')->where('user_id','=',auth()->user()->id);
+            $users->update([
+                'verified' => '2'
+            ]);
+            
             return redirect()->back()->withErrors(['File successfuly uploaded!']);
         }
         else {

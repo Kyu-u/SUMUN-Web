@@ -244,10 +244,13 @@ class registerController extends BaseController {
                 return redirect('registerMUN')->withErrors('User not found');
             }
             if($user->verified==1){
-                return redirect('registerMUN')->withErrors('Ada user yang sedang diverifikasi');
+                return redirect('registerMUN')->withErrors('You have been registered, please upload your proof of payment');
             }
             if($user->verified==2){
-                return redirect('registerMUN')->withErrors('Ada user sudah terverifikasi');
+                return redirect('registerMUN')->withErrors('Please wait for verification');
+            }
+            if($user->verified==3){
+                return redirect('registerMUN')->withErrors('Someone has already been verified');
             }
         }
         foreach($datas as $data){

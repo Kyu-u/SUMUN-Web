@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Queueverif;
 use Auth;
 
 class HomeController extends Controller
@@ -19,6 +20,14 @@ class HomeController extends Controller
     }
     public function landing()
     {
+        if(Auth::check()){
+            $user = Auth::user();
+        if($user->verified==1){
+            $id = Queueverif::where('tambahan','=',$user->id)->first();
+            $temen = User::where('id','=',$id->user_id)->first();
+            return view('landing',['nama' => $temen->name]);
+            }
+        }
         return view('landing');
     }
     public function about()

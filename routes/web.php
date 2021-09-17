@@ -47,7 +47,9 @@ Route::POST('/registerMUN/post', [registerController::class,'registMember'])->na
 /* Admin Verif */
 Route::post('/admin/assign', [AdminController::class, 'assignCountry'])->name('assignCountry');
 Route::post('/adminVerif-post', [AdminController::class, 'verify'])->name('verify.post');
+Route::post('/adminVerif-delete', [AdminController::class, 'delete'])->name('verify.delete');
 Route::get('/admin', [AdminController::class, 'adminAssign'])->name('adminAssign');
+
 /* User Verif */
 Route::get('/verifMUN', [verif::class, 'MUN'])->name('verifMUN.index');
 Route::get('/verifWebinar', [verif::class, 'Webinar'])->name('verifWebinar.index');
