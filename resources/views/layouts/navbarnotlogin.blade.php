@@ -16,6 +16,31 @@
         }
 
     </style>
+     <style>
+        .carousel-open:checked + .carousel-item {
+            position: static;
+            opacity: 100;
+        }
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+        #carousel-1:checked ~ .control-1,
+        #carousel-2:checked ~ .control-2,
+        #carousel-3:checked ~ .control-3 {
+            display: block;
+        }
+        .carousel-indicators {
+            list-style: none;
+            z-index: 10;
+        }
+        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #57CA85;  /*Set to match the Tailwind colour you want the active one to be */
+        }
+    </style>
+    
     <meta name="description"
         content="Surabaya Model United Nations is the first international Model United Nations conference in Surabaya, was held by the ITS Model United Nations Club">
     <meta name="keywords" content="Surabaya,MUN,SUMUN,Surabaya MUN,Conference">
@@ -388,6 +413,9 @@
                     <a href="mailto:surabayamun@gmail.com"
                         class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Email</a>
                 </div>
+                <div class="text-xs font-thin text-center md:text-left">
+            <a href="mailto:admin@surabayamun.com" class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Dev Support</a>
+</div>
             </div>
         </div>
         <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />

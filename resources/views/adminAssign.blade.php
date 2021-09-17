@@ -98,9 +98,12 @@
             <div class="mt-5 flex flex-col text-xl gap-7 overflow-y-scroll items-center h-44 self-center scrollbar-thumb-rounded-full scrollbar-thin object-contain 
       scrollbar-track-main-0 scrollbar-thumb-signup-0 pr-10">
                 @foreach($users as $user)
+                <p class="py-2">
                 {{$user->username}} <br>
                 Level: {{$user->experience}}
                 @endforeach
+                </p>
+                
             </div>
         </div>
     </form>

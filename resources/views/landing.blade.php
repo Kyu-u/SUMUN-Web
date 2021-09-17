@@ -41,9 +41,7 @@
     <div id="sponsors" class="max-w-5xl lg:max-w-7xl pt-20 mx-auto relative">
         <h2 class="text-signup-0 opacity-70 font-navbar text-center md:text-4xl font-semibold lg:text-6xl pb-10">
             No Sponsors Yet
-            @if(Auth::check() && Auth::user()->verified==1)
-            {{$nama}}
-            @endif
+        
         </h2>
         <!-- <div class="grid grid-rows-2 gap-8 pt-24">
         <div class="grid grid-cols-5 gap-12 justify-items-center">
@@ -566,6 +564,9 @@
                     <a href="mailto:surabayamun@gmail.com"
                         class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Email</a>
                 </div>
+                <div class="text-xs font-thin text-center md:text-left">
+            <a href="mailto:admin@surabayamun.com" class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Dev Support</a>
+</div>
             </div>
         </div>
         <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />

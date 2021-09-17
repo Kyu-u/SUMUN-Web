@@ -347,6 +347,9 @@
                             <a href="mailto:surabayamun@gmail.com"
                                 class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Email</a>
                         </div>
+                        <div class="text-xs font-thin text-center md:text-left">
+            <a href="mailto:admin@surabayamun.com" class="text-white hover:text-signup-0 transform translate duration-300 text-lg font-light">Dev Support</a>
+</div>
                     </div>
                 </div>
                 <hr class="block h-0.5 bg-foot-0 opacity-25 rounded-full mx-auto max-w-7xl w-1/2 md:w-full" />

@@ -37,6 +37,31 @@
 <body class="bg-main-0 ">
     <div class="relative max-w-screen-3xl mx-auto">
         @if (Auth::check())
+
+        @if(Auth::check() && Auth::user()->verified==1)
+        <div class="sticky bg-main-0 text-center py-4 lg:px-4  w-full ">
+    <div class="alert p-2 bg-cardcouncil-0 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex transform -translate-y-full popup" role="alert">
+      <span class="flex rounded-full bg-signup-0 uppercase px-2 py-1 text-xs font-bold mr-3">Announcement</span>
+      <span class="font-semibold mr-2 text-left flex-auto">Don't forget to upload your proof of payment!</span>
+      <svg class="fill-current h-6 w-6 text-signup-0 close" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+    </div>
+    @elseif(Auth::check() && Auth::user()->verified==2)
+    <div class="sticky bg-main-0 text-center py-4 lg:px-4  w-full ">
+    <div class="alert p-2 bg-cardcouncil-0 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex transform -translate-y-full popup" role="alert">
+      <span class="flex rounded-full bg-signup-0 uppercase px-2 py-1 text-xs font-bold mr-3">Announcement</span>
+      <span class="font-semibold mr-2 text-left flex-auto">Wait for admin to verify your proof of payment</span>
+      <svg class="fill-current h-6 w-6 text-signup-0 close" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+    </div>
+    @elseif(Auth::check() && Auth::user()->verified==3)
+    <div class="sticky bg-main-0 text-center py-4 lg:px-4  w-full ">
+    <div class="alert p-2 bg-cardcouncil-0 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex transform -translate-y-full popup" role="alert">
+      <span class="flex rounded-full bg-signup-0 uppercase px-2 py-1 text-xs font-bold mr-3">Announcement</span>
+      <span class="font-semibold mr-2 text-left flex-auto">You've been verified</span>
+      <svg class="fill-current h-6 w-6 text-signup-0 close" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+    </div>
+            @endif
+       
+
         <nav class="bg-main-0 py-10 text-white font-navbar font-medium relative z-50">
             <div id="navitems" class="max-w-7xl mx-auto items-center grid grid-cols-9 hidden lg:grid">
                 <a href="{{route('landing')}}" class="link justify-self-center relative hover:text-signup-0">Home</a>
@@ -619,6 +644,37 @@
         AOS.init();
 
     </script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const pop = document.querySelector('.popup')
+      const close = document.querySelector('.close')
+console.log("test")
+      close.addEventListener('click', () => {
+        console.log("test2")
+        if (pop.classList.contains('flex') || pop.classList.contains('lg:inline-flex')) {
+          pop.classList.remove('flex');
+          pop.classList.remove('lg:inline-flex')
+          pop.classList.add('hidden');
+        } else {
+          pop.classList.remove('lg:inline-flex');
+          pop.classList.add('hidden');
+        }
+      })
+    })
+  </script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <script >
+        const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+        tl.to('.alert',{y: "0%", duration: 1.25});
+
+       
+      </script>
+      
 </body>
 
 </html>
