@@ -67,11 +67,11 @@
                         </button>
                         <div id="dropdown2"
                             class="hidden z-10 absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
-                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                <a href="{{route('registMUN')}}">MUN</a>
+                            <div class="flex py-2 justify-center bg-gray-700 text-gray-300 line-through" disabled>
+                                <a href="{{route('registMUN')}}" disabled>MUN</a>
                             </div>
-                            <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                <a href="{{route('regisweb')}}">Webinar</a>
+                            <div class="flex py-2 justify-center bg-gray-700 text-gray-300 line-through" disabled>
+                                <a href="{{route('regisweb')}}" disabled>Webinar</a>
                             </div>
                             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                                 <a href="{{route('verifMUN.index')}}">Verif MUN</a>
@@ -128,11 +128,11 @@
                                     </svg>
                                 </button>
                                 <div id="mobilenavbardropdown" class="flex-col hidden items-end">
-                                    <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                        <a href="{{route('registMUN')}}">MUN</a>
+                                    <div class="flex py-2 justify-center bg-gray-700 text-gray-300 line-through " disabled>
+                                        <a href="{{route('registMUN')}}" disabled>MUN</a>
                                     </div>
-                                    <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
-                                        <a href="{{route('regisweb')}}">Webinar</a>
+                                    <div class="flex py-2 justify-center bg-gray-700 text-gray-300 line-through " disabled>
+                                        <a href="{{route('regisweb')}}" disabled>Webinar</a>
                                     </div>
                                     <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                                         <a href="{{route('verifMUN.index')}}">Verif MUN</a>
@@ -214,7 +214,7 @@
                             class="link justify-self-center relative hover:text-signup-0">Merchandise</a>
 
                         <div id="navitems" class="justify-self-center flex gap-4 items-center text-sm col-span-2">
-                            <a href={{ route('showLoginForm') }}
+                            <a href="{{route('showLoginForm')}}"
                                 class="link justify-self-start relative hover:text-signup-0">Log In</a>
                             <div class="text-xs">
                                 <h2>or</h2>

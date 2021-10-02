@@ -28,7 +28,7 @@
             <img class="mx-auto self-center pt-5 md:pt-5 lg:pt-10" src="images/line.png" alt="">
 
             <div class="text-white font-sans self-center pt-5">
-                Already have an account? <a href=""><span class="hover:text-signup-0">Log in</span></a>
+                Already have an account? <a href="{{route('showLoginForm')}}"><span class="hover:text-signup-0">Log in</span></a>
             </div>
 
         </div>

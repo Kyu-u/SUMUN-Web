@@ -70,8 +70,7 @@
         <div data-aos="fade-right" data-aos-duration="2000"
             class="font-judul text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
             <h2>
-                Early registration for MUN is open from <span class="font-bold">13 - 26 september</span>.
-                Don't miss it!
+                Early registration is closed!
             </h2>
         </div>
         <div class="flex flex-col md:flex-row gap-14 pt-16">
@@ -116,18 +115,19 @@
                 <div class="flex flex-row justify-between mt-5 md:mt-0 items-center">
                     @if (Auth::check())
                     <a href="{{route('registMUN')}}" class="
-              bg-signup-0
               px-2
               py-1
-              text-sm text-white
+              text-sm 
+            bg-gray-700
+            text-gray-300
               font-bold font-navbar
               rounded-full
-              focus:bg-buttonactive-0
+              
               flex
               justify-center
               items-center
               
-            ">
+            " disabled>
                         Register Here!
                     </a>
 
@@ -146,14 +146,14 @@
             flex
             justify-center
             items-center
-          ">
+          " >
                         Register Here!
                     </a>
 
                     @endif
 
                     <p class="text-white flex justify-center
-                    items-center text-xs md:text-sm lg:text-lg font-semibold">Rp.80000,00</p>
+                    items-center text-xs md:text-sm lg:text-lg font-semibold">Early Reg Closed</p>
                 </div>
 
 
@@ -203,15 +203,15 @@
                 <div class="flex justify-between items-center mt-5 md:mt-0">
                     @if (Auth::check())
                     <a href="{{route('registMUN')}}" class="
-              bg-signup-0
+              bg-gray-700
+              text-gray-300
               px-2
               py-1
-              text-sm text-white
+              text-sm 
               font-bold font-navbar
               rounded-full
               self-start
-              focus:bg-buttonactive-0
-            ">
+            " disabled>
                         Register Here!
                     </a>
 
