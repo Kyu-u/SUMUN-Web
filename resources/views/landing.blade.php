@@ -70,7 +70,7 @@
         <div data-aos="fade-right" data-aos-duration="2000"
             class="font-judul text-center md:text-left text-white text-sm px-4 go:px-0 go:text-xl pt-8">
             <h2>
-                Early registration is closed
+                Registration is now open, Don't miss it!
             </h2>
         </div>
         <div class="flex flex-col md:flex-row gap-14 pt-16">
@@ -115,43 +115,38 @@
                 <div class="flex flex-row justify-between mt-5 md:mt-0 items-center">
                     @if (Auth::check())
                     <a href="{{route('registMUN')}}" class="
-              bg-gray-700
-              px-2
-              py-1
-              text-sm
-              text-gray-300
-              font-bold font-navbar
-              rounded-full
-           
-              flex
-              justify-center
-              items-center
+                    bg-signup-0
+            px-2
+            py-1
+            text-sm text-white
+            font-bold font-navbar
+            rounded-full
+            self-start
+            focus:bg-buttonactive-0
               
-            " disabled style="pointer-events: none">
+            " >
                         closed
                     </a>
 
                     @else
 
                     <a href="{{route('signup1')}}" class="
-            bg-gray-700
+                    bg-signup-0
             px-2
             py-1
-            text-sm 
-            text-gray-300
+            text-sm text-white
             font-bold font-navbar
             rounded-full
-            flex
-            justify-center
-            items-center
-          " disabled style="pointer-events: none">
-                        Closed
+            self-start
+            focus:bg-buttonactive-0
+          " >
+                        Register here!
                     </a>
 
                     @endif
 
                     <p class="text-white flex justify-center
-                    items-center text-xs md:text-sm lg:text-lg font-semibold">Early regist closed</p>
+                    items-center text-xs md:text-sm lg:text-lg font-semibold">Rp 100.000,00</p>
                 </div>
 
 

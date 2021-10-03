@@ -67,11 +67,11 @@
                         </button>
                         <div id="dropdown2"
                             class="hidden z-10 absolute top-6 flex-col bg-signup-0 w-28  mt-1 justify-center">
-                            <div class="flex py-2 justify-center bg-gray-700 text-gray-300 line-through" disabled style="pointer-events: none">
-                                <a href="{{route('registMUN')}}" disabled style="pointer-events: none">MUN</a>
+                            <div class="flex py-2 justify-center hover:bg-dropdown-0 " >
+                                <a href="{{route('registMUN')}}" >MUN</a>
                             </div>
-                            <div class="flex py-2 justify-center hover:bg-dropdown-0 " disabled style="pointer-events: none">
-                                <a href="{{route('regisweb')}}" disabled style="pointer-events: none">Webinar</a>
+                            <div class="flex py-2 justify-center hover:bg-dropdown-0 " ">
+                                <a href="{{route('regisweb')}}" ">Webinar</a>
                             </div>
                             <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                                 <a href="{{route('verifMUN.index')}}">Verif MUN</a>
@@ -128,8 +128,8 @@
                                     </svg>
                                 </button>
                                 <div id="mobilenavbardropdown" class="flex-col hidden items-end">
-                                    <div class="flex py-2 justify-center bg-gray-700 text-gray-300 line-through " disabled style="pointer-events: none">
-                                        <a href="{{route('registMUN')}}" disabled style="pointer-events: none">MUN</a>
+                                    <div class="flex py-2 justify-center hover:bg-dropdown-0 " >
+                                        <a href="{{route('registMUN')}}" >MUN</a>
                                     </div>
                                     <div class="flex py-2 justify-center hover:bg-dropdown-0 ">
                                         <a href="{{route('regisweb')}}" >Webinar</a>
