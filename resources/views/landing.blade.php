@@ -125,7 +125,7 @@
             focus:bg-buttonactive-0
               
             " >
-                        closed
+                      Register Here
                     </a>
 
                     @else
@@ -140,7 +140,7 @@
             self-start
             focus:bg-buttonactive-0
           " >
-                        Register here!
+                        Register Here!
                     </a>
 
                     @endif
