@@ -34,6 +34,7 @@ Route::get('/regisweb', [HomeController::class, 'index'])->name('regisweb');
 Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
 Route::get('account/verify/{token}', [registerController::class, 'verifyAccount'])->name('user.verify'); 
 Route::get('/waitemail', [HomeController::class, 'waitemail'])->name('waitemail');
+Route::get('/experience', [HomeController::class, 'experience'])->name('experience');
 
 /* Login Logout MUN */
 Route::get('/login',[LoginController::class,'showLoginForm'])->name('showLoginForm');

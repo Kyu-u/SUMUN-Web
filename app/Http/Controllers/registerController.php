@@ -108,19 +108,7 @@ class registerController extends BaseController {
         $users->save();
         $request->session()->forget('users');
 
-        $token = Str::random(64);
-        $user = User::where('username','=',$users->username)->first();
-        UserVerify::create([
-              'user_id' => $user->id, 
-              'token' => $token
-            ]);
-        
-        Mail::send('verificationEmail', ['token' => $token], function($message) use($user){
-            $message->to($user->email);
-            $message->subject('Email Verification Mail');
-        });
-
-        return redirect()->route('waitemail');
+        return redirect()->route('experience');
     } 
 
     public function store5(Request $request)
@@ -138,6 +126,20 @@ class registerController extends BaseController {
         $users->save();
         $request->session()->forget('users');
         
+        return redirect()->route('experience');
+    } 
+
+    public function store6(Request $request)
+    {
+        $validatedData = $request->validate([
+            'munevent' => 'required',
+        ]);
+        $users = $request->session()->get('users');
+        $users->fill($validatedData);
+        $request->session()->put('users', $users);
+        $users->save();
+        $request->session()->forget('users');
+
         $token = Str::random(64);
         $user = User::where('username','=',$users->username)->first();
         UserVerify::create([
@@ -149,6 +151,7 @@ class registerController extends BaseController {
             $message->to($user->email);
             $message->subject('Email Verification Mail');
         });
+
         return redirect()->route('waitemail');
     } 
 
