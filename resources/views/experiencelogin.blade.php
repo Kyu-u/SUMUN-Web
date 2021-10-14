@@ -69,7 +69,7 @@
 
 
 
-        <form class="flex flex-col py-10 w-2/3" action="{{ route('regis6') }}" method="POST">
+        <form class="flex flex-col py-10 w-2/3" action="{{ route('addExp') }}" method="POST">
         @csrf
             <label class="pb-2 text-xs nd:text-sm text-white font-semibold" for="munevent" class="">Your Experience</label>
             <input class="rounded-lg md:w-full px-4 py-2 text-xxs md:text-sm  text-xl text-black" type="text" id="munevent" name="munevent"

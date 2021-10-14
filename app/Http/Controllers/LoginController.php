@@ -27,8 +27,12 @@ class LoginController extends BaseController
             if(!Auth::attempt($request->only('email', 'password'), $request->remember)){
                 return back()->with('status', 'Invalid login details');
             }
-        }
 
+            if($user->munevent == NULL ){
+                return redirect()->route('experiencelogin');
+            }
+        }
+      
         return redirect()->route('landing')->withErrors('Invalid Credentials');
     }
 
@@ -36,6 +40,18 @@ class LoginController extends BaseController
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+        return redirect()->route('landing');
+    }
+
+    public function addExp(Request $request){
+        $request->validate([
+            'munevent' => 'required',
+        ]);
+
+        $user = Auth::user();
+        
+        $user->update(['munevent' => $request->munevent]);
+
         return redirect()->route('landing');
     }
 }
