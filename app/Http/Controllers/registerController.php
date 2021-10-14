@@ -103,10 +103,17 @@ class registerController extends BaseController {
             'experience' => 'required',
         ]);
         $users = $request->session()->get('users');
-        $users->fill($validatedData);
+        $users->fill(array(
+         'school_name' => $request->school_name,
+         'grade'=>$request->grade,
+         'major'=>$request->major,
+         'experience' => $request->experience
+        ));
         $request->session()->put('users', $users);
-        $users->save();
-        $request->session()->forget('users');
+        // $users->fill($validatedData);
+        // $request->session()->put('users', $users);
+        // $users->save();
+        // $request->session()->forget('users');
 
         return redirect()->route('experience');
     } 
@@ -119,12 +126,20 @@ class registerController extends BaseController {
             'major' => 'required',
             'experience' => 'required',
         ]);
-
         $users = $request->session()->get('users');
-        $users->fill($validatedData);
+        $users->fill(array(
+         'university' => $request->university,
+         'grade'=>$request->grade,
+         'major'=>$request->major,
+         'experience' => $request->experience
+        ));
         $request->session()->put('users', $users);
-        $users->save();
-        $request->session()->forget('users');
+        // $request->session()->put('users', $users);
+        // $users = $request->session()->get('users');
+        // $users->fill($validatedData);
+        // $request->session()->put('users', $users);
+        // $users->save();
+        // $request->session()->forget('users');
         
         return redirect()->route('experience');
     } 

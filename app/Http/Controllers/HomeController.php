@@ -42,6 +42,14 @@ class HomeController extends Controller
     {
         return view('merch');
     }
+    public function experience()
+    {
+        return view('experience');
+    }
+    public function experiencelogin()
+    {
+        return view('experiencelogin');
+    }
     public function regisweb()
     {
         return view('regisweb');
