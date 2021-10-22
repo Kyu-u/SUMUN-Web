@@ -40,24 +40,14 @@
 
     <div id="sponsors" class="max-w-5xl lg:max-w-7xl pt-20 mx-auto relative">
         <h2 class="text-signup-0 opacity-70 font-navbar text-center md:text-4xl font-semibold lg:text-6xl pb-10">
-            No Sponsors Yet
+            Our Sponsor
         
         </h2>
-        <!-- <div class="grid grid-rows-2 gap-8 pt-24">
-        <div class="grid grid-cols-5 gap-12 justify-items-center">
-          <img class="self-center w-1/2" src="coke.png" alt="" />
-          <img class="self-center w-1/2" src="shangri.png" alt="" />
-          <img class="self-center w-1/2" src="bni.png" alt="" />
-          <img class="self-center w-1/2" src="its.png" alt="" />
-          <img class="self-center w-1/2" src="coke.png" alt="" />
-        </div>
-        <div class="grid grid-cols-4 gap-12 justify-center">
-          <img class="self-center w-1/2" src="coke.png" alt="" />
-          <img class="self-center w-1/2" src="shangri.png" alt="" />
-          <img class="self-center w-1/2" src="bni.png" alt="" />
-          <img class="self-center w-1/2" src="its.png" alt="" />
-        </div>
-      </div> -->
+    <div class="grid grid-rows-2 gap-8 pt-24">
+        <div class="grid grid-cols-1 gap-12 justify-items-center">
+          <img class="w-full" src="https://res.cloudinary.com/varkyu/image/upload/v1634912843/SKK-IOG-POAHEC_ddm9jv.png" alt="SKK Migas , IOG 4.0 & PremiereOil Logo" />
+        </div>   
+      </div>
 
     </div>
 
