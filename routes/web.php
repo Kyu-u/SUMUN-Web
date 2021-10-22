@@ -37,7 +37,7 @@ Route::get('/waitemail', [HomeController::class, 'waitemail'])->name('waitemail'
 Route::get('/experience', [HomeController::class, 'experience'])->name('experience');
 Route::get('/experiencelogin', [HomeController::class, 'experiencelogin'])->name('experiencelogin');
 Route::post('/regis6',[registerController::class,'store6'])->name('regis6');
-Route::post('/addExp',[registerController::class,'addExp'])->name('addExp');
+Route::post('/addExp',[LoginController::class,'addExp'])->name('addExp');
 
 /* Login Logout MUN */
 Route::get('/login',[LoginController::class,'showLoginForm'])->name('showLoginForm');

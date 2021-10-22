@@ -40,6 +40,7 @@ class User extends Authenticatable
         'transaction_id',
         'is_email_verified',
         'experience',
+        'munevent',
         'created_at',
         'updated_at',
     ];

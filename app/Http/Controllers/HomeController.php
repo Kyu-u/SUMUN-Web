@@ -24,9 +24,13 @@ class HomeController extends Controller
             $user = Auth::user();
         if($user->verified==1){
             $id = Queueverif::where('tambahan','=',$user->id)->first();
-            $temen = User::where('id','=',$id->user_id)->first();
-            return view('landing',['nama' => $temen->name]);
+            if ($id){
+                $temen = User::where('id','=',$id->user_id)->first();
+                return view('landing',['nama' => $temen->name]);
+                }
             }
+            else
+                return view('landing');
         }
         return view('landing');
     }
@@ -41,6 +45,14 @@ class HomeController extends Controller
     public function merch()
     {
         return view('merch');
+    }
+    public function experience()
+    {
+        return view('experience');
+    }
+    public function experiencelogin()
+    {
+        return view('experiencelogin');
     }
     public function regisweb()
     {
