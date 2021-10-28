@@ -35,7 +35,14 @@
                             </h1>
 
                             <p class="text-xs md:text-md pt-4">
+                                @if(Auth::check() && Auth::user()->verified < 2)
                                 Rp. {{$total}},00 <span class="px-2">or</span> USD {{round($total/14250)}}$
+                            @elseif(Auth::check() && Auth::user()->verified== 2)
+                                Wait for admin to verify
+                            @elseif(Auth::check() && Auth::user()->verified== 3)
+                           You've been verified 
+                                    @endif
+                                
                             </p>
 
                         </div>
