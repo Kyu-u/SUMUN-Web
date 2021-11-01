@@ -34,15 +34,17 @@
                                 class="bg-signup-0 bg-opacity-80 rounded-md w-14 px-5 text-center flex justify-center items-center ml-5 h-10 shadow-sm"
                                 type="submit">Filter</button>
                         </div>
-                        <div class="mt-5 flex-1 border-l-2 border-white pl-2 flex flex-col text-xl gap-7 w-full overflow-y-scroll  h-64 sm:h-72 md:h-80 lg:h-80  scrollbar-thumb-rounded-full scrollbar-thin object-contain
-            scrollbar-track-main-0 scrollbar-thumb-signup-0 pr-10">
-                            <div class="flex items-center w-full">
+                        <div class="mt-5 flex-1 border-l-2 border-white pl-2 flex flex-col text-xl gap-7 w-full     ">
+                          <div class="flex flex-col h-64 sm:h-72 md:h-80 lg:h-80 items-center w-full overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-thin object-contain
+                          scrollbar-track-main-0 scrollbar-thumb-signup-0 pr-10 ">
                                 @foreach($users as $user)
                                 <p class="py-2">
                                     {{$user->username}} <br>
                                     Level: {{$user->experience}}
                                 </p>
                                 @endforeach
+
+
                             </div>
 
 
